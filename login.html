@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es" class="tt">
+  <head>
+    <title>Tame Traffic</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body class="bg-gradient login">
+    <!-- Button trigger modal -->
+    <div class="d-flex justify-content-center launch-modal">
+      <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#loginModal">
+        Iniciar sesión
+      </button>
+    </div>
+  <!-- container start -->
+   <div class="container country">
+     <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+          <div class="modal-dialog flex-center flex-column" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">TAME <img src="images/tt.svg" alt=""> TRAFFIC</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                    <p class="sign">Iniciar Sesion</p>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Correo</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="correo">
+
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Contraseña</label><a href="" class="pass">¿Olvidaste tu contraseña?</a>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="contraseña">
+                  </div>
+                  <div class="new-user">
+                    <p>¿Eres nuevo? <a href="#">Crea tu cuenta en Tame Traffic</a></p>
+                  </div>
+
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-secondary btn-lg btn-block">Entrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+    <!-- container end -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('#loginModal').modal('show')
+    </script>
+  </body>
+</html>
