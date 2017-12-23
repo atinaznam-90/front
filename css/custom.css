@@ -195,12 +195,18 @@ background-color: #3af1a7; }
     border-radius: 20px;
     padding: 0.3rem 2rem;
 }
+.btn.btn-trans:hover{
+  background-color: #3af1a7;
+  color: #fff;
+  border: none;
+}
 .btn.btn-trans.btn-b {
   color: #000;
   border-color: #000
 }
 .int .btn.btn-trans:hover, .int .btn.btn-trans:focus, .int .btn.btn-trans:active {
-  background-color: #3af1a7
+  background-color: #3af1a7;
+  color: #fff;
 }
 /*Modals*/
 .launch-modal {
@@ -568,6 +574,7 @@ background-color: #3af1a7; }
     margin: auto;
     display: flex;
 }
+
 /*footer*/
 footer {
   border-top: 1px solid #59595c;
