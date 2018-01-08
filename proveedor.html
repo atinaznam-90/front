@@ -20,7 +20,7 @@
     <!-- navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
             <div class="container">
-                <a class="navbar-brand" href="#"><strong>TAME <img src="images/tt.svg" alt=""> TRAFFIC</strong></a>
+                <a class="navbar-brand" href="#"><img src="images/tt_logo.svg" alt="" class="img-fluid logo-tt"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -59,12 +59,18 @@
                     </div>
                       <div class="col-xl-7">
                         <!--Panel-->
-                          <div class="card card-body panel-top">
+                          <div class="card card-body panel-top chair">
                               <img src="images/panel_top1.png" alt="" class="img-fluid">
                           </div>
                           <!--/.Panel-->
                     </div>
+
               </div>
+              <div class="col-xs-12 startnow">
+              <form action="dashboard.html">
+              <button class="nav-link waves-effect waves-light btn-green">Iniciar</button>
+              </form>
+            </div>
               </div>
               <div class="row col platform">
                   <div class="col-md-12 wow fadeIn mb-3">
@@ -80,7 +86,7 @@
             <div class="container ">
                 <!--Grid row-->
                 <div class="row info-wrapper">
-                  <div class="figures-top wow slideInDown" data-wow-delay="2.6s">
+                  <div class="figures-top wow slideInDown floating" data-wow-delay="2.6s">
                   </div>
                     <!--Grid column-->
                     <div class="row col-md-12  mb-3 top-content-2">
@@ -140,6 +146,11 @@
         </div>
       </div>
     </div>
+    <div class="col join">
+
+      <a href="#"><img src="images/chat.svg" alt="chat" class="chat"> </a>
+
+    </div>
     <!-- /container-->
     <!--Footer-->
       <footer class="page-footer center-on-small-only container">
@@ -149,10 +160,10 @@
               <div class="row">
 
                   <!--First column-->
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-xs-12">
                     <h5 class="title">Productos</h5>
-                    <div class="row col">
-                    <ul class="col-md-4">
+                    <div class="row col no-margin">
+                    <ul class="col-md-4 col-xs-12">
                         <li><a href="#!">Categoría</a></li>
                         <li><a href="#!">Categoría</a></li>
                         <li><a href="#!">Categoría</a></li>
@@ -200,7 +211,7 @@
                   <!--third column-->
                   <div class="col-md-4">
                       <h5 class="title">Tendencias</h5>
-                        <div class="row col">
+                        <div class="row col no-margin">
                           <ul class="col-xl-6">
                               <li><a href="#!" class="tag tag-1">TAG 1</a></li>
                               <li><a href="#!" class="tag tag-4">TAG 4</a></li>
@@ -235,11 +246,11 @@
                   Todos los derechos reservados, Tame Traffic, S.A. de C.V.
                 </div>
                 <div class="col-md-6">
-                  <div class="float-right">
-                  <a href="#"><img src="images/fb-icon.svg" alt="facebook"></a>
-                  <a href="#"><img src="images/yt-icon.svg" alt="TouTube"></a>
-                  <a href="#"><img src="images/ins-icon.svg" alt="Instagram"></a>
-                  <a href="#"><img src="images/mail-icon.svg" alt="Correo"></a>
+                  <div class="float-right sm-icons">
+                  <a href="#" ><img src="images/fb-icon.svg" alt="facebook" class="fb_icon" onmouseover="this.src='images/fb-icon_2.svg';" onmouseout="this.src='images/fb-icon.svg';"/></a>
+                  <a href="#"><img src="images/yt-icon.svg" alt="TouTube" class="ty_icon" onmouseover="this.src='images/yt-icon_2.svg';" onmouseout="this.src='images/yt-icon.svg';"/></a>
+                  <a href="#"><img src="images/ins-icon.svg" alt="Instagram" class="ins_icon" onmouseover="this.src='images/ins-icon_2.svg';" onmouseout="this.src='images/ins-icon.svg';"/></a>
+                  <a href="#"><img src="images/mail-icon.svg" alt="Correo" class="mail_icon" onmouseover="this.src='images/mail-icon_2.svg';" onmouseout="this.src='images/mail-icon.svg';"/></a>
                   <a href="#" class="terms">Condiciones</a>
                   <a href="#" class="terms">Privacidad</a>
                 </div>

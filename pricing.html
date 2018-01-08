@@ -42,6 +42,7 @@
       <!-- /navbar -->
       <!-- container -->
     <div class="container-fluid steps pricing">
+
       <!--Intro Section-->
    <section class="view intro-2">
 
@@ -50,55 +51,71 @@
            <div class="container top-content">
 
                <div class="row flex-center pt-5 mt-3">
-
                  <div class="col-xl-12 text-center ">
-                   <h3>
-                     Elige el plan que mas se acomode a tu negocio
-                   </h3>
-                    <p>Tienes que estar certificado para poder utilizar cualquier plan*</p>
-                    <div class="row col prices">
-                      <div class="col-md-4 green-text">
-                        <p class="txt-price">1 año</p>
-                        <p>(Ahorra el 18%)</p>
-                      </div>
-                      <div class="col-md-4">
-                        <p class="txt-price">2 año</p>
-                        <p>(Ahorra el 32%)</p>
-                      </div>
-                      <div class="col-md-4">
-                        <p class="txt-price">Mensual</p>
-
-                      </div>
-                    </div>
+                  <h3>
+                    Elige el plan que mas se acomode a tu negocio
+                  </h3>
+                   <p>Tienes que estar certificado para poder utilizar cualquier plan*</p>
                  </div>
-                   <div class="col-md-4 pymes">
-                           <div class="card wow fadeInLeft" >
-                             <div class="row">
+                 <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#basic" role="tab" aria-controls="basic" aria-selected="true">
+                        <div class="green-text">
+                          <p class="txt-price">1 año</p>
+                          <p>(Ahorra el 18%)</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#premium" role="tab" aria-controls="premium" aria-selected="false">
+                        <div>
+                          <p class="txt-price">2 año</p>
+                          <p>(Ahorra el 32%)</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#broker" role="tab" aria-controls="broker" aria-selected="false">
+                        <div>
+                          <p class="txt-price">Mensual</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="tab-content col-xl-12" id="myTabContent">
+                    <div class="row tab-pane fade show active" id="basic" role="tabpanel" aria-labelledby="basic-tab">
+                      <div class=" col-xl-4 pymes">
+                          <div class="card wow fadeInLeft" >
                               <a href="#"><img class="img-fluid" src="images/img-basic.jpg" alt="Básico"></a>
-                             </div>
-                             </div>
-                      </div>
-
-                   <div class="col-md-4 pymes">
-                           <div class="card wow fadeInLeft" >
-                             <div class="row">
-                                 <a href="#"><img class="img-fluid" src="images/img_premium.jpg" alt="Premium"></a>
-                             </div>
-                             </div>
-                      </div>
-
-                      <div class="col-md-4 pymes">
+                          </div>
+                        </div>
+                      <div class=" col-xl-4 pymes">
                               <div class="card wow fadeInLeft" >
-                                <div class="row">
-                                  <a href="#">  <img class="img-fluid" src="images/img_broke.jpg" alt="Broker"></a>
-                                </div>
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                     Button with data-target
+                                 </button>
+                              </p>
+                              <div class="collapse" id="collapseExample">
+                                 <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                              </div>
+                                    <!-- <a href="#"><img class="img-fluid" src="images/img_premium.jpg" alt="Premium"></a> -->
                                 </div>
                          </div>
+                         <div class=" col-xl-4 pymes">
+                                 <div class="card wow fadeInLeft" >
+                                     <a href="#">  <img class="img-fluid" src="images/img_broke.jpg" alt="Broker"></a>
+                                   </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane fade" id="premium" role="tabpanel" aria-labelledby="premium-tab">...</div>
+                    <div class="tab-pane fade" id="broker" role="tabpanel" aria-labelledby="broker-tab">...</div>
+                  </div>
 
                </div>
            </div>
        </div>
    </section>
+
     </div>
     <!-- /container-->
 

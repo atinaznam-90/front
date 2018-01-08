@@ -17,7 +17,7 @@
      <div class="logo">
     <h1><img src="images/logo.svg" alt="Tame Traffic"></h1>
     </div>
-    <form class="form-inline">
+    <form class="form-inline" action="login.html">
       <div class="form-group col-xl-6 col-sm-6 d-flex justify-content-end">
         <div class="cont_heg_50"></div>
           <div class="cont_select_center">
@@ -29,6 +29,12 @@
           <option value="1">País</option>
           <option value="2" >País</option>
           <option value="3">País</option>
+          <option value="4">País</option>
+          <option value="5">País</option>
+          <option value="6">País</option>
+          <option value="7">País</option>
+          <option value="8">País</option>
+          <option value="9">País</option>
             </select>
           <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
               <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
@@ -44,7 +50,7 @@
 </div> <!-- End div center   -->
       </div>
       <div class="col-xl-6 col-sm-6 choose-country">
-      <button type="submit" class="btn btn-link">English</button>
+      <button type="submit" class="btn btn-link" onclick="location.href='login.html'">English</button>
       <button type="submit" class="btn btn-link">Español</button>
     </div>
     </form>
@@ -130,7 +136,7 @@
       }else{
       document.querySelectorAll("[data-indx-select='"+idx1+"']")[0].setAttribute('data-selec-open','false');
       document.querySelectorAll("[data-indx-select='"+idx1+"'] > .icon_select_mate")[0].style.transform = 'rotate(0deg)';
-      document.querySelectorAll("[data-indx-select='"+idx1+"'] > .cont_list_select_mate > ul")[0].style.height = "0px";
+      document.querySelectorAll("[data-indx-select='"+idx1+"'] > .cont_list_select_mate > ul")[0].style.height = "0";
       }
       }
 
