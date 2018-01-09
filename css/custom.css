@@ -165,6 +165,16 @@ position: absolute;
   background: #3af1a7;
   border-color: #3af1a7;
 }
+.nav.navbar-nav .btn-green {
+    background-color: #3af1a7;
+    border: 0;
+    border-radius: 12px;
+    text-transform: uppercase;
+    padding: 0.3rem 1.4rem;
+    color: #fff;
+    box-shadow: none;
+    top: 6px;
+}
 .btn-green {
     background-color: #3af1a7;
     border: 0;
@@ -212,6 +222,15 @@ background-color: #3af1a7; }
 .int .btn.btn-trans:hover, .int .btn.btn-trans:focus, .int .btn.btn-trans:active {
   background-color: #3af1a7;
   color: #fff;
+}
+.card .btn.btn-features  {
+    position: relative;
+    left: inherit;
+    text-align: center;
+    margin: 1rem auto 0;
+    display: flex;
+    font-size: 1.1rem;
+    bottom: 2rem;
 }
 /*Modals*/
 .launch-modal {
@@ -303,6 +322,20 @@ input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly
 .steps.pricing, .steps.pricing h3, .steps.pricing p {
   color: #59595c;
 }
+.steps.pricing .card ul {
+    text-align: left;
+    padding-left: 2rem;
+}
+.steps.pricing .card ul li{
+  margin-bottom: 0.2rem;
+}
+.steps.pricing ul .fa{
+  font-size: 1.2rem;
+  padding-right: 1rem;
+}
+.nav-tabs .active .sprice p {
+  color: rgb(43, 202, 115);
+}
 .steps.pricing .card {
     font-weight: 400;
     height: 100%;
@@ -339,13 +372,49 @@ input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly
 .steps.pricing .green-text p {
   color: #3af1a7
 }
-/* .steps .card.wow:hover {
-  max-width: 700px;
-  max-height: 700px;
-  transition: all 2s ease-in;
-  cursor: pointer;
-} */
-
+.top-pricing {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.7rem 0;
+    color: #fff;
+    font-family: 'Akkurat';
+    background-color: rgb(89,89,92);
+}
+.green-top{
+  background-color: rgb(43, 202,115);
+}
+.top-pricing.green-top2{
+  background-color: rgb(200, 219,72);
+}
+.green-price, .pymes .green-price p , .fagreen{
+  color: rgb(43, 202,115);
+}
+.green-price2, .pymes .green-price2 p , .fagreen2{
+  color: rgb(200, 219,72);
+}
+.uprice {
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    align-items: baseline;
+    justify-content: center;
+    padding: 2rem 0 0;
+}
+.uprice span {
+    font-size: 1.2rem;
+}
+.uprice p {
+  font-size: 3rem;
+  padding: 0 0.2rem
+}
+.uprice small {
+  padding-left: 0.1rem;
+}
+.includes p{
+  text-align: center;
+  margin-bottom: 1rem;
+}
 .steps.pricing .nav-tabs .nav-item.show .nav-link,.steps.pricing  .nav-tabs .nav-link.active {
      color: #d1d2d3;
      background-color: transparent;
@@ -487,6 +556,9 @@ input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly
   padding-top: 3rem;
   color: #59595c;
 }
+.top-content-3{
+  padding-top: 4rem;
+}
 .top-content-2 h2{
   color: #59595c;
 }
@@ -627,9 +699,15 @@ input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly
     margin-top: 1rem;
 }
 .pymes {
-    margin: 2rem 1rem;
+    margin: 2rem 0;
     float: left;
-    max-width: 30%;
+
+    height: auto;
+}
+
+.pymes .collapse{
+  display: block;
+  height: 272px;
 }
 .steps.step3 form {
   margin-top: 3rem;
@@ -850,6 +928,12 @@ footer .md-form label {
     float: left;
     max-width: 100%;
 }
+.pymes .collapse{
+  display: none;
+}
+.pymes .collapse.show{
+  display: block;
+}
 .startnow {
     position: absolute;
     bottom: inherit;
@@ -936,4 +1020,5 @@ footer .md-form label {
 
 }.shadowfilter:hover {
 	-webkit-filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
+  cursor: pointer;
 }

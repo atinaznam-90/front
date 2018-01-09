@@ -15,10 +15,10 @@ vertical-align: middle;
 font-size:20px;
 color: #fff;
 }
-.main-menu:hover,nav.main-menu.expanded {
+/* .main-menu:hover,nav.main-menu.expanded {
 width:250px;
 overflow:visible;
-}
+} */
 .main-menu {
     background: #f1f1f1;
     border-right: 1px solid #f1f1f1;
@@ -130,6 +130,13 @@ padding:0;
 .dashboard-page nav.dashboard-menu ul li.active a {
 color:#2bca73;
 background-color:transparent;
+}
+.left-menu {
+  background: #f1f1f1;
+  width: 210px;
+  position: absolute;
+  left: 0;
+  height: 100%;
 }
 .area {
 float: left;
