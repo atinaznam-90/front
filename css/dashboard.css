@@ -5,6 +5,10 @@ body.dash.int {
 .fa-2x {
 font-size: 2em;
 }
+.breadcrumb-item.active {
+  color: rgb(43, 202, 115);
+  font-weight: bold;
+}
 .fa {
 position: relative;
 display: table-cell;
@@ -22,7 +26,7 @@ overflow:visible;
 .main-menu {
     background: #f1f1f1;
     border-right: 1px solid #f1f1f1;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     height: 100%;
@@ -37,6 +41,10 @@ overflow:visible;
 }
 .main-menu .fa{
   background: #2bca73;
+      color: #d1d3d4;
+}
+.main-menu .fa:hover {
+  color: #fff;
 }
 .main-menu>ul {
     margin: 4rem 0 0;
@@ -134,9 +142,52 @@ background-color:transparent;
 .left-menu {
   background: #f1f1f1;
   width: 210px;
-  position: absolute;
+  position: fixed;
   left: 0;
   height: 100%;
+  z-index: 99;
+}
+.left-menu ul {
+    position: relative;
+    top: 5rem;
+    padding-left: 5rem;
+    list-style: none;
+}
+.left-menu ul li {
+  margin-bottom: 1rem;
+}
+.left-menu ul a {
+  color: rgb(89, 89, 92);
+  font-weight: bold;
+}
+.left-menu ul a:hover {
+  color: rgb(43, 202, 115);
+}
+.dropdown-menu {
+    position: absolute;
+    top: 47px;
+    left: 1.6rem;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10.3rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: rgb(43,202,115);
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 0;
+}
+.navbar .dropdown-menu  a{
+  color: #fff;
+}
+.dropdown .dropdown-menu .dropdown-item:hover, .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:focus {
+    color: #fff;
+    background-color: #3af1a7;
 }
 .area {
 float: left;
@@ -145,27 +196,51 @@ width: 100%;
 height: 100%;
 }
 .navbar {
-  background-color: #f1f1f1
+    background-color: #f1f1f1;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 47px;
 }
 .navbar .navbar-brand {
-  margin-left: 4rem;
+  margin-left: 3rem;
   color: #59595c;
   font-weight: bold;
   font-size: 1rem;
+  line-height: 2;
 }
 .navbar .navbar-brand:hover {
   color: #2bca73;
+}
+.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover{
+    color: #2bca73;
 }
 .user{
     position: relative;
     display: flex;
     z-index: 10010;
+    /* top: -7px;
+    height: 47px; */
+    max-width: 194px;
+    padding-top: 0.1rem;
+    padding-bottom: 0.6rem;
+}
+.dropdown.show:hover, .user:focus, .user:active, .user:hover {
+    width: 179px;
+    background: rgb(43, 202, 115);
+
+}
+.navbar .dropdown-menu a {
+    padding: 10px 0 10px 20px;
+}
+.dropdown.show:hover a, .user:hover a, .user:focus a{
+  color: #fff!important;
 }
 .logod {
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     width: 59px;
     left: 0;
     top: 0;
@@ -177,13 +252,14 @@ height: 100%;
 .dash .container-fluid {
   background-color: #fff;
 }
-.dash .fa-user-circle{
-    text-align: left;
+.dash .fa-user-circle {
     color: #59595c;
     width: 30px;
-    height: 20px;
-    font-size: 1.6rem;
-    top: -4px;
+    height: 25px;
+    font-size: 2rem;
+    display: flex;
+    float: right;
+    left: 1.2rem;
 }
 .dash .other-item span {
     text-indent: 5rem;
@@ -220,13 +296,14 @@ height: 100%;
 .plans .card {
     background: #f1f1f1;
     box-shadow: none;
-    height: 488px;
+    height: 511px;
 }
 .plans .animated {
-  margin: 5rem auto;
+    margin: 5rem auto;
+    /* max-width: 22%; */
 }
 .plans .last .card {
-    height: 260px;
+    height: 300px;
     margin-top: 2rem;
 }
 .plans .last .btn.btn-green {
@@ -234,9 +311,12 @@ height: 100%;
     color: #fff;
     background-color: #2bca73;
 }
+.plans .last .btn.btn-green:hover {
+  background-color: #3af1a7;
+}
 .plans h3 {
     padding: 1.3rem 1.5rem;
-    color: #59595c;
+    color: rgb(34,31,31);
     font-size: 1rem;
     text-align: center;
     background: #d1d2d3;
@@ -245,6 +325,7 @@ height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 23px;
 }
 .plans .fa-check-circle {
     color: #2bca73;
@@ -257,23 +338,34 @@ height: 100%;
 }
 .plans .card .card-body p {
     text-align: center;
-    padding: 0 2rem;
-    margin-top: -2rem;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    line-height: 2;
+    display: flex;
+    vertical-align: middle;
 }
 .plans .card .card-body {
     position: relative;
     display: flex;
-    margin: auto;
+    margin: 1rem auto;
     vertical-align: middle;
     justify-content: center;
-    align-items: center;
 }
+
 .plans .btn {
     display: flex;
     left: inherit;
     margin: auto;
     align-items: center;
     justify-content: center;
+}
+.card .card-text {
+    font-size: 1.2rem;
+    color: rgb(34,31,31);
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+    display: flex;
 }
 .testing {
     display: flex;
@@ -282,6 +374,8 @@ height: 100%;
     align-items: center;
     font-size: 0.9rem;
     font-weight: 400;
+    top: -8px;
+    font-weight: bold;
 }
 /* circular progress */
 @-webkit-keyframes load {
@@ -328,14 +422,23 @@ height: 100%;
   content: attr(data-percent);
   position: absolute;
   width: 100%;
-  top: 1.5rem;
+  top: 1.3rem;
   left: 0;
   font-size: 3rem;
   text-align: center;
 }
 .dash .progress svg {
-  width: 7rem;
+  width: 8rem;
   height: 7rem;
+}
+.container-dash {
+    padding-right: 0;
+    margin-right: 0;
+    padding-left: 250px;
+    margin-left: -30px;
+    max-width: 100%;
+    position: relative;
+    top: 4rem;
 }
 .dash .progress svg:nth-child(2) {
   position: absolute;
@@ -346,7 +449,7 @@ height: 100%;
 }
 .dash .progress svg:nth-child(2) path {
   fill: none;
-  stroke-width: 25;
+  stroke-width: 38;
   stroke-dasharray: 629;
   stroke: #fff;
   opacity: .9;
@@ -355,18 +458,150 @@ height: 100%;
 }
 /* responsive */
 @media screen and (max-width: 767px) {
+  body.dash.int {
+      height: 100%;
+  }
+  .navbar .navbar-brand {
+    margin-left: 0;
+}
+
   .nav-item.text-green {
       float: left;
       text-align: right;
   }
-  .dash .plans{
-    margin-left: 15px
+  .dash .plans {
+      margin: 0;
+      padding: 0;
+      width: 100%;
   }
   .dash .plans div {
-    margin-left: 10px
-  }
+    margin: 0 0 2rem;
+    padding: 0;
+}
   .plans .animated {
     margin: 1rem auto;
+    max-width: 100%
+}
+.main-menu {
+    top: inherit;
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    width: 100%;
+    overflow: inherit;
+    display: inline-flex;
+    transition: inherit;
+}
+.main-menu>ul {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background: #2bca73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-menu li {
+    position: relative;
+    display: flex;
+    width: 20%;
+    float: left;
+    margin: auto;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+.left-menu {
+    background: #f1f1f1;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    height: 7rem;
+    z-index: 99;
+    bottom: 0;
+}
+.left-menu ul {
+    position: relative;
+    top: 1.2rem;
+    width: 100%;
+    padding-left: 1rem;
+}
+.left-menu ul li {
+    margin-bottom: 1rem;
+    display: flex;
+    float: left;
+    margin: auto;
+    margin-right: 1rem;
+}
+.main-menu .fa {
+    height: 48px;
+}
+.container-dash {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container-dash .col-12{
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown.show:hover, .user:focus, .user:active, .user:hover {
+    width: 100%;
+    background: transparent;
+}
+.user {
+  max-width: 100%;
+}
+.navbar .dropdown-menu {
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+}
+.logod, .navbar-brand.dropdown-toggle span,
+ .navbar-brand.dropdown-toggle::after,
+ .show-room span, .card-text br{
+  display: none;
+}
+.plans .card {
+  height: auto;
+}
+.plans .card .card-body {
+  display: block;
+}
+.plans .card .card-body p {
+    margin-top: 0;
+    display: block;
+    width: 100%;
+}
+.btn.btn-trans.btn-b {
+    display: block;
+    width: 100%;
+    bottom: 0;
+}
+.dash .plans .last.animated {
+  margin-bottom: 9rem;
+}
+.plans .last .card {
+    height: auto;
+    margin-top: 0;
+}
+.dash .plans .try {
+    padding: 0 40px;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: -1138px;
+    height: auto;
+}
+.plans .try .col-md-6 {
+  margin: 0 auto;
+}
+.dash .progress svg {
+    width: 7rem;
+    height: 7rem;
+}
+.dash .plans .slideInUp {
+  margin-top: 15rem;
 }
 }
 /* FF */
@@ -380,5 +615,17 @@ height: 100%;
     line-height: 0.7;
 
   }
-
+  .dash .fa-user-circle {
+      top: -26px;
+      height: 0;
+  }
+  .navbar .navbar-brand {
+    line-height: inherit;
+  }
+  .plans .last .card {
+    height: 285px;
+}
+.plans .card .card-body.last {
+  margin: 1rem auot;
+}
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="full-height">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -16,12 +16,17 @@
     <link href="css/dashboard.css" rel="stylesheet">
 
 </head>
-<body class="int area dash" onload="wow.init();" >
+<body class="int  dash" onload="wow.init();" >
     <a class="logod">
         <img src="images/logo_dash.svg" alt="Home">
     </a>
   <nav class="main-menu">
             <ul>
+              <li class="d-md-block d-xl-none">
+                  <a href="#">
+                      <img src="images/logo_dash.svg" alt="Home">
+                  </a>
+              </li>
                 <li>
                     <a href="#">
                         <i class="fa fa-search fa-2x"></i>
@@ -36,7 +41,7 @@
                 </li>
                 <li class="has-subnav">
                     <a href="#">
-                       <i class="fa fa-calendar fa-2x"></i>
+                      <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 
                     </a>
 
@@ -56,42 +61,43 @@
       <li>
         <a href="#">Productos</a>
       </li>
+      <li>
+        <a href="#">Pedidos</a>
+      </li>
     </ul>
   </div>
           <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="user col-xl-12">
-            <a class="navbar-brand" href="#">Nombre </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
-            </button>
-
-            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto  col-xl-8 col-xs-12">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><i class="fa fa-user-circle"></i> <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item text-green">
-                        <a class="nav-link" href="#"> Dashboard</a>
-                    </li>
-
-                </ul>
-                <ul class="d-flex align-items-end flex-column col-xl-4 col-xs-12 showroom">
-                  <li class="nav-item ">
-                      <a class="nav-link" href="#"> <img src="images/icon_showroom.svg" alt="Showroom"> Showroom</a>
-                  </li>
-                </ul>
+            <div class="user col col-xl-2">
+            <div class="dropdown show">
+              <a class="navbar-brand dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span>Nombre </span> <i class="fa fa-user-circle"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Mi Cuenta</a>
+                <a class="dropdown-item" href="#">Proveedor</a>
+                <a class="dropdown-item" href="#">Cerrar sesión</a>
+              </div>
             </div>
           </div>
-
+          <div class="col col-xl-8">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+              <!-- <li class="breadcrumb-item "><a href="#">Productos</a></li> -->
+            </ol>
+          </nav>
+        </div>
+        <div class="col col-xl-2 show-room">
+            <a class="nav-link float-right" href="#"> <img src="images/icon_showroom.svg" alt="Showroom"> <span>Showroom</span></a>
+        </div>
         </nav>
-        <div class="container">
-          <div class="col">
+        <div class="container container-dash">
+          <div class="col-12">
 
             <div class="row plans">
             <div class="col-xl-3 col-12 animated slideInUp">
               <div class="card ">
-                <h3>¡Felicidades creaste tu cuenta!</h3>
+                <h3>¡Felicidades creaste <br>tu cuenta!</h3>
                 <div class="card-body">
                   <p class="card-text"><i class="fa fa-check-circle fa-6" aria-hidden="true"></i></p>
                 </div>
@@ -101,8 +107,8 @@
               <div class="card">
                 <h3>Tu primer producto.</h3>
                 <div class="card-body">
-                  <p class="card-text">Primero, te recomendamos subir un producto individualmenta y ya
-que seas todo un experto, puedes subirlos en una carga masiva</p>
+                  <p class="card-text">Primero, te <br>recomendamos <br>subir un producto <br>individualmenta y ya<br>
+que seas todo un <br>experto, puedes <br>subirlos en una <br>carga masiva</p>
         <button class="btn btn-trans btn-b">
           subir producto
         </button>
@@ -115,7 +121,7 @@ que seas todo un experto, puedes subirlos en una carga masiva</p>
             </div>
             <div class="col-xl-3 col-12 animated slideInRight">
               <div class="card">
-                  <h3>Empieza tu certificación</h3>
+                  <h3>Empieza tu <br>certificación</h3>
                 <div class="card-body">
                   <p class="card-text">Recuerda que sin certificación tu showroom público y
                     otras funciones no estaran disponibles.
@@ -129,7 +135,7 @@ que seas todo un experto, puedes subirlos en una carga masiva</p>
             </div>
             <div class="col-xl-3 col-12 last animated">
               <div class="row try">
-                <div class="col-md-6">
+                <div class="col-5 col-md-6">
                 <ul class="progress">
                 <!--  Item  -->
                   <li data-percent="30">
@@ -180,15 +186,15 @@ que seas todo un experto, puedes subirlos en una carga masiva</p>
               </defs>
               </svg>
             </div>
-              <div class="col-md-6 testing">
+              <div class="col-4 col-md-6 testing">
                 <p>Dias de prueba restantes</p>
               </div>
                 <button class="btn btn-green">planes y costos</button>
               </div>
               <div class="card">
-                <h3>Lo mejor siempre se obtiene aprendiendo.</h3>
-                <div class="card-body">
-                  <p class="card-text">Explora nuestros tutoriales</p>
+                <h3>Lo mejor siempre <br>se obtiene aprendiendo.</h3>
+                <div class="card-body last">
+                  <p class="card-text">Explora nuestros <br> tutoriales</p>
                   <button class="btn btn-trans btn-b">
                   tutoriales
                   </button>
