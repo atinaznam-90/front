@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="tt">
 
 <head>
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
     <link href="css/team.css" rel="stylesheet">
 
 </head>
-<body class="int  dash" onload="wow.init();" >
+<body class="int dash dashtt" onload="wow.init();" >
     <a class="logod ttime">
         <img src="images/logo_dash2.svg" alt="Home">
     </a>
@@ -87,19 +87,25 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item " aria-current="page">Dashboard</li>
-              <li class="breadcrumb-item active"><a href="#">Supplier Team</a></li> 
+              <li class="breadcrumb-item active"><a href="#">Supplier Team</a></li>
             </ol>
           </nav>
         </div>
         <div class="col col-xl-2 show-room">
             <a class="nav-link float-right" href="#"> <img src="images/icon_showroom.svg" alt="Showroom"> <span>Showroom</span></a>
         </div>
+        <div class="col d-block d-md-none d-xl-none filters-m">
+          <a data-toggle="collapse" href="#collapseFilter" role="button" aria-expanded="false" aria-controls="collapseFilter">
+            <img src="images/icon_filter.svg" alt="Filtros">
+          </a>
+        </div>
         </nav>
         <div class="container container-dash team">
           <div class="col-12">
-      <form>
-          <div class="filters">
+            <form>
 
+          <div class="filters">
+            <div class="d-none d-md-block d-xl-block">
               <div class="cont_select_center col-12 col-md-2">
 
                 <!-- Custom select structure -->
@@ -172,37 +178,112 @@
 
 
 </div> <!-- End div center   -->
+</div>
 <div class="col-12 col-md-2 col-filter">
-  <a class="btn btn-link btn-filter" data-toggle="collapse" href="#collapseFilter" role="button" aria-expanded="false" aria-controls="collapseFilter">
-    <i class="fa fa-caret-down" aria-hidden="true"></i> FILTROS
+  <a class="btn btn-link btn-filter d-none d-md-block d-xl-block" data-toggle="collapse" href="#collapseFilter" role="button" aria-expanded="false" aria-controls="collapseFilter">
+    <i class="fa fa-caret-down " aria-hidden="true"><span>Filtros</span></i>
   </a>
 </div>
-<div class="col-12 col-md-2 searchs cont_select_center">
+<div class="col-1 col-md-2 searchs cont_select_center">
   <div class="form-group">
     <input type="search" id="" aria-describedby="search" placeholder="Buscar">
     <i class="fa fa-search" aria-hidden="true"></i>
   </div>
 </div>
           <div class="collapse" id="collapseFilter">
+            <div class="d-md-block d-xl-none">
+              <div class="cont_select_center col-12 col-md-2">
+
+                <!-- Custom select structure -->
+              <div class="select_mate" data-mate-select="active" >
+              <select name="" onchange="" onclick="return false;" id="">
+              <option value="">México </option>
+              <option value="1">País</option>
+              <option value="2" >País</option>
+              <option value="3">País</option>
+              <option value="4">País</option>
+              <option value="5">País</option>
+              <option value="6">País</option>
+              <option value="7">País</option>
+              <option value="8">País</option>
+              <option value="9">País</option>
+                </select>
+              <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                  <path d="M0-.75h24v24H0z" fill="none"/>
+              </svg></span>
+              <div class="cont_list_select_mate">
+                <ul class="cont_select_int">  </ul>
+              </div>
+                </div>
+                <!-- Custom select structure -->
+
+
+    </div> <!-- End div center   -->
+    <div class="cont_select_center col-12 col-md-2">
+
+      <!-- Custom select structure -->
+    <div class="select_mate" data-mate-select="active" >
+    <select name="" onchange="" onclick="return false;" id="">
+    <option value="">TIPO DE BUSQUEDA</option>
+    <option value="1">Categoría</option>
+    <option value="2" >Subcategoría</option>
+    <option value="3">B2B</option>
+      </select>
+    <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+        <path d="M0-.75h24v24H0z" fill="none"/>
+    </svg></span>
+    <div class="cont_list_select_mate">
+      <ul class="cont_select_int">  </ul>
+    </div>
+      </div>
+      <!-- Custom select structure -->
+
+
+</div> <!-- End div center   -->
+<div class="cont_select_center col-12 col-md-2">
+
+  <!-- Custom select structure -->
+<div class="select_mate" data-mate-select="active" >
+<select name="" onchange="" onclick="return false;" id="">
+<option value="">Categoría</option>
+<option value="1">Categoría</option>
+<option value="2" >Categoría</option>
+<option value="3">Categoría</option>
+  </select>
+<p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+    <path d="M0-.75h24v24H0z" fill="none"/>
+</svg></span>
+<div class="cont_list_select_mate">
+  <ul class="cont_select_int">  </ul>
+</div>
+  </div>
+  <!-- Custom select structure -->
+
+
+</div> <!-- End div center   -->
+</div>
             <div class="row col-12">
 
-                  <div class="col-12 col-md-2 ">
+                  <div class="col-12 col-md-2 filter-gray">
                     <p class="bold head">Nacionalidad</p>
                     <p class="bold">Nacional <span class="badge badge-light">X</span> </p>
                     <p class="">Internacional</p>
                   </div>
-                  <div class="col-12 col-md-1">
+                  <div class="col-12 col-md-1 filter-gray">
                   <p class="bold head">Tipo</p>
                   <p class="">Fabricante</p>
                   <p class="">Broker</p>
                   </div>
-                  <div class="col-12 col-md-1 ">
+                  <div class="col-12 col-md-1 filter-gray">
                   <p class="bold head">Tamaño</p>
                   <p class="">Start Up </p>
                   <p class="">PYME </p>
                   <p class="">MGE </p>
                   </div>
-                  <div class="col-12 col-md-2">
+                  <div class="col-12 col-md-2 filter-gray">
                   <p class="bold head">Status</p>
                   <p class="bold">Básico <span class="badge badge-light">X</span> </p>
                   <p class="">Premium</p>
@@ -212,7 +293,7 @@
                   <p class="">En certificación</p>
                   <p class="">Sin certificación</p>
                   </div>
-                  <div class="col-12 col-md-2">
+                  <div class="col-12 col-md-2 filter-gray">
                   <p class="bold head">Actividad</p>
                   <p class=""><a href="#">(+)</a> Actividad </p>
                   <p class="">Actividad semanal</p>
@@ -221,7 +302,7 @@
                   <p class="">Inactivo 6 meses</p>
                   <p class="">Sin actividad</p>
                   </div>
-                  <div class="col-12 col-md-2">
+                  <div class="col-12 col-md-2 filter-gray">
                   <p class="bold head">Actividad | Productos</p>
                   <p class="bold"> Alta <a href="#">(+)</a> No de Productos<span class="badge badge-light">X</span> </p>
                   <p class="bold"> P.A <a href="#">(+)</a> No de Productos<span class="badge badge-light">X</span>
@@ -229,7 +310,7 @@
                   <p class="bold"> Alta <a href="#">(-)</a> No de Productos<span class="badge badge-light">X</span> </p>
                   <p class="bold"> P.A. <a href="#">(-)</a> No de Productos<span class="badge badge-light">X</span> </p>
                   </div>
-                  <div class="col-12 col-md-2">
+                  <div class="col-12 col-md-2 filter-gray">
                   <p class="bold head">Actividad | Pedidos</p>
                   <p class=""> Entregado <a href="#">(+)</a> No de pedidos </p>
                   <p class=""> En proceso <a href="#">(+)</a> No de pedidos </p>
@@ -248,21 +329,21 @@
           <div class="col-md-2">
 
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 col-3">
             <p>Perfil</p>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 col-3">
             <p>Status</p>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 col-3">
             <p>Actividad</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-3">
             <p class="center-text">Acciones</p>
           </div>
         </div>
         <div class="selected profile-status row">
-          <div class="col-md-2 col-xs-12 full-profile">
+          <div class="col-6 col-sm-6 col-xl-2  full-profile">
             <ul class="pics">
               <li>
                 <img src="images/profile_pic.svg" alt="">
@@ -274,29 +355,36 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-2 col-xs-12 ">
+          <div class="col-6  col-md-6 col-xl-2">
             <p class="bold">Farid Jasper</p>
             <p>Yensen Co.</p>
             <p>Inglaterra</p>
             <p>CM21837</p>
+            <div class="d-xs-block d-xl-none d-sm-none modal-contact">
+              <a href="#" data-toggle="modal" data-target="#modalContact">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
-          <div class="col-md-2 col-xs-12 ">
+          <div class="col-6 col-md-6 col-xl-2 broker">
             <p class="color-blue">Int.Broker</p>
             <p class="color-orange">Broker MGE</p>
             <p class="color-green">Wrold Leader</p>
             <p><a href="#" class="text-gray">TT.Division</a></p>
           </div>
-          <div class="col-md-2 col-xs-12 activity">
+          <div class="col-6 col-md-6 col-xl-2 activity">
             <p class="text-green">Alta<small> productos</small><span>1,987</span></p>
             <p class="text-blue2">P.A<small> productos</small><span>39</span></p>
             <p class="text-green">Entregado<small> pedidos</small><span>23</span></p>
             <p class="text-green2">En proceso<small> pedidos</small><span>2</span></p>
           </div>
-            <div class="col-md-1 col-xs-12 phones">
+            <div class="col-6 col-md-6 col-xl-1  phones">
               <p><a href="#"> <i class="fa fa-mobile" aria-hidden="true"></i> (44)5075916</a></p>
               <p><a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> 7825170</a></p>
             </div>
-            <div class="col-md-3 col-xs-12 icon-action">
+            <div class="col-6 col-md-6 col-xl-3  icon-action">
               <a href="" class="icon_chat">chat</a>
               <a href="" class="icon_mail">mail</a>
               <a href="" class="icon_usr">user</a>
@@ -304,7 +392,7 @@
             </div>
         </div>
         <div class="selected profile-status row">
-          <div class="col-md-2 col-xs-12 full-profile">
+          <div class="col-6 col-sm-6 col-xl-2  full-profile">
             <ul class="pics">
               <li>
                 <img src="images/profile_pic.svg" alt="">
@@ -316,29 +404,36 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-2 col-xs-12 ">
+          <div class="col-6  col-md-6 col-xl-2">
             <p class="bold">Farid Jasper</p>
             <p>Yensen Co.</p>
             <p>Inglaterra</p>
             <p>CM21837</p>
+            <div class="d-xs-block d-xl-none d-sm-none modal-contact">
+              <a href="#" data-toggle="modal" data-target="#modalContact">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
-          <div class="col-md-2 col-xs-12 ">
+          <div class="col-6 col-md-6 col-xl-2 broker">
             <p class="color-blue">Int.Broker</p>
             <p class="color-orange">Broker MGE</p>
             <p class="color-green">Wrold Leader</p>
             <p><a href="#" class="text-gray">TT.Division</a></p>
           </div>
-          <div class="col-md-2 col-xs-12 activity">
+          <div class="col-6 col-md-6 col-xl-2 activity">
             <p class="text-green">Alta<small> productos</small><span>1,987</span></p>
             <p class="text-blue2">P.A<small> productos</small><span>39</span></p>
             <p class="text-green">Entregado<small> pedidos</small><span>23</span></p>
             <p class="text-green2">En proceso<small> pedidos</small><span>2</span></p>
           </div>
-            <div class="col-md-1 col-xs-12 phones">
+            <div class="col-6 col-md-6 col-xl-1  phones">
               <p><a href="#"> <i class="fa fa-mobile" aria-hidden="true"></i> (44)5075916</a></p>
               <p><a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> 7825170</a></p>
             </div>
-            <div class="col-md-3 col-xs-12 icon-action">
+            <div class="col-6 col-md-6 col-xl-3  icon-action">
               <a href="" class="icon_chat">chat</a>
               <a href="" class="icon_mail">mail</a>
               <a href="" class="icon_usr">user</a>
@@ -346,7 +441,7 @@
             </div>
         </div>
         <div class="selected profile-status row">
-          <div class="col-md-2 col-xs-12 full-profile">
+          <div class="col-6 col-sm-6 col-xl-2  full-profile">
             <ul class="pics">
               <li>
                 <img src="images/profile_pic.svg" alt="">
@@ -358,29 +453,36 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-2 col-xs-12 ">
+          <div class="col-6  col-md-6 col-xl-2">
             <p class="bold">Farid Jasper</p>
             <p>Yensen Co.</p>
             <p>Inglaterra</p>
             <p>CM21837</p>
+            <div class="d-xs-block d-xl-none d-sm-none modal-contact">
+              <a href="#" data-toggle="modal" data-target="#modalContact">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
-          <div class="col-md-2 col-xs-12 ">
+          <div class="col-6 col-md-6 col-xl-2 broker">
             <p class="color-blue">Int.Broker</p>
             <p class="color-orange">Broker MGE</p>
             <p class="color-green">Wrold Leader</p>
             <p><a href="#" class="text-gray">TT.Division</a></p>
           </div>
-          <div class="col-md-2 col-xs-12 activity">
+          <div class="col-6 col-md-6 col-xl-2 activity">
             <p class="text-green">Alta<small> productos</small><span>1,987</span></p>
             <p class="text-blue2">P.A<small> productos</small><span>39</span></p>
             <p class="text-green">Entregado<small> pedidos</small><span>23</span></p>
             <p class="text-green2">En proceso<small> pedidos</small><span>2</span></p>
           </div>
-            <div class="col-md-1 col-xs-12 phones">
+            <div class="col-6 col-md-6 col-xl-1  phones">
               <p><a href="#"> <i class="fa fa-mobile" aria-hidden="true"></i> (44)5075916</a></p>
               <p><a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> 7825170</a></p>
             </div>
-            <div class="col-md-3 col-xs-12 icon-action">
+            <div class="col-6 col-md-6 col-xl-3  icon-action">
               <a href="" class="icon_chat">chat</a>
               <a href="" class="icon_mail">mail</a>
               <a href="" class="icon_usr">user</a>
@@ -388,7 +490,7 @@
             </div>
         </div>
         <div class="selected profile-status row">
-          <div class="col-md-2 col-xs-12 full-profile">
+          <div class="col-6 col-sm-6 col-xl-2  full-profile">
             <ul class="pics">
               <li>
                 <img src="images/profile_pic.svg" alt="">
@@ -400,29 +502,36 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-2 col-xs-12 ">
+          <div class="col-6  col-md-6 col-xl-2">
             <p class="bold">Farid Jasper</p>
             <p>Yensen Co.</p>
             <p>Inglaterra</p>
             <p>CM21837</p>
+            <div class="d-xs-block d-xl-none d-sm-none modal-contact">
+              <a href="#" data-toggle="modal" data-target="#modalContact">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
-          <div class="col-md-2 col-xs-12 ">
+          <div class="col-6 col-md-6 col-xl-2 broker">
             <p class="color-blue">Int.Broker</p>
             <p class="color-orange">Broker MGE</p>
             <p class="color-green">Wrold Leader</p>
             <p><a href="#" class="text-gray">TT.Division</a></p>
           </div>
-          <div class="col-md-2 col-xs-12 activity">
+          <div class="col-6 col-md-6 col-xl-2 activity">
             <p class="text-green">Alta<small> productos</small><span>1,987</span></p>
             <p class="text-blue2">P.A<small> productos</small><span>39</span></p>
             <p class="text-green">Entregado<small> pedidos</small><span>23</span></p>
             <p class="text-green2">En proceso<small> pedidos</small><span>2</span></p>
           </div>
-            <div class="col-md-1 col-xs-12 phones">
+            <div class="col-6 col-md-6 col-xl-1  phones">
               <p><a href="#"> <i class="fa fa-mobile" aria-hidden="true"></i> (44)5075916</a></p>
               <p><a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> 7825170</a></p>
             </div>
-            <div class="col-md-3 col-xs-12 icon-action">
+            <div class="col-6 col-md-6 col-xl-3  icon-action">
               <a href="" class="icon_chat">chat</a>
               <a href="" class="icon_mail">mail</a>
               <a href="" class="icon_usr">user</a>
@@ -569,5 +678,32 @@
       }
     </script>
 </body>
+<!-- modal-contact -->
+<div class="modal fade modal-contacts d-md-block d-xl-none" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="modalContact" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-12 icon-action">
+          <a href="" class="icon_chat">chat</a>
+          <a href="" class="icon_mail">mail</a>
+          <a href="" class="icon_usr">user</a>
+          <a href="" class="icon_fav">favorito</a>
+        </div>
+        <div class="col-12 phones">
+          <p><a href="#"> <i class="fa fa-mobile" aria-hidden="true"></i> (44)5075916</a></p>
+          <p><a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> 7825170</a></p>
+        </div>
+      </div>
 
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-gray btn-block" data-dismiss="modal">Cancelar</button>
+    </div>
+  </div>
+</div>
 </html>

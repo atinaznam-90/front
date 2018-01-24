@@ -148,9 +148,10 @@ color: #fff;
     margin-top: 2rem;
     margin-left: 3.333333%;
     float: left;
+    z-index: 9999;
 }
 .col-filter {
-  margin-top: 2rem;
+  margin-top: 1rem;
   float: left;
 }
 .dash .searchs input {
@@ -252,6 +253,7 @@ color: #fff;
     display: flex;
     line-height: 1;
     padding: 0.2rem 0;
+    text-align: right;
 }
 .btn.btn-link.btn-filter:hover, .btn-filter .fa:hover {
   color: #3af1a7!important;
@@ -259,15 +261,20 @@ color: #fff;
 .btn-filter .fa {
     position: relative;
     width: 1rem;
-    height: auto;
+    height: 2rem;
     vertical-align: middle;
     font-size: 20px;
     color: #000;
     margin: 0 3px 0 0;
     display: flex;
-    line-height: 10px;
+    top: 10px
 }
-
+.btn-filter .fa span {
+  font-family: 'Akkurat', sans-serif;
+  font-size: 0.8rem;
+  margin-left: 5px;
+  line-height: 18px;
+}
 .main-menu {
     background: #f1f1f1;
     border-right: 1px solid #f1f1f1;
@@ -415,6 +422,7 @@ bottom:0;
     padding-top: 1.5rem;
     border-bottom: 1px solid #f1f1f1;
     padding-bottom: 1rem;
+    clear: both;
 }
 .profile-status:hover{
   background: #f1f1f1;
@@ -825,6 +833,11 @@ height: 100%;
     padding: 0;
 }
 /* responsive */
+@media screen and (max-width: 1320px) {
+  .broker , .phones {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 767px) {
   body.dash.int {
       height: 100%;
@@ -850,6 +863,118 @@ height: 100%;
     margin: 1rem auto;
     max-width: 100%
 }
+.container-dash.team {
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    position: relative;
+    top: 4rem;
+    padding-left: 15px;
+}
+.dash .cont_select_center.searchs {
+   position: fixed;
+   border: 0;
+   top: -2rem;
+   right: 7rem;
+   z-index: 999;
+}
+.dash .searchs input{
+  border: 0
+}
+.dash .container-dash .filter-gray {
+    background: #f1f1f1;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+.filters-m {
+    width: 100%;
+    position: absolute;
+    background: #f1f1f1;
+    z-index: 9999;
+}
+.filters-m img {
+    width: 3rem;
+    position: relative;
+    float: right;
+}
+
+.dash .container-fluid.head-profile, .phones, .icon-action {
+  display: none;
+}
+.dash .container-dash .actions-profile {
+  padding-bottom: 7rem
+}
+.actions-profile .pics {
+  display: block;
+}
+.modal-contact {
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.modal-contacts a {
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+.modal-contacts a:hover, .modal-contacts fa:hover {
+  color: #000;
+}
+.modal-contact .fa, .modal-contacts .modal-body .phones{
+  display: block;
+  color: #000;
+}
+.modal-contacts .modal-body .icon-action {
+  display: flex;
+}
+.modal-contacts .modal-body {
+    padding: 0;
+}
+.modal-contacts .modal-content {
+    border-radius: 20px;
+    border: 0;
+    padding-bottom: 10rem;
+    background: #f1f1f1;
+}
+.modal-contacts .fa{
+    display: table-cell;
+    width: 40px;
+    height: 35px;
+    line-height: 9px;
+    color: #000;
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+.modal-contacts .modal-body .phones {
+    margin-top: 2rem;
+    border-top: 1px solid #999;
+}
+.modal-contacts .modal-body .phones p{
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #999;
+  margin-bottom: 0;
+}
+.modal-contacts .modal-body .phones p:hover {
+  background: #3af1a7;
+}
+.modal-contacts .btn-gray{
+    background: #f1f1f1;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.modal-contacts .btn-gray:hover, .modal-contacts .btn-gray:active {
+  background: #3af1a7;
+}
+.modal-contacts  .modal-footer {
+  margin-top: 0.7rem;
+}
+/* .container-dash.team .col-12 {
+  padding-right: 15px;
+  padding-left: 15px;
+} */
 .dash .select_mate {
     float: none;
     min-width: 50%;
@@ -930,7 +1055,24 @@ height: 100%;
     padding: 0;
     margin: 0;
 }
-
+.dashtt .dropdown-menu {
+    background-color: #f1f1f1;
+}
+.dashtt .dropdown.show:hover a,.dashtt .user:hover a,.dashtt .user:focus a {
+    color: #000!important;
+}
+.dashtt .navbar .dropdown-menu a {
+    color: #000;
+    font-weight: bold;
+    position: relative;
+}
+.dashtt .navbar .dropdown-menu a::after {
+    content: '>';
+    position: absolute;
+    right: 3rem;
+    font-weight: bold;
+    color: #000;
+}
 .dropdown.show:hover, .user:focus, .user:active, .user:hover {
     width: 100%;
     background: transparent;
