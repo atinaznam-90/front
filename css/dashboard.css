@@ -5,8 +5,11 @@ body.dash.int {
 .fa-2x {
 font-size: 2em;
 }
-.breadcrumb-item.active {
-  color: rgb(43, 202, 115);
+.breadcrumb-item, .breadcrumb-item a {
+  color: #999999;
+}
+.breadcrumb-item.active a{
+  color: #18C2B8;
   font-weight: bold;
 }
 .fa {
@@ -828,6 +831,373 @@ height: 100%;
   -webkit-animation: load 10s;
           animation: load 10s;
 }
+/* profile-dash */
+.profile-dash .menu-dash {
+    /* margin-bottom: 2rem; */
+    padding-right: 0;
+    border-bottom: 11px solid #f1f1f1;
+}
+.profile-dash  .nav-user {
+    z-index: 9;
+    height: 60px;
+    position: relative;
+    background: transparent;
+}
+.profile-dash.dash  .nav-user .collapse ul{
+  width: 100%;
+}
+
+.profile-dash.dash  .nav-user .collapse,.profile-dash.dash  .nav-user  .collapsing {
+    padding-top: 0;
+}
+.profile-dash .nav-user .active {
+    background-color: transparent;
+    border-bottom: 1px solid #18c2b8;
+}
+.profile-dash .nav-user.navbar.navbar-light .navbar-nav .nav-item{
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+.profile-dash .nav-user.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+    background-color: transparent;
+    color: #18c2b8;
+}
+.profile-dash  .container-dash.team {
+  top: 3rem;
+}
+.bcrumbleft {
+  float: left;
+}
+.profile-dash h3 {
+    float: left;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 2;
+    margin-top: 2rem;
+}
+.profile-dash  .h3-first {
+  margin-top: 0;
+}
+.profile-dash .jumbotron {
+    background-color: #f1f1f1;
+    padding: 1rem 0 0.2rem;
+    box-shadow: none;
+    border-radius: 13px;
+    margin: 3rem 0 0.1rem;
+}
+.profile-dash .jumbotron:hover {
+  border: 1px solid #18C2B8
+}
+.profile-dash .small-jumbo{
+  padding: 2.6rem 0
+}
+.profile-dash  .icon-action {
+    float: right;
+}
+.nopad, .nomar {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.charts ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+.charts li {
+    font-size: 0.8rem;
+    display: flex;
+    margin: 0.5rem 0.7rem 0 auto;
+    flex-direction: column;
+    border-top: 1px solid;
+}
+.charts li p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.dash .tables-search .cont_select_center {
+    margin-top: 0;
+    margin-left: 0;
+}
+.tables-search .fa {
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: right;
+    vertical-align: text-top;
+    font-size: 15px;
+    color: #000;
+    display: inline-block;
+}
+.tables-search  table {
+  margin-top: 1rem;
+}
+.tables-search  table.table thead th {
+    border-top: none;
+    background: #fff;
+}
+.chart {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+.doughnutTip {
+  position: absolute;
+  min-width: 30px;
+  max-width: 300px;
+  padding: 5px 15px;
+  border-radius: 1px;
+  background: rgba(0,0,0,.8);
+  color: #ddd;
+  font-size: 17px;
+  text-shadow: 0 1px 0 #000;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: .06em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  pointer-events: none;}
+.doughnutTip:after {
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      content: "";
+      height: 0;
+      margin: 0 0 0 -6px;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-top: 6px solid rgba(0,0,0,.7);
+      line-height: 0;
+  }
+
+.doughnutSummary {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #d5d5d5;
+  text-align: center;
+  text-shadow: 0 -1px 0 #111;
+  cursor: default;
+}
+.doughnutSummaryTitle {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -27%;
+  font-size: 22px;
+  letter-spacing: .06em;
+}
+.doughnutSummaryNumber {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -25%;
+    font-size: 25px;
+    color: #000;
+}
+.chart path:hover { opacity: 0.65; }
+/* borders-colors */
+.borders p{
+  border-bottom: 2px solid #000;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+.borders .text-center{
+  margin: auto;
+}
+.borders .bgreen, .bgreen{
+  border-color: #2bca73!important;
+}
+.borders .bgreenok, .bgreenok{
+  border-color: #4a9d1e!important;
+}
+.borders .bgreendone, .bgreendone{
+  border-color: #41beb4!important;
+}
+.borders .bblue, .bblue{
+  border-color: #0645f9!important;
+}
+.borders .byellow, .byellow{
+  border-color: #fffc1a!important;
+}
+.borders .borange, .borange{
+  border-color: #ffb64d!important;
+}
+.borders .bred, .bred{
+  border-color: #ff5050!important;
+}
+.borders .bgray, .bgray {
+  border-color: #d1d2d3!important;
+}
+.profile-dash .myprofile {
+  padding-bottom: 3rem;
+}
+.myprofile {
+    padding: 0 0 0 60px;
+}
+.myprofile .pics{
+    list-style: none;
+    position: relative;
+    padding: 0;
+}
+.myprofile .pics.edit-pic a {
+    display: block;
+    margin: auto;
+    background-image: url(../images/profile_pic.svg);
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 270px;
+}
+.myprofile .pics.edit-pic a p{
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    left: 50%;
+    margin-left: -40px;
+    text-indent: -999em
+}
+.myprofile .pics.edit-pic a:hover {
+    background-image: url(../images/profile_pic_hov.svg);
+    background-size: 264px auto;
+    background-position: 8px 5px;
+
+}
+.myprofile .pics.edit-pic a:hover p{
+  text-indent: 0;
+}
+.myprofile .pics span{
+    position: absolute;
+    top: 0;
+    width: 80px;
+    max-width: 40%;
+}
+.myprofiles  ul {
+    list-style: none;
+    padding: 0;
+}
+.myprofiles  ul li {
+  margin-bottom: 1rem;
+}
+.myprofiles strong{
+    font-weight: bold;
+    color: #000;
+    font-size: 1.1rem;
+}
+.myprofile .phones {
+  text-align: left;
+
+}
+.myprofile .phones a{
+  color: #000
+}
+.myprofile .phones .fa {
+    height: auto;
+    color: #000;
+}
+.dash .myprofile .update .cont_select_center{
+    margin-left: 0;
+    width: 100%;
+
+}
+.container-dash.team.marketing-col{
+  position: absolute;
+  height: 100%;
+
+}
+.profile-dash .marketing-col .myprofile{
+  height: 100%;
+  padding-bottom: 0;
+}
+.dash .myprofile .update {
+  width: 100%;
+}
+.dash .myprofile .update label{
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.mkt-list {
+  list-style: none;
+}
+.mkt-list li {
+  margin-bottom: 4rem;
+}
+.mkt-list li a {
+  color: #000;
+}
+.mkt-list li a:hover {
+  color: #999;
+}
+.mkt-list li a.active {
+    color: #18c2b8;
+    border-bottom: 2px solid #18c2b8;
+    padding-bottom: 1rem;
+    background: transparent;
+    width: 220px;
+    display: inline-flex;
+}
+.usr-mkt{
+    display: flex;
+    margin: 0 auto 2rem;
+    justify-content: center;
+}
+.usr-mkt .jumbotron {
+    width: 400px;
+}
+.usr-mkt .jumbotron ul {
+  list-style: none;
+  padding-left: 0.5rem;
+}
+.usr-mkt .jumbotron ul a:hover{
+  color: #999;
+}
+.usr-mkt p  {
+    position: relative;
+    left: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.usr-mkt p span {
+    background: #18c2b8;
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
+.m-t2 {
+  margin-top: 2rem;
+}
+.p-t2 {
+  padding-top: 2rem;
+}
+.border-right {
+  border-right: 11px solid #f1f1f1
+}
+.data {
+  margin-bottom: 1.5rem;
+}
+.data p {
+  margin-bottom: 0;
+}
+.data p:first-child{
+  color: #999999;
+  text-transform: uppercase;
+}
 /* filters */
 .filters {
     padding: 0;
@@ -845,7 +1215,12 @@ height: 100%;
   .navbar .navbar-brand {
     margin-left: 0;
 }
-
+.profile-dash .menu-dash {
+  border-bottom: none;
+}
+.border-right {
+    border-right: none;
+}
   .nav-item.text-green {
       float: left;
       text-align: right;
@@ -862,6 +1237,16 @@ height: 100%;
   .plans .animated {
     margin: 1rem auto;
     max-width: 100%
+}
+
+.profile-dash .small-jumbo {
+    min-height: 160px;
+}
+.profile-dash .container-dash .myprofile {
+    padding-bottom: 9rem;
+}
+.left-menu ul a {
+  font-size: 0.8rem;
 }
 .container-dash.team {
     padding-right: 15px;
@@ -1018,8 +1403,11 @@ height: 100%;
 .main-menu.timetraffic .dashm {
   width: 30px;
 }
-.breadcrumb-item.active {
+.breadcrumb-item{
   display: none;
+}
+.breadcrumb-item.active {
+  display: block;
 }
 .left-menu {
     background: #f1f1f1;
@@ -1079,6 +1467,18 @@ height: 100%;
 }
 .user {
   max-width: 100%;
+  padding: 0;
+}
+.show-room {
+  padding: 0
+}
+
+.btn.btn-trans.btn-b.btn-xs {
+    display: block;
+    width: 35%;
+    bottom: 0;
+    padding: 0.3rem 0rem;
+    top: 0;
 }
 .navbar .dropdown-menu {
     left: 0;
