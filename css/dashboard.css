@@ -12,6 +12,9 @@ font-size: 2em;
   color: #18C2B8;
   font-weight: bold;
 }
+.no-padding {
+  padding: 0;
+}
 .fa {
 position: relative;
 display: table-cell;
@@ -22,8 +25,9 @@ vertical-align: middle;
 font-size:20px;
 color: #fff;
 }
-.bold{
-  font-weight: bold;
+.bold {
+    font-weight: bold;
+    font-family: 'Akkurat bold', sans-serif;
 }
 .w90 {
   max-width: 15%
@@ -151,7 +155,7 @@ color: #fff;
     margin-top: 2rem;
     margin-left: 3.333333%;
     float: left;
-    z-index: 9999;
+
 }
 .col-filter {
   margin-top: 1rem;
@@ -242,6 +246,7 @@ color: #fff;
 }
 .dash #collapseFilter .head {
   margin-bottom: 2rem;
+  font-size: 14px;
 }
 .dash .collapse, .dash .collapsing {
   width: 100%;
@@ -421,11 +426,49 @@ bottom:0;
 .main-menu.timetraffic .last {
     background: #221F1F;
 }
+.form-check.categoryform {
+  position: relative;
+}
+
+.checkboxFour input[type=checkbox] {
+	display: none;
+}
+
+.checkboxFour input[type=checkbox]:checked + label {
+	background: #26ca28;
+}
+.checkboxFour {
+	position: relative;
+}
+.checkboxFour label {
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+	cursor: pointer;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 12;
+	background: transparent;
+  margin-bottom: 1rem;
+  text-indent: 20px;
+  line-height: 18px;
+  border: 1px solid #333;
+}
 .profile-status {
     padding-top: 1.5rem;
     border-bottom: 1px solid #f1f1f1;
     padding-bottom: 1rem;
     clear: both;
+}
+.profile-status p{
+  margin-bottom: 0;
 }
 .profile-status:hover{
   background: #f1f1f1;
@@ -443,9 +486,13 @@ bottom:0;
 .phones a:hover, .phones a .fa:hover{
   color: #3af1a7;
 }
-.phones  p{
+.phones p {
     width: 100%;
     display: block;
+    margin-bottom: 3rem;
+}
+.phones p:last-child{
+  margin-bottom: 0;
 }
 .activity {
   padding-left: 0;
@@ -525,7 +572,7 @@ background-color:transparent;
   font-weight: bold;
 }
 .left-menu ul a:hover {
-  color: rgb(43, 202, 115);
+  color: #18c2b8;
 }
 .dropdown-menu {
     position: absolute;
@@ -591,10 +638,21 @@ height: 100%;
     padding-top: 0.1rem;
     padding-bottom: 0.6rem;
 }
+.user span  {
+    font-size: 16px;
+}
 .dropdown.show:hover, .user:focus, .user:active, .user:hover {
     width: 179px;
     background: rgb(43, 202, 115);
 
+}
+.int.dashtt .dropdown.show:hover,.int.dashtt .user:focus,
+.int.dashtt .user:active, .int.dashtt .user:hover {
+  background: transparent;
+
+}
+.int.dashtt .dropdown.show:hover a, .int.dashtt .user:hover a{
+    color: #59595c!important;
 }
 .navbar .dropdown-menu a {
     padding: 10px 0 10px 20px;
@@ -837,9 +895,12 @@ height: 100%;
     padding-right: 0;
     border-bottom: 11px solid #f1f1f1;
 }
+.profile-dash .menu-dash.edit-page{
+  border-bottom: none;
+}
 .profile-dash  .nav-user {
     z-index: 9;
-    height: 60px;
+    height: 35px;
     position: relative;
     background: transparent;
 }
@@ -1004,6 +1065,9 @@ height: 100%;
     font-size: 25px;
     color: #000;
 }
+.bg-select-gray {
+  background: #f1f1f1!important;
+}
 .chart path:hover { opacity: 0.65; }
 /* borders-colors */
 .borders p{
@@ -1065,7 +1129,7 @@ height: 100%;
     text-align: center;
     left: 50%;
     margin-left: -40px;
-    text-indent: -999em
+    text-indent: -999em;
 }
 .myprofile .pics.edit-pic a:hover {
     background-image: url(../images/profile_pic_hov.svg);
@@ -1096,7 +1160,6 @@ height: 100%;
 }
 .myprofile .phones {
   text-align: left;
-
 }
 .myprofile .phones a{
   color: #000
@@ -1121,6 +1184,25 @@ height: 100%;
 }
 .dash .myprofile .update {
   width: 100%;
+}
+.logic-form {
+  max-width: 800px;
+  margin: auto;
+}
+.logic-form label {
+  text-transform: uppercase;
+}
+.second-grp {
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+}
+.p-right {
+  padding-right: 0!important
+}
+.m_bottom3{
+  margin-bottom: 3rem!important;
 }
 .dash .myprofile .update label{
   background: transparent;
@@ -1148,13 +1230,62 @@ height: 100%;
     width: 220px;
     display: inline-flex;
 }
+
 .usr-mkt{
     display: flex;
     margin: 0 auto 2rem;
     justify-content: center;
+    flex-direction: column;
+}
+.usr-mkt.target {
+  align-items: center;
+}
+.usr-mkt.target .choose{
+  width: 800px;
+}
+.usr-mkt.target .choose p{
+  left: 0;
+  margin-bottom: 0.3rem;
+}
+.usr-mkt.target .choose a{
+float: right;
+text-decoration: underline;
+text-transform: capitalize;
+color: #18c2b8;
 }
 .usr-mkt .jumbotron {
     width: 400px;
+}
+.usr-mkt.target .jumbotron {
+    width: 800px;
+    height: 240px;
+    overflow: hidden;
+    margin-top: 0
+}
+.usr-mkt.target .jumbotron.jumbo-select{
+  height: auto;
+  overflow: inherit;
+}
+.usr-mkt.target .jumbotron.jumbo-select .select_mate{
+  border: none;
+}
+.usr-mkt.target .jumbotron.jumbo-select p{
+  margin-bottom: 0;
+}
+.dash .usr-mkt.target .jumbotron.jumbo-select .icon_select_mate {
+    top: -14px;
+    height: 2rem;
+    border-left: 1px solid #000;
+}
+.usr-mkt.target .jumbotron p{
+  font-size: 12px;
+  color: #999;
+  left: 0.9rem;
+}
+.usr-mkt.target .jumbotron ul {
+    overflow-y: scroll;
+    width: 99%;
+    height: 100%;
 }
 .usr-mkt .jumbotron ul {
   list-style: none;
@@ -1163,6 +1294,7 @@ height: 100%;
 .usr-mkt .jumbotron ul a:hover{
   color: #999;
 }
+
 .usr-mkt p  {
     position: relative;
     left: 2.2rem;
@@ -1208,6 +1340,16 @@ height: 100%;
     text-align: center;
   }
 }
+
+@media screen and (max-width: 760px) {
+  .dash .cont_select_center.searchs {
+    position: fixed;
+    border: 0;
+    top: -2rem;
+    right: 0;
+    z-index: 999;
+}
+}
 @media screen and (max-width: 767px) {
   body.dash.int {
       height: 100%;
@@ -1215,11 +1357,23 @@ height: 100%;
   .navbar .navbar-brand {
     margin-left: 0;
 }
+.usr-mkt.target .jumbotron {
+  width: 100%;
+}
 .profile-dash .menu-dash {
   border-bottom: none;
 }
+.usr-mkt.target .jumbotron.jumbo-select .select_mate {
+  width: 100%;
+}
 .border-right {
     border-right: none;
+}
+.title-br {
+    position: relative;
+    z-index: 99999;
+    font-size: 0.7rem;
+    top: 8px;
 }
   .nav-item.text-green {
       float: left;
@@ -1446,6 +1600,7 @@ height: 100%;
 .dashtt .dropdown-menu {
     background-color: #f1f1f1;
 }
+
 .dashtt .dropdown.show:hover a,.dashtt .user:hover a,.dashtt .user:focus a {
     color: #000!important;
 }
