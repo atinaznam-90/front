@@ -1204,6 +1204,9 @@ height: 100%;
 .m_bottom3{
   margin-bottom: 3rem!important;
 }
+.no-top{
+  top: 0!important;
+}
 .dash .myprofile .update label{
   background: transparent;
   text-transform: uppercase;
@@ -1262,9 +1265,73 @@ color: #18c2b8;
     overflow: hidden;
     margin-top: 0
 }
-.usr-mkt.target .jumbotron.jumbo-select{
+.usr-mkt.target .jumbotron.jumbo-select, .usr-mkt.target .jumbotron.jumbodd{
   height: auto;
   overflow: inherit;
+}
+.jumbodd .card .btn {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+.jumbodd .card {
+  box-shadow: none;
+}
+.jumbodd .card-header {
+  padding: 0;
+  margin: 0;
+}
+.usr-mkt.target .jumbotron.jumbodd p {
+    font-size: 1rem;
+    color: #333;
+    top: 20px;
+    left: 0;
+    display: flex;
+}
+.jumbotron.jumbodd .card-body {
+    padding: 0;
+}
+.childaccordion button{
+  background: #999;
+}
+.nchildaccordion {
+    background: #666;
+}
+.jumbotron.jumbodd .childaccordion .fa-caret-down {
+  color: #18C2B8;
+  left: 3rem;
+}
+.dash .jumbotron.jumbodd .collapse, .dash .jumbotron.jumbodd  .collapsing {
+    width: 100%;
+     padding-top: 0;
+    padding-left: 0;
+}
+.usr-mkt.target .jumbotron.jumbodd .checkboxFour label{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    top: 20px;
+    line-height: normal;
+    text-indent: inherit;
+}
+.jumbodd .fa {
+    color: #000;
+    font-size: 1.5rem;
+}
+.jumbodd .fa.fa-image {
+  font-size: 3rem;
+}
+.jumbodd .checkboxFour label {
+  width: 20px;
+  height: 20px;
+}
+.usr-mkt.target .jumbotron.jumbodd .childaccordion p {
+  color: #fff;
 }
 .usr-mkt.target .jumbotron.jumbo-select .select_mate{
   border: none;
@@ -1356,6 +1423,13 @@ color: #18c2b8;
   }
   .navbar .navbar-brand {
     margin-left: 0;
+}
+.usr-mkt.target .choose {
+    width: 100%;
+}
+.jumbodd .card .btn {
+    width: 100%;
+    max-width: 100%;
 }
 .usr-mkt.target .jumbotron {
   width: 100%;
