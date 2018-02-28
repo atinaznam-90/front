@@ -161,6 +161,9 @@ color: #fff;
   margin-top: 1rem;
   float: left;
 }
+.mtop3{
+  margin-top: 3rem;
+}
 .dash .searchs input {
     border: 1px solid #000;
     border-radius: 9px;
@@ -951,6 +954,57 @@ height: 100%;
     border-radius: 13px;
     margin: 3rem 0 0.1rem;
 }
+.usr-mkt.casefile .fa {
+    color: #000;
+    height: auto;
+    width: auto;
+    top: 5px;
+    padding-right: 3px;
+}
+.dash  .usr-mkt.casefile .jumbo-scroll {
+  height: 300px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+.dash .usr-mkt.casefile p {
+    left: 0;
+    margin-bottom: 0;
+    color: #999;
+    font-size: 0.8rem;
+    line-height: 2;
+}
+.usr-mkt .jumbotron.jumbo-scroll ul {
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    padding-left: 0;
+}
+.add {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-family: 'Akkurat-bold';
+}
+.heightauto {
+  height: auto!important;
+}
+.casefile .files {
+  margin-bottom: 2rem;
+}
+.jumbo-scroll li{
+  border-bottom: 1px solid #999;
+  padding: 1rem;
+}
+.jumbo-scroll li:hover {
+  background: #999;
+}
+.jumbo-scroll li:hover a{
+  color: #fff;
+}
+.jumbo-scroll li a{
+  color: #000;
+}
 .profile-dash .jumbotron:hover {
   border: 1px solid #18C2B8
 }
@@ -1423,6 +1477,9 @@ color: #18c2b8;
   }
   .navbar .navbar-brand {
     margin-left: 0;
+}
+.dash .usr-mkt.casefile .jumbo-scroll {
+    width: 100%;
 }
 .usr-mkt.target .choose {
     width: 100%;
