@@ -76,6 +76,9 @@ color: #fff;
   color: #999999;
   text-decoration: underline;
 }
+.color-gray {
+  color: #999999;
+}
 .text-pink {
   color: #EB008B;
   border-bottom: #EB008B!important;
