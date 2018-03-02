@@ -72,9 +72,18 @@ color: #fff;
 .color-green2 {
   color: #4A9D1E;
 }
+.color-green4 {
+  color: #3af1a7;
+}
+.color-green3 {
+  color: #2bca73;
+}
 .text-gray {
   color: #999999;
   text-decoration: underline;
+}
+.filter-gray {
+  background: #f1f1f1!important;
 }
 .color-gray {
   color: #999999;
@@ -166,6 +175,127 @@ color: #fff;
 }
 .mtop3{
   margin-top: 3rem;
+}
+.dash .products .searchs input, .dash .products .select_mate {
+  border: 0;
+}
+.actions-profile-product {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-left: 5rem;
+}
+.paginations {
+    display: flex;
+    margin: 2rem auto;
+    width: 100%;
+    align-content: center;
+    justify-content: space-around;
+}
+.actions-profile-product .card {
+  box-shadow: none;
+}
+.actions-profile-product .card p{
+  margin-bottom: 0;
+}
+.actions-profile-product .row ,.actions-profile-product .card-deck{
+  width: 100%;
+}
+.actions-profile-product .card:hover {
+  border: 1px solid #999;
+}
+.actions-profile-product .card .price {
+  font-family: 'Akkurat-bold'
+}
+.actions-profile-product .card .card-body h5 {
+  margin-bottom: 0.2rem;
+}
+.actions-profile-product .stock {
+    display: flex;
+    list-style: none;
+    margin: 0.5rem auto;
+    width: 100%;
+    border-bottom: 1px solid #18c2b8;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0 0 0.5rem;
+    align-items: center;
+}
+.actions-profile-product li {
+  margin-right: 1rem
+}
+.actions-profile-product .number {
+  color: #3af1a7;
+  font-family: 'Akkurat-bold';
+  font-size: 1.1rem;
+}
+.actions-profile-product .fa {
+    color: #000;
+    width: auto;
+    height: auto;
+    font-size: 0.7rem;
+    display: inline-flex;
+    top: -1px;
+}
+.actions-profile-product .actions {
+    position: absolute;
+    right: 3rem;
+    top: 8rem;
+}
+.actions-profile-product .actions .fa {
+  font-size: 1.2rem
+}
+.actions-profile-product .card .actions .btn {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin: auto;
+}
+.actions-profile-product .card .actions .dropdown-menu {
+    position: absolute;
+    top: -10rem!important;
+    left: -80px!important;
+    background-color: #f1f1f1;
+}
+.actions-profile-product .card .actions .dropdown .dropdown-menu .dropdown-item:hover,
+.actions-profile-product .card .actions .dropdown .dropdown-menu .dropdown-item:active,
+.actions-profile-product .card .actions .dropdown .dropdown-menu .dropdown-item:focus {
+    color: #fff;
+    background-color: #999;
+}
+.actions-profile-product .card .actions .dropdown.show:hover,.actions-profile-product .card .actions .user:focus,
+ .actions-profile-product .card .actions .user:active, .user:hover {
+   width: 100%;
+ }
+.items-pag {
+  list-style: none;
+  display: flex;
+}
+.paginations .items-pag li{
+margin-left: 1rem;
+}
+.paginations .items-pag a {
+  color: #000;
+  text-transform: uppercase;
+}
+.paginations .items-pag .fa.active{
+  color: #18c2b8;
+}
+.paginations .items-pag .fa{
+  color: #000;
+  height: auto;
+  width: auto;
+}
+.paginations .pagination .fa  {
+    width: auto;
+    height: auto;
+    color: #000;
+    top: -3px;
+}
+.paginations .pagination a {
+  color: #000
 }
 .dash .searchs input {
     border: 1px solid #000;
@@ -1458,6 +1588,10 @@ color: #18c2b8;
 .filters {
     padding: 0;
 }
+.filter-products .btn-link.btn-filter {
+    padding: 0.2rem 3rem 0;
+    float: right;
+}
 /* responsive */
 @media screen and (max-width: 1320px) {
   .broker , .phones {
@@ -1480,6 +1614,9 @@ color: #18c2b8;
   }
   .navbar .navbar-brand {
     margin-left: 0;
+}
+.items-pag {
+  padding: 0;
 }
 .dash .usr-mkt.casefile .jumbo-scroll {
     width: 100%;
@@ -1561,6 +1698,7 @@ color: #18c2b8;
     border-radius: 20px;
     margin-bottom: 1rem;
 }
+
 .filters-m {
     width: 100%;
     position: absolute;
