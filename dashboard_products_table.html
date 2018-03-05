@@ -356,93 +356,246 @@
           </ul>
         </nav>
       </div>
-      <div class="container-fluid actions-profile-product col-12 ">
-
-        <div class="row w100">
-          <div class="card-deck">
-               <div class="card">
-                 <img class="card-img-top img-fluid" src="images/bota.png" alt="...">
-                 <div class="card-body">
-                   <ul class="stock">
-                     <li class="number">10</li>
-                     <li>12 <img src="images/icon_pack.svg" alt="..."></li>
-                     <li>289 <i class="fa fa-file"></i></li>
-                     <li>789k <i class="fa fa-eye"></i></li>
-                   </ul>
-                   <h5 class="card-title">Steam Boots</h5>
-                   <p class="color-green"><small>Botas / Calzado</small></p>
-                   <p class="price">$980.000 MXN / 50 pz min.</p>
-                   <p class="color-green4">13% <img src="images/icons_sizes.svg" alt="..."> </p>
-                   <p class="color-green3"><small>83HJ22 / TT2830 / México</small></p>
-                 </div>
-               </div>
-               <div class="card">
-                 <img class="card-img-top" src="images/chamarra.png" alt="...">
-                 <span class="favorite">
-                   <i class="fa fa-heart"></i>
-                 </span>
-                 <div class="card-body">
-                   <ul class="stock">
-                     <li class="number">10</li>
-                     <li>12 <img src="images/icon_pack.svg" alt="..."></li>
-                     <li>289 <i class="fa fa-file"></i></li>
-                     <li>789k <i class="fa fa-eye"></i></li>
-                   </ul>
-                   <h5 class="card-title">Down Leather Coat</h5>
-                   <p class="color-green"><small>Botas / Calzado</small></p>
-                   <p class="price">$980.000 MXN / 50 pz min.</p>
-                   <p class="color-green4">13% <img src="images/icons_sizes.svg" alt="..."> </p>
-                   <p class="color-green3"><small>83HJ22 / TT2830 / México</small></p>
-                 </div>
-               </div>
-               <div class="card">
-                 <img class="card-img-top" src="images/guantes.png" alt="...">
-                 <div class="card-body">
-                   <ul class="stock">
-                     <li class="number">10</li>
-                     <li>12 <img src="images/icon_pack.svg" alt="..."></li>
-                     <li>289 <i class="fa fa-file"></i></li>
-                     <li>789k <i class="fa fa-eye"></i></li>
-                   </ul>
-                   <h5 class="card-title">Le Mans Cashmere-Lined</h5>
-                   <p class="color-green"><small>Botas / Calzado</small></p>
-                   <p class="price">$980.000 MXN / 50 pz min.</p>
-                   <p class="color-green4">13% <img src="images/icons_sizes.svg" alt="..."> </p>
-                   <p class="color-green3"><small>83HJ22 / TT2830 / México</small></p>
-                 </div>
-               </div>
-               <div class="card">
-                 <img class="card-img-top" src="images/pantalon.png" alt="...">
-                 <div class="card-body">
-                   <ul class="stock">
-                     <li class="number">10</li>
-                     <li>12 <img src="images/icon_pack.svg" alt="..."></li>
-                     <li>289 <i class="fa fa-file"></i></li>
-                     <li>789k <i class="fa fa-eye"></i></li>
-                   </ul>
-                   <h5 class="card-title">Painter Slim Jeans</h5>
-                   <div class="actions">
-                     <!-- Split dropup button -->
-                     <div class="dropdown">
-                         <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           <i class="fa fa-ellipsis-h"></i>
-                         </button>
-                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                           <button class="dropdown-item" type="button">Enviar al grupo</button>
-                           <button class="dropdown-item" type="button">Editar</button>
-                           <button class="dropdown-item" type="button" data-toggle="modal" data-target="#modalDelete">Dar de baja</button>
-                           <button class="dropdown-item" type="button">Eliminar</button>
-                         </div>
-                        </div>
-                   </div>
-                   <p class="color-green"><small>Botas / Calzado</small></p>
-                   <p class="price">$980.000 MXN / 50 pz min.</p>
-                   <p class="color-green4">13% <img src="images/icons_sizes.svg" alt="..."> </p>
-                   <p class="color-green3"><small>83HJ22 / TT2830 / México</small></p>
-                 </div>
-               </div>
-             </div>
-        </div>
+      <div class="container-fluid actions-profile-product col-12 padding-left table-responsive">
+        <table class="table table-hover table-products ">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Datos</th>
+              <th scope="col">Producto</th>
+              <th scope="col">Sección</th>
+              <th scope="col">Costo y min pz.</th>
+              <th scope="col">Oportunidad</th>
+              <th scope="col">ID</th>
+              <th scope="col"><i class="fa fa-heart"></i></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <ul class="stock">
+                  <li class="number">10</li>
+                  <li>12 <img src="images/icon_pack.svg" alt="..."></li>
+                  <li>289 <i class="fa fa-file"></i></li>
+                  <li>789k <i class="fa fa-eye"></i></li>
+                </ul>
+              </th>
+              <td>Steam Boots</td>
+              <td><p class="color-green">Botas / Calzado</p></td>
+              <td><p class="price">$980.000 MXN / 50 pz min.</p></td>
+              <td><p class="color-green4">13% <img src="images/icons_sizes.svg" alt="..."> </p>
+              </td>
+              <td><p class="color-green3">83HJ22 / TT2830 / México</p></td>
+              <td>
+                <div class="actions">
+                  <!-- Split dropup button -->
+                  <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-h"></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Enviar al grupo</button>
+                        <button class="dropdown-item" type="button">Editar</button>
+                        <button class="dropdown-item" type="button" data-toggle="modal" data-target="#modalDelete">Dar de baja</button>
+                        <button class="dropdown-item" type="button">Eliminar</button>
+                      </div>
+                     </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <ul class="stock">
+                  <li class="number">10</li>
+                  <li>12 <img src="images/icon_pack.svg" alt="..."></li>
+                  <li>289 <i class="fa fa-file"></i></li>
+                  <li>789k <i class="fa fa-eye"></i></li>
+                </ul>
+              </th>
+              <td>Steam Boots</td>
+              <td><p class="color-green">Botas / Calzado</p></td>
+              <td><p class="price">$980.000 MXN / 50 pz min.</p></td>
+              <td><p class="color-green4">13% <img src="images/icons_sizes.svg" alt="..."> </p>
+              </td>
+              <td><p class="color-green3">83HJ22 / TT2830 / México</p></td>
+              <td>
+                <div class="actions">
+                  <!-- Split dropup button -->
+                  <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-h"></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Enviar al grupo</button>
+                        <button class="dropdown-item" type="button">Editar</button>
+                        <button class="dropdown-item" type="button" data-toggle="modal" data-target="#modalDelete">Dar de baja</button>
+                        <button class="dropdown-item" type="button">Eliminar</button>
+                      </div>
+                     </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <ul class="stock">
+                  <li class="number">10</li>
+                  <li>12 <img src="images/icon_pack.svg" alt="..."></li>
+                  <li>289 <i class="fa fa-file"></i></li>
+                  <li>789k <i class="fa fa-eye"></i></li>
+                </ul>
+              </th>
+              <td>Steam Boots</td>
+              <td><p class="color-green">Botas / Calzado</p></td>
+              <td><p class="price">$980.000 MXN / 50 pz min.</p></td>
+              <td><p class="color-green4">13% <img src="images/icons_sizes.svg" alt="..."> </p>
+              </td>
+              <td><p class="color-green3">83HJ22 / TT2830 / México</p></td>
+              <td>
+                <div class="actions">
+                  <!-- Split dropup button -->
+                  <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-h"></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Enviar al grupo</button>
+                        <button class="dropdown-item" type="button">Editar</button>
+                        <button class="dropdown-item" type="button" data-toggle="modal" data-target="#modalDelete">Dar de baja</button>
+                        <button class="dropdown-item" type="button">Eliminar</button>
+                      </div>
+                     </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <ul class="stock">
+                  <li class="number">10</li>
+                  <li>12 <img src="images/icon_pack.svg" alt="..."></li>
+                  <li>289 <i class="fa fa-file"></i></li>
+                  <li>789k <i class="fa fa-eye"></i></li>
+                </ul>
+              </th>
+              <td>Steam Boots</td>
+              <td><p class="color-green">Botas / Calzado</p></td>
+              <td><p class="price">$980.000 MXN / 50 pz min.</p></td>
+              <td><p class="color-green4">13% <img src="images/icons_sizes.svg" alt="..."> </p>
+              </td>
+              <td><p class="color-green3">83HJ22 / TT2830 / México</p></td>
+              <td>
+                <div class="actions">
+                  <!-- Split dropup button -->
+                  <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-h"></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Enviar al grupo</button>
+                        <button class="dropdown-item" type="button">Editar</button>
+                        <button class="dropdown-item" type="button" data-toggle="modal" data-target="#modalDelete">Dar de baja</button>
+                        <button class="dropdown-item" type="button">Eliminar</button>
+                      </div>
+                     </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <ul class="stock">
+                  <li class="number">10</li>
+                  <li>12 <img src="images/icon_pack.svg" alt="..."></li>
+                  <li>289 <i class="fa fa-file"></i></li>
+                  <li>789k <i class="fa fa-eye"></i></li>
+                </ul>
+              </th>
+              <td>Steam Boots</td>
+              <td><p class="color-green">Botas / Calzado</p></td>
+              <td><p class="price">$980.000 MXN / 50 pz min.</p></td>
+              <td><p class="color-green4">13% <img src="images/icons_sizes.svg" alt="..."> </p>
+              </td>
+              <td><p class="color-green3">83HJ22 / TT2830 / México</p></td>
+              <td>
+                <div class="actions">
+                  <!-- Split dropup button -->
+                  <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-h"></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Enviar al grupo</button>
+                        <button class="dropdown-item" type="button">Editar</button>
+                        <button class="dropdown-item" type="button" data-toggle="modal" data-target="#modalDelete">Dar de baja</button>
+                        <button class="dropdown-item" type="button">Eliminar</button>
+                      </div>
+                     </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <ul class="stock">
+                  <li class="number">10</li>
+                  <li>12 <img src="images/icon_pack.svg" alt="..."></li>
+                  <li>289 <i class="fa fa-file"></i></li>
+                  <li>789k <i class="fa fa-eye"></i></li>
+                </ul>
+              </th>
+              <td>Steam Boots</td>
+              <td><p class="color-green">Botas / Calzado</p></td>
+              <td><p class="price">$980.000 MXN / 50 pz min.</p></td>
+              <td><p class="color-green4">13% <img src="images/icons_sizes.svg" alt="..."> </p>
+              </td>
+              <td><p class="color-green3">83HJ22 / TT2830 / México</p></td>
+              <td>
+                <div class="actions">
+                  <!-- Split dropup button -->
+                  <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-h"></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Enviar al grupo</button>
+                        <button class="dropdown-item" type="button">Editar</button>
+                        <button class="dropdown-item" type="button" data-toggle="modal" data-target="#modalDelete">Dar de baja</button>
+                        <button class="dropdown-item" type="button">Eliminar</button>
+                      </div>
+                     </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <ul class="stock">
+                  <li class="number">10</li>
+                  <li>12 <img src="images/icon_pack.svg" alt="..."></li>
+                  <li>289 <i class="fa fa-file"></i></li>
+                  <li>789k <i class="fa fa-eye"></i></li>
+                </ul>
+              </th>
+              <td>Steam Boots</td>
+              <td><p class="color-green">Botas / Calzado</p></td>
+              <td><p class="price">$980.000 MXN / 50 pz min.</p></td>
+              <td><p class="color-green4">13% <img src="images/icons_sizes.svg" alt="..."> </p>
+              </td>
+              <td><p class="color-green3">83HJ22 / TT2830 / México</p></td>
+              <td>
+                <div class="actions">
+                  <!-- Split dropup button -->
+                  <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-h"></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Enviar al grupo</button>
+                        <button class="dropdown-item" type="button">Editar</button>
+                        <button class="dropdown-item" type="button" data-toggle="modal" data-target="#modalDelete">Dar de baja</button>
+                        <button class="dropdown-item" type="button">Eliminar</button>
+                      </div>
+                     </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <!-- PRODUCTS -->

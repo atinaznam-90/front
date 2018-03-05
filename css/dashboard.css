@@ -13,7 +13,10 @@ font-size: 2em;
   font-weight: bold;
 }
 .no-padding {
-  padding: 0;
+  padding: 0!important;
+}
+.padding-left {
+  padding-left: 15px!important;
 }
 .fa {
 position: relative;
@@ -193,6 +196,52 @@ color: #fff;
     width: 100%;
     align-content: center;
     justify-content: space-around;
+    padding-top: 2rem;
+}
+.favorite {
+    position: absolute;
+    right: 0;
+    bottom: 13rem;
+}
+table.table-products.table th,table.table-products.table td {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.actions-profile-product table.table-products.table .actions {
+    position: relative;
+    right: inherit;
+    top: inherit;
+}
+.actions-profile-product table.table-products.table .actions .btn {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    margin: 0px;
+    border-radius: 0;
+    border: 0;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    text-transform: uppercase;
+    white-space: normal !important;
+    word-wrap: break-word;
+    cursor: pointer;
+    box-shadow: none;
+}
+.actions-profile-product table.table-products.table .dropdown-menu.show{
+   position: absolute;
+   transform: translate3d(0px, 25px, 0px);
+   top: -152px!important;
+   left: -45px!important;
+   will-change: transform;
+   background: #f1f1f1;
+}
+.actions-profile-product table.table-products.table .dropdown.show:hover {
+    width: auto;
+}
+.actions-profile-product .table-products .stock{
+  margin: 0 auto;
+}
+.actions-profile-product .favorite .fa{
+  font-size: 1.5rem;
 }
 .actions-profile-product .card {
   box-shadow: none;
@@ -654,7 +703,9 @@ overflow-y:hidden;
 overflow-y:auto;
 overflow:visible;
 }
-
+.navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: #18c2b8;
+}
 a:hover,a:focus {
 text-decoration:none;
 }
@@ -1592,6 +1643,33 @@ color: #18c2b8;
     padding: 0.2rem 3rem 0;
     float: right;
 }
+.modal.modal-delete button {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin: 0;
+    border-radius: 20px;
+    border: 0;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    text-transform: uppercase;
+    white-space: normal !important;
+    word-wrap: break-word;
+    cursor: pointer;
+    max-width: 8rem;
+    justify-content: space-between;
+    box-shadow: none;
+}
+.modal.modal-delete button.btn-gray {
+  background: #f1f1f1;
+}
+.modal.modal-delete p {
+  text-align: center;
+}
+.modal-delete .modal-footer {
+    padding: 15px;
+    border-top: none;
+    justify-content: space-between;
+}
 /* responsive */
 @media screen and (max-width: 1320px) {
   .broker , .phones {
@@ -1617,6 +1695,20 @@ color: #18c2b8;
 }
 .items-pag {
   padding: 0;
+}
+.actions-profile-product .actions {
+    position: relative;
+    right: 0;
+    top: 4rem;
+    float: right;
+    width: 10%;
+}
+.actions-profile-product .card .actions .dropdown-menu {
+    top: 0rem!important;
+    left: -28px!important;
+}
+.favorite {
+    right: 20px;
 }
 .dash .usr-mkt.casefile .jumbo-scroll {
     width: 100%;
@@ -1781,6 +1873,26 @@ color: #18c2b8;
 }
 .modal-contacts  .modal-footer {
   margin-top: 0.7rem;
+}
+.modal.modal-delete button {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin: 0;
+    border-radius: 20px;
+    border: 0;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    text-transform: uppercase;
+    white-space: normal !important;
+    word-wrap: break-word;
+    cursor: pointer;
+    max-width: 8rem;
+    justify-content: space-between;
+}
+.modal-delete .modal-footer {
+    padding: 15px;
+    border-top: none;
+    justify-content: space-between;
 }
 /* .container-dash.team .col-12 {
   padding-right: 15px;
