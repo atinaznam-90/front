@@ -18,6 +18,13 @@ font-size: 2em;
 .padding-left {
   padding-left: 15px!important;
 }
+.no-margin {
+  margin: 0!important;
+}
+.no-paddingedge{
+  padding-left: 0!important;
+  padding-right: 0!important
+}
 .fa {
 position: relative;
 display: table-cell;
@@ -96,6 +103,9 @@ color: #fff;
 .text-gray {
   color: #999999;
   text-decoration: underline;
+}
+.bg-gray {
+  background: #f1f1f1;
 }
 .filter-gray {
   background: #f1f1f1!important;
@@ -1258,6 +1268,34 @@ height: 100%;
 }
 .items-actions ul:first-child img{
     width: 2rem;
+}
+.prodctname .items-actions ul:first-child{
+  padding: 0 0.8rem;
+  border-bottom: 12px solid #18c2b8;
+}
+.prodctname .items-actions .mkt-list{
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.prodctname p {
+  clear: both;
+}
+.prodctname br {
+  display: block;
+}
+.prodctname .p-t2 p {
+  color: #999;
+}
+.prodctname table thead {
+    background: #ccc;
+    color: #fff;
+}
+.prodctname table.table-bordered td, .prodctname table.table-bordered th {
+    border: 1px solid #d3d3d3;
+}
+.prodctname table row {
+    background: #f1f1f1;
 }
 .stock {
 
