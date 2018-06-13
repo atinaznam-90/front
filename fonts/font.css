@@ -9,4 +9,14 @@
   font-style:   normal;
   font-weight:  400;
 }
-
+@font-face {
+  font-family: 'AkkuratPro';
+  src: url('AkkuratPro.eot'); /* IE9 Compat Modes */
+  src: url('AkkuratPro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AkkuratPro.woff') format('woff'), /* Modern Browsers */
+       url('AkkuratPro.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AkkuratPro.svg#698d2ea641fc87a985fffa625d86cb81') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}

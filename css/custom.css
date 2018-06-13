@@ -40,6 +40,107 @@ h1, h2, h3, h4, h5{
 .choose-country .btn {
   margin-right: 5rem;
 }
+.margins{
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+.perfils {
+  position: relative;
+  left: 4rem;
+}
+.fa.fareset {
+  position: relative;
+  display: inline-block ;
+  width: auto;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+  color: inherit;
+}
+.fahelp{
+  position: absolute;
+  left: 44px;
+  top: -3px;
+}
+.fahelp.helpcolor {
+  left: 65px;
+}
+.pad.pad05{
+  padding: 0.5rem!important;
+}
+.accordion-special {
+  width: 100%;
+}
+ .usr-mkt.target .accordion-special.jumbotron,  .usr-mkt.target .accordion-special .jumbotron {
+  width: 100%!important;
+}
+.accordion-special .card .btn {
+  position: relative;
+  bottom: 0;
+  left: inherit;
+  font-size: 1rem;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.accordion-special .jumbodd {
+  height: 100%!important;
+}
+.accordion-special .jumbodd #accordion{
+  height: 100%;
+  overflow: scroll;
+}
+.unique-colors {
+  display: inline-flex;
+  background-color: gray;
+  padding: 10px;
+  border-radius: 15px;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: -4px;
+}
+/* tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  opacity: inherit;
+  line-height: 0;
+}
+.tooltip .tiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+  border-radius: 3px;
+  padding: 1rem 0.5rem;
+  left: 4rem;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid #ccc;
+  height: auto;
+  overflow: hidden;
+  line-height: normal;
+}
+.tooltip .tiptext .fa{
+  font-size: 20px;
+  left: 0;
+}
+.tooltip:hover .tiptext {
+  visibility: visible;
+}
+.tooltip.right .tiptext{
+  top: -5px;
+  left: 110%;
+}
+.tooltip.right .tiptext::after{
+  margin-top: -5px;
+  top: 50%;
+  right: 100%;
+  border-color: transparent #2E2E2E transparent transparent;
+}
 /*selects*/
 .strans {
     background-color: transparent;
@@ -48,6 +149,116 @@ h1, h2, h3, h4, h5{
     border-radius: 0;
     margin-right: 5rem;
 }
+.numberselect{
+  padding: 0.2rem 0.5rem!important;
+  max-width: 200px;
+  margin-bottom: 1rem!important;
+}
+.quantity {
+ 
+  position: relative;
+   
+  }
+   
+  input[type=number]::-webkit-inner-spin-button,
+   
+  input[type=number]::-webkit-outer-spin-button
+   
+  {
+   
+  -webkit-appearance: none;
+   
+  margin: 0;
+   
+  }
+   
+  input[type=number]
+   
+  {
+   
+  -moz-appearance: textfield;
+   
+  }
+   
+  .quantity input {
+   
+  line-height: 1.65;
+   
+  float: left;
+   
+  display: block;
+   
+  padding: 0;
+   
+  margin: 0;
+   
+  padding-left: 20px;
+   
+  border: 1px solid #eee;
+   
+  }
+   
+  .quantity input:focus {
+   
+  outline: 0;
+   
+  }
+   
+  .quantity-nav {
+    float: left;
+    position: relative;
+    height: 29px;
+    top: 9px;
+    right: 20px;
+}
+   
+  .quantity-button {
+   
+  position: relative;
+   
+  cursor: pointer;
+   
+  border-left: 1px solid #eee;
+   
+  width: 20px;
+   
+  text-align: center;
+   
+  color: #333;
+   
+  font-size: 13px;
+   
+  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+   
+  line-height: 1.7;
+   
+  -webkit-transform: translateX(-100%);
+   
+  transform: translateX(-100%);
+   
+  -webkit-user-select: none;
+   
+  -moz-user-select: none;
+   
+  -ms-user-select: none;
+   
+  -o-user-select: none;
+   
+  user-select: none;
+  display: inline-flex;
+   
+  }
+   
+  .quantity-button.quantity-up {
+  height: 50%;
+  top: 0;
+  border-bottom: 1px solid #eee;
+   
+  }
+  .quantity-button.quantity-down {
+  bottom: -1px;
+  height: 50%;
+  }
 /* ///  DECORATION CSS ///  */
 .cont_select_center {
  position: absolute;
@@ -145,7 +356,9 @@ position: absolute;
   .active {
   background-color: #EEEEEE;
   }
-
+.pick_color {
+  margin-bottom: 1rem;
+}
 .selecionado_opcion {
    padding: 10px 2%;
    width: 96%;
@@ -204,6 +417,15 @@ position: absolute;
   text-transform: uppercase;
   padding: 0.2rem 2rem;
   box-shadow: none;
+}
+.btn-green3{
+  background-color: #2bca73;
+  border: 0;
+  border-radius: 15px;
+  text-transform: uppercase;
+  padding: 0.2rem 2rem;
+  box-shadow: none;
+  color: #fff;
 }
 .btn-green2:hover{
   background-color: #3af1a7;
@@ -389,6 +611,12 @@ input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly
 .no-shadow {
   box-shadow: none!important;
 }
+.no-height {
+  height: auto!important;
+}
+.pbottom{
+  padding-bottom: 2rem;
+}
 .steps.pricing .green-text p {
   color: #3af1a7
 }
@@ -494,6 +722,11 @@ input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly
     bottom: 3rem;
     width: 100%;
     z-index: 99;
+}
+.btn-next {
+  right: 13rem;
+  position: relative;
+  padding: 0.3rem 7rem;
 }
 .startnow button {
     position: relative;
@@ -908,6 +1141,22 @@ footer .md-form label {
   }
   .steps h2 {
     font-size: 1.5rem;
+}
+
+.btn-next {
+    right: 0;
+    position: relative;
+    padding: 0.3rem 7rem;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.btn-trans {
+  position: relative;
+  margin: auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
 }
   .choose-country {
     display: flex;

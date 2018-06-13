@@ -60,6 +60,9 @@ color: #fff;
   color: #0C3783;
   border-bottom: 1px solid  #0C3783!important;
 }
+.color-black {
+  color: #000!important;
+}
 .color-blue {
   color: #0C3783;
 }
@@ -95,10 +98,10 @@ color: #fff;
   color: #4A9D1E;
 }
 .color-green4 {
-  color: #3af1a7;
+  color: #3af1a7!important;
 }
 .color-green3 {
-  color: #2bca73;
+  color: #2bca73!important;
 }
 .text-gray {
   color: #999999;
@@ -111,7 +114,7 @@ color: #fff;
   background: #f1f1f1!important;
 }
 .color-gray {
-  color: #999999;
+  color: #999999!important;
 }
 .text-pink {
   color: #EB008B;
@@ -297,10 +300,30 @@ table.table-products.table th,table.table-products.table td {
 .actions-profile-product li, .stock li {
   margin-right: 1rem
 }
+.stock.preview li {
+    margin-right: 1rem;
+    margin-bottom: 0.6rem;
+}
+.callinc {
+    text-align: right;
+    padding-right: 3rem;
+
+}
+.callinc  a {
+  color: #18c2b8;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+.items-actions .preview .mobile  {
+    width: 1rem;
+}
 .actions-profile-product .number, .stock .number {
   color: #3af1a7;
   font-family: 'Akkurat-bold';
   font-size: 1.1rem;
+}
+.prodctname .items-actions .stock.preview:first-child {
+    border-bottom: 12px solid #f1f1f1;
 }
 .actions-profile-product .fa, .stock .fa {
     color: #000;
@@ -671,7 +694,11 @@ bottom:0;
 .checkboxFour input[type=checkbox] {
 	display: none;
 }
-
+.checkboxFour span{
+  width: 450px;
+  display: flex;
+  position: relative;
+}
 .checkboxFour input[type=checkbox]:checked + label {
 	background: #26ca28;
 }
@@ -962,6 +989,7 @@ height: 100%;
     box-shadow: none;
     height: 511px;
 }
+
 .plans .animated {
     margin: 5rem auto;
     /* max-width: 22%; */
@@ -1246,6 +1274,72 @@ height: 100%;
     margin-top: 1rem;
     padding: 1rem;
 }
+.dropdown.addproduct {
+    position: relative;
+    float: right;
+}
+.dropdown.addproduct .btn-link {
+    text-transform: capitalize;
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 9;
+}
+.dropdown.addproduct .btn .fa {
+    font-size: 1.5rem;
+    position: relative;
+    vertical-align: middle;
+    margin-top: 0;
+    color: #666;
+    height: auto;
+    width: auto;
+    display: inline-flex;
+    margin-right: 0.4rem;
+}
+.dropdown.addproduct .dropdown-menu .dropdown-item {
+  border-bottom: 2px solid #999;
+  padding-left: 0;
+}
+.dropdown.addproduct .dropdown-menu .dropdown-item:hover {
+    color: #000!important;
+    background-color: #fff;
+    border-bottom: 2px solid #18c2b8;
+}
+.int.dashtt .dropdown.addproduct.show:hover{
+    background: #fff;
+    width: auto;
+
+    border-right: 1px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+}
+.navbar .dropdown.addproduct .dropdown-menu {
+    position: absolute !important;
+    margin-top: -1px;
+    top: 100%;
+    background: #fff;
+    left: inherit;
+    right: -1px;
+    border: 1px solid #e3e3e3;
+    padding: 0.5rem 0.5rem 1.5rem;
+    text-align: left;
+    z-index: 1;
+}
+.step-item {
+  margin-top: 3rem;
+}
+.pitem{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: 'Akkurat-bold';
+}
+span.bigger {
+    font-size: 1.6rem;
+    font-family: 'Akkurat';
+    font-weight: 100;
+}
 .items-actions p{
   margin-bottom: 0.2rem;
 }
@@ -1277,6 +1371,55 @@ height: 100%;
     flex-direction: column;
     margin-top: 2rem;
     padding: 1rem;
+}
+.holder {
+    background: #f1f1f1;
+    display: flex;
+    padding-right: 0;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+}
+.holder h3 {
+    text-transform: capitalize;
+    font-weight: normal;
+    color: #999;
+    margin-top: 0;
+    float: none;
+    line-height: normal;
+    font-family: 'Akkurat';
+    font-size: 1.7rem;
+}
+.prodctname.newproduct .p-t2 p{
+  color: #000;
+}
+.prodctname.newproduct .usr-mkt.target {
+    align-items: flex-start;
+}
+.prodctname.newproduct .usr-mkt.target .jumbotron.jumbo-select {
+    width: 100%;
+    height: 60px;
+}
+.profile-dash .prodctname.newproduct  input.jumbotron {
+    background-color: #f1f1f1;
+    padding: 1rem 0 1.2rem 0.5rem;
+    box-shadow: none;
+    border-radius: 13px;
+    margin: 0.2rem 0 0;
+}
+.bigfont {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.bigB{
+  color: #000!important;
+}
+.bigB small {
+  font-size: 11px;
+  color: #999;
+}
+.jumbotron.jumbo100{
+  width: 100%!important;
 }
 .prodctname p {
   clear: both;
@@ -2182,7 +2325,7 @@ color: #18c2b8;
 
 .btn.btn-trans.btn-b.btn-xs {
     display: block;
-    width: 35%;
+    width: 100%;
     bottom: 0;
     padding: 0.3rem 0rem;
     top: 0;
