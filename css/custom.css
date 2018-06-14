@@ -142,6 +142,23 @@ h1, h2, h3, h4, h5{
   border-color: transparent #2E2E2E transparent transparent;
 }
 /*selects*/
+.profile-dash .jumbotron.inputchoose{
+    padding: 0.5rem 0.6rem 0.2rem;
+    margin: 0 0 1rem;
+}
+.profile-dash .jumbotron.inputchoose .form-check-inline {
+  display: inline-block;
+  margin-right: 0;
+}
+.profile-dash .jumbotron.inputchoose .form-check-label {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.profile-dash .jumbotron.inputchoose .form-check-input {
+  position: relative;
+  margin-top: 0;
+  margin-left: 0;
+}
 .strans {
     background-color: transparent;
     color: #fff;
@@ -464,6 +481,16 @@ background-color: #3af1a7; }
   background-color: #3af1a7;
   color: #fff;
 }
+.btn-trans2 {
+  background-color: transparent;
+    color: #fff;
+    box-shadow: none;
+    border: 1px solid #fff!important;
+    border-radius: 20px;
+    padding: 0.3rem 2rem;
+    font-family: 'Akkurat';
+    font-weight: bold;
+}
 .card .btn.btn-features  {
     position: relative;
     left: inherit;
@@ -474,6 +501,9 @@ background-color: #3af1a7; }
     bottom: 2rem;
 }
 /*Modals*/
+.modaltrans{
+  background: transparent;
+}
 .launch-modal {
   margin-top: 20%
 }
@@ -533,9 +563,41 @@ background-color: #3af1a7; }
     border-radius: .35rem;
 }
 /* inputs */
+
 input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search-md]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
     border-bottom: 1px solid #3af1a7;
     box-shadow: 0 1px 0 0 #3af1a7;
+}
+.upload-item label{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.3rem;
+  position: relative;
+  top: 1.2rem;
+  left: 1rem;
+}
+.upload-item .fa {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.upload-item input {
+  background: transparent;
+  border: none;
+  opacity: 0;
+  position: relative;
+  height: 100%;
+  display: block;
+  z-index: 2;
+  top: -1rem;
+  cursor: pointer;
+}
+.profile-dash .jumbotron.upload-item{
+padding: 0;
+}
+.profile-dash .jumbotron.upload-item .form-group {
+  margin-bottom: 0;
 }
 .form-control:focus {
     color: #495057;
@@ -543,6 +605,17 @@ input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly
     border-color: #3af1a7;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.card-deck.card-upload {
+  margin-bottom: 2rem;
+}
+.card-deck.card-upload .card {
+  box-shadow: none;
+}
+.card-deck.card-upload  .card-body{
+  background: #f1f1f1;
+  border-radius: 1rem;
+  margin-top: 1rem;
 }
 /* placeholders */
 .step3 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -611,8 +684,15 @@ input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly
 .no-shadow {
   box-shadow: none!important;
 }
-.no-height {
+.profile-dash .jumbotron.countext{
+    padding: 1rem 1rem 0.2rem;
+    margin: 0 0 0.1rem;
+}
+.no-height, .countext {
   height: auto!important;
+}
+.spacers {
+  margin: 2rem 0;
 }
 .pbottom{
   padding-bottom: 2rem;
@@ -1158,6 +1238,7 @@ footer .md-form label {
   text-align: center;
   margin-bottom: 1rem;
 }
+
   .choose-country {
     display: flex;
     justify-content: center;
