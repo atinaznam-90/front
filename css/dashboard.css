@@ -754,7 +754,7 @@ bottom:0;
 .phones p {
     width: 100%;
     display: block;
-    margin-bottom: 3rem;
+   
 }
 .phones p:last-child{
   margin-bottom: 0;
@@ -1214,10 +1214,13 @@ height: 100%;
 }
 .profile-dash .jumbotron {
     background-color: #f1f1f1;
-    padding: 1rem 0 0.2rem;
+    padding: 1.5rem 0;
     box-shadow: none;
     border-radius: 13px;
     margin: 3rem 0 0.1rem;
+}
+.profile-dash .jumbotron.borders {
+  padding: 1.5rem 0;
 }
 .usr-mkt.casefile .fa {
     color: #000;
@@ -1683,6 +1686,11 @@ span.bigger {
     top: 0;
     width: 80px;
     max-width: 40%;
+    left: 0;
+}
+.full-profile .pics li img {
+  width: 87px;
+  max-width: 100%;
 }
 .myprofiles  ul {
     list-style: none;
