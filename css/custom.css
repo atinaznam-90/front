@@ -1399,7 +1399,7 @@ footer .md-form label {
     to   { transform: translate(-2px, -0px); }
 }
 .shadowfilter {
-	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));s
 	-webkit-transition: all 0.5s linear;
 	-o-transition: all 0.5s linear;
 	transition: all 0.5s linear;
@@ -1411,4 +1411,10 @@ footer .md-form label {
 .tt .nav-pills .nav-link.active,.mkt-list .nav-pills .show>.nav-link{
   color: #18c2b8;
   background: transparent;
+}
+.myprofile .tab-content>.active {
+  background: #fff;s
+}
+.usr-mkt.casefile, .usr-mkt.target{
+  display:block;
 }
