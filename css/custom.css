@@ -1415,6 +1415,6 @@ footer .md-form label {
 .myprofile .tab-content>.active {
   background: #fff;s
 }
-.usr-mkt.casefile, .usr-mkt.target{
+.usr-mkt.casefile, .usr-mkt.target, .usr-mkt.quality{
   display:block;
 }
