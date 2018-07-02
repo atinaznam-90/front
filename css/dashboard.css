@@ -73,6 +73,9 @@ color: #fff;
 .color-blue2 {
   color: #0645F9;
 }
+.color-blue3{
+  color: #5a9fff;
+}
 .text-orange {
   color: #F24405;
   border-bottom: 1px solid  #F24405!important;
@@ -102,6 +105,9 @@ color: #fff;
 }
 .color-green3 {
   color: #2bca73!important;
+}
+.color-pink {
+  color: #e0025f;
 }
 .text-gray {
   color: #999999;
