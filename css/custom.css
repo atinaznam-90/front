@@ -1413,8 +1413,50 @@ footer .md-form label {
   background: transparent;
 }
 .myprofile .tab-content>.active {
-  background: #fff;s
+  background: #fff;
 }
 .usr-mkt.casefile, .usr-mkt.target, .usr-mkt.quality{
   display:block;
+}
+.items-actions .progress {
+  top: -3px;
+}
+.progress .progress-bar {
+  border-radius: 0;
+  height: 11px;
+  background-color: #18c2b8;
+
+}
+.productitem .mkt-list li a.active {
+  width: 100%;
+  border-radius: 0;
+}
+.container-fluid.full-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.container-fluid.full-fluid .nav-tabs .nav-link {
+  border: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.container-fluid.full-fluid .nav-tabs .nav-item.show .nav-link,.container-fluid.full-fluid .nav-tabs .nav-link.active {
+  color: #2bca73;
+  background-color: #fff;
+  border-bottom:1px solid #2bca73;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+}
+.prodctname.newproduct .usr-mkt.target .jumbotron.jumbo-select {
+  line-height: 9px;
+}
+.fa-plus-circle.addmore {
+  color: #999;
+  width: auto;
+  height: auto;
+  font-size: 30px;
+  display: inline-flex;
 }

@@ -105,65 +105,61 @@
       <!-- profile start -->
       <div class="col-12 row myprofile no-margin prodctname newproduct">
         <div class="col-12 col-md-7 p-t2 border-right">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
           <p class= "bigfont bigB">Atracción visual
             <small>Paso 2</small>
           </p>
           <p>Encabezado y descripción</p>
           <div class="row">
             <div class="col col-md-6">
-              <p class="color-gray margins">ENCABEZADO</p>
+              <p class="color-gray margins">VIDEO</p>
             </div>
             <div class="col col-md-6">
               <p class="margins"><a href="#" class="color-green perfils"><i class="fa fa-user-o fareset" aria-hidden="true"></i> Cliente</a></p>
             </div>
            <div class="col-12">
-               <p>Escribe un título que acompañe al producto <br><small class="color-gray">Max caracteres: 140</small></p>
+               <p>Si ya cuentas con un video promocional que hablé de todas sus<br>
+                  ventajas, puedes poner el enlace directamente aquí y se reproducirá<br>
+                  directamente en el catálogo.<br>
+                  <small class="color-gray">Por el momento solo soportamos videos alojados en YouTube o Vimeo.</small></p>
            </div>
           </div>
         
             <div class="col-sm-12 col-lg-8">
           <div class="form-group">
-                <textarea class="form-control jumbotron countext" id="" rows="7" placeholder="Ejemplo: Perfecta para actividades extremas y campismo."></textarea>
+                <input type="text" class="form-control jumbotron " id="" placeholder="Pega aquí el vinculo web del video que quieres mostrar">
               </div>
         </div>
-        <div class="row">
-                <div class="col col-md-6">
-                  <p class="color-gray margins">DESCRIPCIÓN</p>
-                </div>
-                <div class="col col-md-6">
-                  <p class="margins"><a href="#" class="color-green perfils"><i class="fa fa-user-o fareset" aria-hidden="true"></i> Cliente</a></p>
-                </div>
-               <div class="col-12">
-                   <p>Describe tu producto, te recomendamos que lo hagas en la menor <br>cantidad de caracteres posibles y en español. <br>
-                    <small class="color-gray">Max caracteres: 1000</small></p>
-               </div>
-              </div>
-            
-                <div class="col-sm-12 col-lg-8">
-              <div class="form-group">
-                    <textarea class="form-control jumbotron countext" id="" rows="12" placeholder="Ejemplo: Perfecta para actividades extremas y campismo."></textarea>
-                  </div>
-            </div>
+      
       <div class="row spacers">
         <div class="col-12 col-md-6">
-      <a href="" class="btn-trans"> < ATRAS</a> 
+      <a href="" class="btn-trans">  ATRAS</a> 
     </div>
     <div class="col-12 col-md-6">
       <a href="" class="btn-green3 btn-next">Siguiente</a>
       </div>
         </div>
       </div>
-        <div class="col-12 col-md-5 p-t2 no-margin no-paddingedge">
-            <div class="items-actions">
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+      </div>
+      
+      </div>
+        <div class="col-12 col-md-5 p-t2 no-margin no-paddingedge productitem">
+            <div class="items-actions ">
+              
               <ul class="stock preview">
                 <li>Vista previa</li>
                 <li><a href="#"><img src="images/desktop.svg" alt="..." onmouseover="this.src='images/desktopv.svg';" onmouseout="this.src='images/desktop.svg';"/></a></li>
                 <li><a href="#"><img src="images/mobile.svg" alt="..." class="mobile" onmouseover="this.src='images/mobilev.svg';" onmouseout="this.src='images/mobile.svg';"/></a></li>
-
               </ul>
-                  <ul class="mkt-list">
-                    <li><a href="#" class="active">Encabezado</a></li>
-                    <li><a href="#">Descripción</a></li>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+                  <ul class="mkt-list nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <li><a href="#" class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Encabezado</a></li>
+                    <li><a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Descripción</a></li>
                   </ul>
             </div>
           </div>
