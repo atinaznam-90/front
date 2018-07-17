@@ -1460,3 +1460,18 @@ footer .md-form label {
   font-size: 30px;
   display: inline-flex;
 }
+.edit-flex{
+  display: flex;
+}
+.edit-step {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.edit-flex .fa.fa-check-circle {
+  width: auto;
+  height: auto;
+  color: #2bca73;
+  display: inline-flex;
+  margin-right: 5px
+}
