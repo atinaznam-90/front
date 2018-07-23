@@ -87,13 +87,19 @@
           <nav aria-label="breadcrumb" class="bcrumbleft">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">Dashboard</li>
-              <li class="breadcrumb-item"><a href="#">Producto individual</a></li>
-              <li class="breadcrumb-item active" aria-current="page"><a href="#">Información básica</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="#">Producto individual</a></li>
             </ol>
           </nav>
-          <button class="btn btn-trans btn-b waves-effect waves-light float-right btn-xs">
-                  Guardar y Salir
-          </button>
+          <div class="dropdown addproduct">
+            <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i> Producto
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Individual</a>
+              <a class="dropdown-item" href="#">Lista de Productos</a>
+
+            </div>
+          </div>
         </div>
         <div class="col-1 col-xl-2 show-room">
             <a class="nav-link float-right" href="#"> <img src="images/icon_showroom.svg" alt="Showroom"> <span>Showroom</span></a>
@@ -103,341 +109,24 @@
         <div class="container container-dash team marketing-col">
 
       <!-- profile start -->
-      <div class="col-12 row myprofile no-margin prodctname newproduct no-height">
+      <div class="col-12 row myprofile newproduct">
         <div class="col-12 col-md-7 p-t2 border-right">
-          <p class= "bigfont bigB">Información básica
-            <small>Paso 1</small>
-          </p>
-          <p>Orígen, calidad, presentación y colores</p>
-          <div class="row">
-            <div class="col col-md-6">
-                  
-              <p class="margins color-gray">ORÍGIN</p>
-            </div>
-            <div class="col col-md-6">
-              <p class="margins"><a href="#" class="color-green3 perfils"><i class="fa fa-user-o fareset" aria-hidden="true"></i> Cliente</a></p>
-            </div>
-           
-          </div>
-        
-          <div class="usr-mkt target">
          
+<p class= "bigfont hugefont">Sube tus productos desde excel<br>
+</p>
 
-          <div class="col-sm-12 col-lg-8 nopad">
-            <div class="jumbotron jumbo-select">
-            <p>¿En dónde se fabrica tu producto?</p>
-            <!-- Custom select structure -->
-          <div class="select_mate color-black" data-mate-select="active" >
-          <select disabled name="" onchange="" onclick="return false;" id="mySelect">
-          <option value="" >Predeterminado </option>
-          <option value="1">País</option>
-          <option value="2" >País</option>
-          <option value="3">País</option>
-          <option value="4">País</option>
-          <option value="5">País</option>
-          <option value="6">País</option>
-          <option value="7">País</option>
-          <option value="8">País</option>
-          <option value="9">País</option>
-            </select>
-          <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-              <path d="M0-.75h24v24H0z" fill="none"/>
-          </svg></span>
-          <div class="cont_list_select_mate">
-            <ul class="cont_select_int">  </ul>
-          </div>
-            </div>
-            <!-- Custom select structure -->
-          </div>
-        </div>
-        </div>
-        <div class="row">
-                <div class="col col-md-6">
-                      
-                  <p class="margins color-gray">CALIDAD</p>
-                </div>
-                <div class="col col-md-6">
-                  <p class="margins"><a href="#" class="color-green3 perfils"><i class="fa fa-user-o fareset" aria-hidden="true"></i> Cliente</a></p>
-                </div>
-               
-              </div>
-            
-              <div class="usr-mkt target">
-             
-    
-              <div class="col-sm-12 col-lg-8 nopad">
-                <div class="jumbotron jumbo-select">
-                <p>¿En qué rango de calidad se encuentra tu producto?</p>
-                <!-- Custom select structure -->
-              <div class="select_mate color-black" data-mate-select="active" >
-              <select disabled name="" onchange="" onclick="return false;" id="mySelect">
-              <option value="" >Predeterminado </option>
-              <option value="1">País</option>
-              <option value="2" >País</option>
-              <option value="3">País</option>
-              <option value="4">País</option>
-              <option value="5">País</option>
-              <option value="6">País</option>
-              <option value="7">País</option>
-              <option value="8">País</option>
-              <option value="9">País</option>
-                </select>
-              <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                  <path d="M0-.75h24v24H0z" fill="none"/>
-              </svg></span>
-              <div class="cont_list_select_mate">
-                <ul class="cont_select_int">  </ul>
-              </div>
-                </div>
-                <!-- Custom select structure -->
-              </div>
-            </div>
-            </div>
-            <div class="row">
-                    <div class="col col-md-6">
-                          
-                      <p class="margins color-gray">PRESENTACIÓN</p>
-                    </div>
-                    <div class="col col-md-6">
-                      <p class="margins"><a href="#" class="color-green3 perfils"><i class="fa fa-user-o fareset" aria-hidden="true"></i> Cliente</a></p>
-                    </div>
-                   
-                  </div>
-                  <P>¿Cuál es la presentación del empaque de tu producto?</P>
-        <div class="usr-mkt target">
-            
-          <div class="row col-sm-12 col-lg-8 choose">
-          <div class="col col-md-6">
-           
-          </div>
-          <div class="col col-md-6">
-              <a href="#" class="color-green4">solicitar</a>
-          </div>
-        </div>
-          <div class="nopad col-sm-12 col-lg-8">
-        <div class="jumbotron jumbo100 accordion-special">
-          
-          
-           
-          </ul>
-          <div class="jumbotron jumbodd">
-            <div id="accordion">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <div class="row  ">
-                    <div class="col col-sm-4"><i class="fa fa-caret-down"></i></div>
-                    <div class="col col-sm-8"><p>Presentación</p></div>
-                    
-                  </div>
-                  </button>
-                </h5>
-              </div>
-    
-              <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                  <div id="accordion " class="childaccordion">
-                  <div class="card">
-                    <div class="card-header" id="heading1a">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link col-12 " data-toggle="collapse" data-target="#collapseOnea" aria-expanded="false" aria-controls="collapseOnea">
-                          <div class="row  ">
-                          <div class="col col-sm-3"><i class="fa fa-caret-down"></i></div>
-                          
-                          <div class="col col-sm-9"><p>Presentación</p></div>
-                        </div>
-                        </button>
-                      </h5>
-                    </div>
-    
-                    <div id="collapseOnea" class="collapse show nchildaccordion" aria-labelledby="heading1a" data-parent="#accordion">
-                      <div class="card-body">
-                        <div class="row">
-                        <div class="col col-sm-4"></div>
-                       
-                        <div class="col col-sm-5"><p>Presentación</p></div>
-                        <div class="col col-sm-2">
-                          <div class="checkboxFour">
-                             <input type="checkbox" value="3" id="checkboxFourInput3" name="">
-                             <label for="checkboxFourInput3"></label>
-                           </div>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                  <div class="card-header" id="heading1a">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link col-12 " data-toggle="collapse" data-target="#collapseOnea" aria-expanded="false" aria-controls="collapseOnea2">
-                        <div class="row  ">
-                        <div class="col col-sm-3"><i class="fa fa-caret-down"></i></div>
-                        
-                        <div class="col col-sm-9"><p>Presentación</p></div>
-                      </div>
-                      </button>
-                    </h5>
-                  </div>
-  
-                  <div id="collapseOnea2" class="collapse show nchildaccordion" aria-labelledby="heading1a" data-parent="#accordion">
-                    <div class="card-body">
-                      <div class="row">
-                      <div class="col col-sm-4"></div>
-                     
-                      <div class="col col-sm-5"><p>Presentación</p></div>
-                      <div class="col col-sm-2">
-                        <div class="checkboxFour">
-                           <input type="checkbox" value="3" id="checkboxFourInput3" name="">
-                           <label for="checkboxFourInput3"></label>
-                         </div>
-                      </div>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingTree">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link col-12" data-toggle="collapse" data-target="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
-                        <div class="row  ">
-                        <div class="col col-sm-2"><i class="fa fa-caret-down"></i></div>
-                      
-                        <div class="col col-sm-7"><p>Presentación</p></div>
-                        <div class="col col-sm-2">
-                          <div class="checkboxFour">
-                             <input type="checkbox" value="3" id="checkboxFourInput3" name="">
-                             <label for="checkboxFourInput3"></label>
-                           </div>
-                        </div>
-                      </div>
-                      </button>
-                    </h5>
-                  </div>
-    
-                  <div id="collapseTree" class="collapse" aria-labelledby="headingTree" data-parent="#accordion">
-                    <div class="card-body">
-                      otro
-                    </div>
-                  </div>
-                </div>
-            </div>
-                </div>
-              </div>
-            </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button class="btn btn-link col-12" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <div class="row  ">
-                  <div class="col col-sm-2"><i class="fa fa-caret-down"></i></div>
-                 
-                  <div class="col col-sm-8"><p>Presentación</p></div>
-                  <div class="col col-sm-2">
-                    <div class="checkboxFour">
-                       <input type="checkbox" value="3" id="checkboxFourInput3" name="">
-                       <label for="checkboxFourInput3"></label>
-                     </div>
-                  </div>
-                </div>
-                </button>
-              </h5>
-            </div>
-    
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body">
-                otro
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingTree">
-              <h5 class="mb-0">
-                <button class="btn btn-link col-12" data-toggle="collapse" data-target="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
-                  <div class="row  ">
-                  <div class="col col-sm-2"><i class="fa fa-caret-down"></i></div>
-                 
-                  <div class="col col-sm-8"><p>Presentación</p></div>
-                  <div class="col col-sm-2">
-                    <div class="checkboxFour">
-                       <input type="checkbox" value="3" id="checkboxFourInput3" name="">
-                       <label for="checkboxFourInput3"></label>
-                     </div>
-                  </div>
-                </div>
-                </button>
-              </h5>
-            </div>
-    
-            <div id="collapseTree" class="collapse" aria-labelledby="headingTree" data-parent="#accordion">
-              <div class="card-body">
-                otro
-              </div>
-            </div>
-          </div>
-      </div>
-    
-          </div>
-        </div>
-      </div>
-      
-      </div>
-      <div class="row">
-        <div class="col col-md-6">
-              
-          <p class="margins"><a href="#" class="tooltip top"><span class="tiptext">
-                <i class="fa fa-question-circle fareset color-green3 fahelp" aria-hidden="true" ><br><br></i>
-                <strong>Colores</strong><br><br>
-                Da click en “modelo único” si solamente tiene un color o por las características de tu producto esto no aplica.
-            
-            </span>
-            
-            <i class="fa fa-question-circle fareset  fahelp helpcolor color-gray" aria-hidden="true" >
-                
-          </i>Colores </a></p>
-        </div>
-        <div class="col col-md-6">
-          <p class="margins"><a href="#" class="color-green3 perfils"><i class="fa fa-user-o fareset" aria-hidden="true"></i> Cliente</a></p>
-        </div>
-        <div class="col-12">
-       <p>Indica en que colores viene tu producto.</p>
-       <p>Modelo único <a href="#" class="unique-colors"></a></p>
-       </div>
-       <div class="col-12 pick_color">
-       <img src="images/pock_color.jpg" class="img-fluid">
-      </div>
-      </div>
-      <div class="row pbottom">
-        <div class="col-12 col-md-6">
-      <a href="" class="btn-trans"> < ATRAS</a> 
-    </div>
-    <div class="col-12 col-md-6">
-      <a href="" class="btn-green3 btn-next">Siguiente</a>
-      </div>
-        </div>
-      </div>
-        <div class="col-12 col-md-5 p-t2 no-margin no-paddingedge">
-            <div class="items-actions">
-              <ul class="stock preview">
-                <li>Vista previa</li>
-                <li><a href="#"><img src="images/desktop.svg" alt="..." onmouseover="this.src='images/desktopv.svg';" onmouseout="this.src='images/desktop.svg';"/></a></li>
-                <li><a href="#"><img src="images/mobile.svg" alt="..." class="mobile" onmouseover="this.src='images/mobilev.svg';" onmouseout="this.src='images/mobile.svg';"/></a></li>
+<p>¿Tienes muchos productos que ofrecer?</p>
+<p>Agíliza la carga de productos con nuestro excel de carga masiva.</p>
+<p>Este permite que captures la información sin conexion y la subas a la plataforma en cualquier momento.</p>
+<a href="#" class="color-green3"><small>Descarga formato</small></a>
+<br><br>
+<button class="btn btn-green3">CARGAR</button>
 
-              </ul>
-                  <ul class="mkt-list">
-                    <li><a href="#" >Nombre</a></li>
-                    <li><a href="#">SKU</a></li>
-                    <li><a href="#">Categoría</a></li>
-                    <li><a href="#">Categoría</a></li>
-                    <li><a href="#">B2B</a></li>
-                    <li><a href="#" class="active">Origen</a></li>
-                    <li><a href="#">Calidad</a></li>
-                    <li><a href="#">Presentación</a></li>
-                    <li><a href="#">Color</a></li>
-                  </ul>
-            </div>
+
+
+        </div>
+        <div class="col-12 col-md-5 p-t2 holder">
+            <h3>Media holder</h3>
           </div>
       </div>
 
@@ -837,12 +526,9 @@
   };
 })(jQuery);
     </script>
-<script>
-    $('#example').tooltip(options)
-</script>
 </body>
-<!-- modal-delete-->
-<div class="modal fade modal-delete" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="modalDelete" aria-hidden="true">
+<!-- modal-contact -->
+<div class="modal fade modal-contacts d-md-block d-xl-none" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="modalContact" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -851,15 +537,22 @@
         </button>
       </div>
       <div class="modal-body">
-        <p>¿Estás seguro que quieres dar de baja este producto?</p>
+        <div class="col-12 icon-action">
+          <a href="" class="icon_chat">chat</a>
+          <a href="" class="icon_mail">mail</a>
+          <a href="" class="icon_usr">user</a>
+          <a href="" class="icon_fav">favorito</a>
+        </div>
+        <div class="col-12 phones">
+          <p><a href="#"> <i class="fa fa-mobile" aria-hidden="true"></i> (44)5075916</a></p>
+          <p><a href="#"> <i class="fa fa-phone" aria-hidden="true"></i> 7825170</a></p>
+        </div>
+      </div>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-gray col-xs-12 col-sm-6" data-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-danger col-xs-12 col-sm-6" data-dismiss="modal">Confirmar</button>
-      </div>
     </div>
-
+    <div class="modal-footer">
+      <button type="button" class="btn btn-gray btn-block" data-dismiss="modal">Cancelar</button>
+    </div>
   </div>
 </div>
 </html>
