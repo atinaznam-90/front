@@ -13,155 +13,230 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--For Parallax-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
-<body class="int" onload="wow.init();">
+<body class="int ready" onload="wow.init();">
+<!-- navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/tt_logo.svg" alt="" class="img-fluid logo-tt"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+                aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+            <ul class="nav navbar-nav nav-flex-icons ml-auto icons-nav">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="#">Pricing <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link waves-effect waves-light btn-green" href="#">Iniciar sesion</button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="#"> <img src="images/mx_flag.svg" alt="MX"> MX
+                        (ESP)</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- /navbar -->
+<!-- container -->
 
-    <!-- navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="images/tt_logo.svg" alt="" class="img-fluid logo-tt"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-                      <ul class="nav navbar-nav nav-flex-icons ml-auto icons-nav">
-                          <li class="nav-item">
-                              <a class="nav-link waves-effect waves-light" href="#">Pricing <span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="nav-item">
-                              <button class="nav-link waves-effect waves-light btn-green" href="#">Iniciar sesion</button>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link waves-effect waves-light" href="#"> <img src="images/mx_flag.svg" alt="MX"> MX (ESP)</a>
-                          </li>
-                      </ul>
-                </div>
+<div class="container-fluid" style="padding-top: 10%">
+    <section class="row top-section bg-gradient">
+        <div class="full-bg-img view intro hm-white-light jarallax animated slideInDown">
+            <div class="halfc jarallax" style="margin-top: -10%" data-jarallax='{"speed": 1.4}'>
+                <img src="images/half-c.svg" alt="" class="animated rotateInDownRight img-fluid">
             </div>
-        </nav>
-      <!-- /navbar -->
-      <!-- container -->
-    <div class="container-fluid">
-          <section class="row top-section bg-gradient">
-            <div class="full-bg-img view intro hm-white-light jarallax animated slideInDown">
-              <div class="halfc jarallax" data-jarallax='{"speed": 1.4}'>
-                <img src="images/half-c.svg" alt="" class="animated rotateInDownRight img-fluid" >
-              </div>
-              <div class="lap">
-                <img src="images/lap.png" alt="" class="img-fluid  animated slideInRight" data-wow-delay="0.6s">
-              </div>
-              <div class="container top-content row" >
-                    <div class="col-xl-5">
-                    <h1 class="animated fadeIn mb-4 ">Conecta con <br>Negocios Reales</h1>
-                      <p class="animated fadeIn ">¿Tu pasión es desarrollar productos?</p>
-                      <p class="animated fadeIn ">Potencializa tu iniciativa con un catálogo moderno, intuitivo y seguro.</p>
-                      <p class="animated fadeIn ">  No importa si la linea de producción eres tú mismo o son de fabricación masiva, lo importante es que te enfoques en lo que mejor sabes hacer.</p>
+            <div class="lap">
+                <img src="images/lap.png" alt="" style="margin-top: -25%" class="img-responsive  animated slideInRight"
+                     data-wow-delay="0.6s">
+            </div>
+            <div class="container top-content row">
+                <div class="col-xl-5">
+                    <h1 class="animated fadeIn mb-4 " style="font-weight: bold">Conecta con <br>Negocios Reales</h1>
+                    <p class="animated fadeIn ">¿Tu pasión es desarrollar productos?</p>
+                    <p class="animated fadeIn ">Potencializa tu iniciativa con un catálogo moderno, intuitivo y
+                        seguro.</p>
+                    <p class="animated fadeIn "> No importa si la linea de producción eres tú mismo o son de
+                        fabricación masiva, lo importante es que te enfoques en lo que mejor sabes hacer.</p>
+                </div>
+                <div class="col-xl-7">
+                    <!--Panel-->
+                    <div class="card card-body panel-top chair" style="left:45%">
+                        <img src="images/panel_top1.png" style="margin-top: -50%" alt="" class="img-responsive">
                     </div>
-                      <div class="col-xl-7">
-                        <!--Panel-->
-                          <div class="card card-body panel-top chair">
-                              <img src="images/panel_top1.png" alt="" class="img-fluid">
-                          </div>
-                          <!--/.Panel-->
+                    <!--/.Panel-->
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row col platform">
+            <div class="col-md-12 wow fadeIn mb-3">
+                <div class="intro-info-content text-center" style="margin-top: -12%">
+                    <h2 class="mb-2 wow fadeInDown" data-wow-delay="0.3s"
+                        style="font-weight: bold;font-family: 'Roboto', sans-serif;">La primer plataforma en su
+                        tipo</h2>
+                    <p class="wow fadeIn">
+                        Te ayudamos a conectar con los expertos de la comercialización para que puedas desplazar tus
+                        productos <br>en pedidos grandes y con las mejores condiciones comerciales del mercado.
+                    </p>
+                </div>
+    </section>
+
+    <section>
+        <div class="container ">
+            <!--Grid row-->
+            <div class="row info-wrapper">
+                <!--<iframe src="https://giphy.com/embed/3o7TKz8EuYZam49eDu" width="480" height="270" frameBorder="0"-->
+                <!--class="giphy-embed" allowFullScreen></iframe>-->
+                <div style="height: 100%;width: 100%;" class="figures-top  wow slideInDown floating"
+                     data-wow-delay="2.6s">
+
+
+                    <div class="shapes one" id="shapes1">
+
+                        <svg class="shape triangle big" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                                            <polygon fill="#3DD0BA" stroke-width="1px" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" points="14.921,2.27 28.667,25.5 1.175,25.5 "/>
+                                        </svg>
+
+                        <div class="shape circle"></div>
+                        <div class="shape diamond"></div>
+                        <svg class="shape waves" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,23.651 c1.092,0,1.55-0.52,2.241-1.308c0.828-0.941,1.861-2.11,4.101-2.07c0.043-0.002,0.087-0.003,0.13-0.003 c2.163,0,3.171,1.148,3.985,2.073c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.006,0.157,0.013 c0.051-0.007,0.104-0.013,0.157-0.013c1.093,0,1.55-0.52,2.241-1.308c0.828-0.941,1.86-2.11,4.101-2.07 c0.044-0.002,0.087-0.003,0.129-0.003c2.163,0,3.173,1.148,3.986,2.073c0.691,0.788,1.148,1.308,2.241,1.308"/>
+                                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,16.684 c1.092,0,1.55-0.521,2.241-1.308c0.828-0.941,1.861-2.111,4.101-2.071c0.043,0,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.148,3.985,2.072c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.005,0.157,0.012 c0.051-0.007,0.104-0.012,0.157-0.012c1.093,0,1.55-0.521,2.241-1.308c0.828-0.941,1.86-2.111,4.101-2.071 c0.044,0,0.087-0.001,0.129-0.001c2.163,0,3.173,1.148,3.986,2.072c0.691,0.788,1.148,1.308,2.241,1.308"/>
+                                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,9.714 c1.092,0,1.55-0.519,2.241-1.307c0.828-0.941,1.861-2.111,4.101-2.071c0.043-0.001,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.147,3.985,2.072c0.692,0.788,1.149,1.307,2.241,1.307c0.054,0,0.106,0.006,0.157,0.014 c0.051-0.007,0.104-0.014,0.157-0.014c1.093,0,1.55-0.519,2.241-1.307c0.828-0.941,1.86-2.111,4.101-2.071 c0.044-0.001,0.087-0.001,0.129-0.001c2.163,0,3.173,1.147,3.986,2.072c0.691,0.788,1.148,1.307,2.241,1.307"/>
+                                        </svg>
+                                        <svg class="shape hexa" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                                            <polygon fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" points="27.5,21.904 15,28.809  2.5,21.904 2.5,8.095 15,1.19 27.5,8.095 "/>
+                                        </svg>
+                                        <svg class="shape triangle small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                                            <polygon fill="none" stroke-width="1px" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" points="14.921,2.27 28.667,25.5 1.175,25.5 "/>
+                                        </svg>
+                        <div class="shape circle small"></div>
+                        <svg class="shape waves small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,23.651 c1.092,0,1.55-0.52,2.241-1.308c0.828-0.941,1.861-2.11,4.101-2.07c0.043-0.002,0.087-0.003,0.13-0.003 c2.163,0,3.171,1.148,3.985,2.073c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.006,0.157,0.013 c0.051-0.007,0.104-0.013,0.157-0.013c1.093,0,1.55-0.52,2.241-1.308c0.828-0.941,1.86-2.11,4.101-2.07 c0.044-0.002,0.087-0.003,0.129-0.003c2.163,0,3.173,1.148,3.986,2.073c0.691,0.788,1.148,1.308,2.241,1.308"/>
+                                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,16.684 c1.092,0,1.55-0.521,2.241-1.308c0.828-0.941,1.861-2.111,4.101-2.071c0.043,0,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.148,3.985,2.072c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.005,0.157,0.012 c0.051-0.007,0.104-0.012,0.157-0.012c1.093,0,1.55-0.521,2.241-1.308c0.828-0.941,1.86-2.111,4.101-2.071 c0.044,0,0.087-0.001,0.129-0.001c2.163,0,3.173,1.148,3.986,2.072c0.691,0.788,1.148,1.308,2.241,1.308"/>
+                                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,9.714 c1.092,0,1.55-0.519,2.241-1.307c0.828-0.941,1.861-2.111,4.101-2.071c0.043-0.001,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.147,3.985,2.072c0.692,0.788,1.149,1.307,2.241,1.307c0.054,0,0.106,0.006,0.157,0.014 c0.051-0.007,0.104-0.014,0.157-0.014c1.093,0,1.55-0.519,2.241-1.307c0.828-0.941,1.86-2.111,4.101-2.071 c0.044-0.001,0.087-0.001,0.129-0.001c2.163,0,3.173,1.147,3.986,2.072c0.691,0.788,1.148,1.307,2.241,1.307"/>
+                                        </svg>
+                    </div>
+                    <div class="shapes two" id="shapes2">
+                        <div class="rotate-area">
+                            <div class="shape circle"></div>
+                            <div class="shape diamond"></div>
+                            <svg class="shape waves" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                                                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,23.651 c1.092,0,1.55-0.52,2.241-1.308c0.828-0.941,1.861-2.11,4.101-2.07c0.043-0.002,0.087-0.003,0.13-0.003 c2.163,0,3.171,1.148,3.985,2.073c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.006,0.157,0.013 c0.051-0.007,0.104-0.013,0.157-0.013c1.093,0,1.55-0.52,2.241-1.308c0.828-0.941,1.86-2.11,4.101-2.07 c0.044-0.002,0.087-0.003,0.129-0.003c2.163,0,3.173,1.148,3.986,2.073c0.691,0.788,1.148,1.308,2.241,1.308"/>
+                                                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,16.684 c1.092,0,1.55-0.521,2.241-1.308c0.828-0.941,1.861-2.111,4.101-2.071c0.043,0,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.148,3.985,2.072c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.005,0.157,0.012 c0.051-0.007,0.104-0.012,0.157-0.012c1.093,0,1.55-0.521,2.241-1.308c0.828-0.941,1.86-2.111,4.101-2.071 c0.044,0,0.087-0.001,0.129-0.001c2.163,0,3.173,1.148,3.986,2.072c0.691,0.788,1.148,1.308,2.241,1.308"/>
+                                                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,9.714 c1.092,0,1.55-0.519,2.241-1.307c0.828-0.941,1.861-2.111,4.101-2.071c0.043-0.001,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.147,3.985,2.072c0.692,0.788,1.149,1.307,2.241,1.307c0.054,0,0.106,0.006,0.157,0.014 c0.051-0.007,0.104-0.014,0.157-0.014c1.093,0,1.55-0.519,2.241-1.307c0.828-0.941,1.86-2.111,4.101-2.071 c0.044-0.001,0.087-0.001,0.129-0.001c2.163,0,3.173,1.147,3.986,2.072c0.691,0.788,1.148,1.307,2.241,1.307"/>
+                                            </svg>
+                                            <svg class="shape waves small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                                                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,23.651 c1.092,0,1.55-0.52,2.241-1.308c0.828-0.941,1.861-2.11,4.101-2.07c0.043-0.002,0.087-0.003,0.13-0.003 c2.163,0,3.171,1.148,3.985,2.073c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.006,0.157,0.013 c0.051-0.007,0.104-0.013,0.157-0.013c1.093,0,1.55-0.52,2.241-1.308c0.828-0.941,1.86-2.11,4.101-2.07 c0.044-0.002,0.087-0.003,0.129-0.003c2.163,0,3.173,1.148,3.986,2.073c0.691,0.788,1.148,1.308,2.241,1.308"/>
+                                                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,16.684 c1.092,0,1.55-0.521,2.241-1.308c0.828-0.941,1.861-2.111,4.101-2.071c0.043,0,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.148,3.985,2.072c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.005,0.157,0.012 c0.051-0.007,0.104-0.012,0.157-0.012c1.093,0,1.55-0.521,2.241-1.308c0.828-0.941,1.86-2.111,4.101-2.071 c0.044,0,0.087-0.001,0.129-0.001c2.163,0,3.173,1.148,3.986,2.072c0.691,0.788,1.148,1.308,2.241,1.308"/>
+                                                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,9.714 c1.092,0,1.55-0.519,2.241-1.307c0.828-0.941,1.861-2.111,4.101-2.071c0.043-0.001,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.147,3.985,2.072c0.692,0.788,1.149,1.307,2.241,1.307c0.054,0,0.106,0.006,0.157,0.014 c0.051-0.007,0.104-0.014,0.157-0.014c1.093,0,1.55-0.519,2.241-1.307c0.828-0.941,1.86-2.111,4.101-2.071 c0.044-0.001,0.087-0.001,0.129-0.001c2.163,0,3.173,1.147,3.986,2.072c0.691,0.788,1.148,1.307,2.241,1.307"/>
+                                            </svg>
+                        </div>
                     </div>
 
-              </div>
 
-              </div>
-              <div class="row col platform">
-                  <div class="col-md-12 wow fadeIn mb-3">
-                      <div class="intro-info-content text-center">
-                          <h2 class="mb-2 wow fadeInDown" data-wow-delay="0.3s">La primer plataforma en su tipo</h2>
-                          <p class="wow fadeIn">
-                            Te ayudamos a conectar con los expertos de la comercialización para que puedas desplazar tus productos <br>en pedidos grandes y con las mejores condiciones comerciales del mercado.
-                          </p>
-                      </div>
-          </section>
-
-          <section>
-            <div class="container ">
-                <!--Grid row-->
-                <div class="row info-wrapper">
-                  <div class="figures-top wow slideInDown floating" data-wow-delay="2.6s">
-                  </div>
-                    <!--Grid column-->
-                    <div class="row col-md-12  mb-3 top-content-2">
-                        <div class="col-md-6 wow fadeIn" data-wow-delay="2.6s">
-                        <h2 class="font-bold">La seguridad lo es todo</h2>
-                        <p>Creamos procesos que te protegen legal y <br>operativamente para que tu único enfoque sea cumplir<br> a tiempo con la producción.</p>
-                        <h2 class="font-bold h-top">Aliados Comerciales</h2>
-                        <p>Al ser parte de nuestro equipo de proveedores, <br>tendrás acceso a acuerdos comerciales de<br> financiamiento y asesoría en áreas esenciales<br> para tu negocio.</p>
-                      </div>
-                      <div class="col-md-6 panels-r">
+                </div>
+                <!--</div>-->
+                <!--Grid column-->
+                <div class="row col-md-12  mb-3 top-content-2">
+                    <div class="col-md-6 wow fadeIn" data-wow-delay="2.6s">
+                        <h2 style="font-weight: bold; font-family: 'Roboto',sans-serif" class="font-bold">La seguridad
+                            lo es todo</h2>
+                        <p>Creamos procesos que te protegen legal y <br>operativamente para que tu único enfoque sea
+                            cumplir<br> a tiempo con la producción.</p>
+                        <h2 class="font-bold h-top" style="font-weight: bold; font-family: 'Roboto',sans-serif">Aliados
+                            Comerciales</h2>
+                        <p>Al ser parte de nuestro equipo de proveedores, <br>tendrás acceso a acuerdos comerciales
+                            de<br> financiamiento y asesoría en áreas esenciales<br> para tu negocio.</p>
+                    </div>
+                    <div class="col-md-6 panels-r">
                         <div class="smallc " data-wow-delay="0.6s">
-                          <img src="images/full-c-small.svg" alt="" class="wow rotateIn img-fluid" data-wow-delay="2.6s">
+                            <img src="images/full-c-small.svg" alt="" class="wow rotateIn img-fluid"
+                                 data-wow-delay="2.6s">
                         </div>
                         <div class="lpannel1 animated fadeIn">
-                          <img src="images/img-panel1.png" alt="" class="wow slideInRight img-fluid" data-wow-delay="3.6s">
+                            <img src="images/img-panel1.png" alt="" class="wow slideInRight img-fluid"
+                                 data-wow-delay="3.6s">
                         </div>
                         <div class="lpannel2 animated fadeIn">
-                          <img src="images/img-panel2.png" alt="" class="wow slideInRight img-fluid" data-wow-delay="4.0s">
+                            <img src="images/img-panel2.png" alt="" class="wow slideInRight img-fluid"
+                                 data-wow-delay="4.0s">
                         </div>
                     </div>
-                    </div>
-                    <!--Grid column-->
                 </div>
-                <!--Grid row-->
-                <!--Grid row-->
-                <div class="row info-wrapper">
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            <!--Grid row-->
+            <div class="row info-wrapper">
 
-                    <!--Grid column-->
-                    <div class="row col-md-12  mb-3 top-content-2">
-                      <div class="col-md-6 panels-r">
+                <!--Grid column-->
+                <div class="row col-md-12  mb-3 top-content-2" style="margin-top: 15%">
+                    <div class="col-md-6 panels-r" style="">
                         <div class="smallc " data-wow-delay="0.6s">
-                          <img src="images/triangle.svg" alt="" class="wow rotateIn img-fluid" data-wow-delay="2.6s">
+                            <img src="images/triangle.svg" alt="" class="wow rotateIn img-fluid" data-wow-delay="2.6s">
                         </div>
                         <div class="lpannel3 animated fadeIn">
-                          <img src="images/img-panel3.png" alt="" class="wow fadeInLeft img-fluid" data-wow-delay="3.6s">
+                            <img src="images/img-panel3.png" alt="" class="wow fadeInLeft img-fluid"
+                                 data-wow-delay="3.6s">
                         </div>
                         <div class="lpannel4 animated fadeIn">
-                          <img src="images/img-panel3.png" alt="" class="wow fadeInRight img-fluid" data-wow-delay="4.0s">
+                            <img src="images/img-panel3.png" alt="" class="wow fadeInRight img-fluid"
+                                 data-wow-delay="4.0s">
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeIn text-right" data-wow-delay="2.6s">
-                    <h2 class="font-bold ">Tu catálogo revolucionado</h2>
-                    <p>Sabemos lo complejo que puede ser crear y cuidar<br> la experiencia de uso, el pricing
-                      y el diseño.<br>Con Tame Traffic tendrás tu propio <br>SHOWROOM ONLINE para que
-                      puedas empezar a <br>recibir órdenes en muy poco tiempo.</p>
-                    <h2 class="font-bold h-top">Tu producto, <br>un estilo de vida.</h2>
-                    <p>Al ser parte de nuestro equipo de proveedores, <br>
-                      tendrás acceso a acuerdos comerciales <br>de financiamiento y asesoría en
-                       áreas <br>esenciales para tu negocio.</p>
-                  </div>
+                        <h2 style="font-weight: bold; font-family: 'Roboto',sans-serif" class="font-bold ">Tu catálogo
+                            revolucionado</h2>
+                        <p>Sabemos lo complejo que puede ser crear y cuidar<br> la experiencia de uso, el pricing
+                            y el diseño.<br>Con Tame Traffic tendrás tu propio <br>SHOWROOM ONLINE para que
+                            puedas empezar a <br>recibir órdenes en muy poco tiempo.</p>
+                        <h2 style="font-weight: bold; font-family: 'Roboto',sans-serif" class="font-bold h-top">Tu
+                            producto, <br>un estilo de vida.</h2>
+                        <p>Al ser parte de nuestro equipo de proveedores, <br>
+                            tendrás acceso a acuerdos comerciales <br>de financiamiento y asesoría en
+                            áreas <br>esenciales para tu negocio.</p>
                     </div>
-                    <!--Grid column-->
                 </div>
-                <!--Grid row-->
+                <!--Grid column-->
             </div>
-          </section>
+            <!--Grid row-->
         </div>
-      </div>
-    </div>
-    <div class="col-xs-12 startnow">
+    </section>
+</div>
+</div>
+</div>
+<div class="col-xs-12 startnow">
     <form action="dashboard.html">
-    <button class="nav-link waves-effect waves-light btn-green">Iniciar</button>
+        <button class="nav-link waves-effect waves-light btn-green">Iniciar</button>
     </form>
-  </div>
-    <div class="col join">
-      <a href="#"><img src="images/chat.svg" alt="chat" class="chat"> </a>
-    </div>
-    <!-- /container-->
-    <!--Footer-->
-      <footer class="page-footer center-on-small-only container">
+</div>
+<div class="col join">
+    <a href="#"><img src="images/chat.svg" alt="chat" class="chat"> </a>
+</div>
+<!-- /container-->
+<!--Footer-->
+<footer class="page-footer center-on-small-only container">
 
-          <!--Footer Links-->
-          <div class="container-fluid">
-              <div class="row">
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <hr style="border: 1px solid #59595c">
 
-                  <!--First column-->
-                  <div class="col-md-4 col-xs-12 fcolumn">
-                    <h5 class="title">Productos</h5>
-                    <div class="row col no-margin">
+        <div class="row" style="margin-top: 30px">
+
+            <!--First column-->
+            <div class="col-md-4 col-xs-12 fcolumn">
+                <h5 style="font-weight: bold;" class="title">Productos</h5>
+                <div class="row col no-margin" style="margin-top: 20px;">
                     <ul class="col-md-4 col-xs-12">
                         <li><a href="#!">Categoría</a></li>
                         <li><a href="#!">Categoría</a></li>
@@ -179,107 +254,128 @@
                         <li><a href="#!">Categoría</a></li>
                     </ul>
                     <div class="row col-xl-12">
-                      <form>
-                        <div class="md-form form-group">
-                            <input value="Buscar Productos" type="text" id="" class="form-control">
-                            <label class="active" for="productos"> Buscar Productos</label>
-                        </div>
-                        <div class="md-form form-group">
-                            <input value="Buscar Proveedores" type="text" id="" class="form-control">
-                            <label class="active" for="productos"> Buscar Proveedores</label>
-                        </div>
-                      </form>
+                        <form>
+                            <div class="md-form form-group">
+                                <input value="Buscar Productos" type="text" id="" class="form-control">
+                                <label class="active" for="productos"> Buscar Productos</label>
+                            </div>
+                            <div class="md-form form-group">
+                                <input value="Buscar Proveedores" type="text" id="" class="form-control">
+                                <label class="active" for="productos"> Buscar Proveedores</label>
+                            </div>
+                        </form>
                     </div>
-                  </div>
-                  </div>
-                  <!--/.First column-->
-
-                  <!--Second column-->
-                  <div class="col-md-4 fcolumn">
-                      <h5 class="title">Acerca de Nosotros</h5>
-                      <ul>
-                          <li><a href="#!">¿Como funciona?</a></li>
-                          <li><a href="#!">Subir productos</a></li>
-                          <li><a href="#!">Certificación</a></li>
-                          <li><a href="#!">Showroom online</a></li>
-                          <li><a href="#!">Pricing</a></li>
-                      </ul>
-                  </div>
-                  <!--/.Second column-->
-
-                  <!--third column-->
-                  <div class="col-md-4 fcolumn">
-                      <h5 class="title">Tendencias</h5>
-                        <div class="row col no-margin">
-                          <ul class="col-xl-6">
-                              <li><a href="#!" class="tag tag-1">TAG 1</a></li>
-                              <li><a href="#!" class="tag tag-4">TAG 4</a></li>
-                              <li><a href="#!" class="tag tag-5">TAG 5</a></li>
-                              <li><a href="#!" class="tag tag-1">TAG 1</a></li>
-                              <li><a href="#!" class="tag tag-1 tag-op1">TAG 1</a></li>
-                              <li><a href="#!" class="tag tag-4 tag-op1">TAG 4</a></li>
-                              <li><a href="#!" class="tag tag-5 tag-op1">TAG 5</a></li>
-                              <li><a href="#!" class="tag tag-1 tag-op1">TAG 1</a></li>
-                          </ul>
-                          <ul class="col-xl-6">
-                              <li><a href="#!" class="tag tag-2">TAG 2</a></li>
-                              <li><a href="#!" class="tag tag-3">TAG 3</a></li>
-                              <li><a href="#!" class="tag tag-6">TAG 6</a></li>
-                              <li><a href="#!" class="tag tag-2">TAG 2</a></li>
-                              <li><a href="#!" class="tag tag-2 tag-op1">TAG 2</a></li>
-                              <li><a href="#!" class="tag tag-3 tag-op1">TAG 3</a></li>
-                              <li><a href="#!" class="tag tag-6 tag-op1">TAG 6</a></li>
-                              <li><a href="#!" class="tag tag-2 tag-op1">TAG 2</a></li>
-                          </ul>
-                        </div>
-                  </div>
-                  <!--/.third column-->
-              </div>
-          </div>
-          <!--/.Footer Links-->
-
-          <!--Copyright-->
-          <div class="footer-copyright">
-              <div class="row container-fluid">
-                <div class="col-md-6">
-                  Todos los derechos reservados, Tame Traffic, S.A. de C.V.
                 </div>
-                <div class="col-md-6">
-                  <div class="float-right sm-icons">
-                  <a href="#" ><img src="images/fb-icon.svg" alt="facebook" class="fb_icon" onmouseover="this.src='images/fb-icon_2.svg';" onmouseout="this.src='images/fb-icon.svg';"/></a>
-                  <a href="#"><img src="images/yt-icon.svg" alt="TouTube" class="ty_icon" onmouseover="this.src='images/yt-icon_2.svg';" onmouseout="this.src='images/yt-icon.svg';"/></a>
-                  <a href="#"><img src="images/ins-icon.svg" alt="Instagram" class="ins_icon" onmouseover="this.src='images/ins-icon_2.svg';" onmouseout="this.src='images/ins-icon.svg';"/></a>
-                  <a href="#"><img src="images/mail-icon.svg" alt="Correo" class="mail_icon" onmouseover="this.src='images/mail-icon_2.svg';" onmouseout="this.src='images/mail-icon.svg';"/></a>
-                  <a href="#" class="terms">Condiciones</a>
-                  <a href="#" class="terms">Privacidad</a>
-                </div>
-                </div>
-              </div>
-          </div>
-          <!--/.Copyright-->
+            </div>
+            <!--/.First column-->
 
-      </footer>
-      <!--/.Footer-->
+            <!--Second column-->
+            <div class="col-md-4 fcolumn" style="left: 60px">
+                <h5 style="font-weight: bold" class="title">Acerca de Nosotros</h5>
+                <ul style="margin-top: 20px">
+                    <li><a href="#!">¿Como funciona?</a></li>
+                    <li><a href="#!">Subir productos</a></li>
+                    <li><a href="#!">Certificación</a></li>
+                    <li><a href="#!">Showroom online</a></li>
+                    <li><a href="#!">Pricing</a></li>
+                </ul>
+            </div>
+            <!--/.Second column-->
 
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <script>
+            <!--third column-->
+            <div class="col-md-4 fcolumn" style="left:70px">
+                <h5 style="font-weight: bold" class="title">Tendencias</h5>
+                <div class="row col no-margin" style="margin-top: 20px">
+                    <ul class="col-xl-6">
+                        <li><a href="#!" class="tag tag-1">TAG 1</a></li>
+                        <li><a href="#!" class="tag tag-4">TAG 4</a></li>
+                        <li><a href="#!" class="tag tag-5">TAG 5</a></li>
+                        <li><a href="#!" class="tag tag-1">TAG 1</a></li>
+                        <li><a href="#!" class="tag tag-1 tag-op1">TAG 1</a></li>
+                        <li><a href="#!" class="tag tag-4 tag-op1">TAG 4</a></li>
+                        <li><a href="#!" class="tag tag-5 tag-op1">TAG 5</a></li>
+                        <li><a href="#!" class="tag tag-1 tag-op1">TAG 1</a></li>
+                    </ul>
+                    <ul class="col-xl-6">
+                        <li><a href="#!" class="tag tag-2">TAG 2</a></li>
+                        <li><a href="#!" class="tag tag-3">TAG 3</a></li>
+                        <li><a href="#!" class="tag tag-6">TAG 6</a></li>
+                        <li><a href="#!" class="tag tag-2">TAG 2</a></li>
+                        <li><a href="#!" class="tag tag-2 tag-op1">TAG 2</a></li>
+                        <li><a href="#!" class="tag tag-3 tag-op1">TAG 3</a></li>
+                        <li><a href="#!" class="tag tag-6 tag-op1">TAG 6</a></li>
+                        <li><a href="#!" class="tag tag-2 tag-op1">TAG 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.third column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="row container-fluid">
+            <div class="col-md-6">
+                Todos los derechos reservados, Tame Traffic, S.A. de C.V.
+            </div>
+            <div class="col-md-6">
+                <div class="float-right sm-icons">
+                    <a href="#"><img src="images/fb-icon.svg" alt="facebook" class="fb_icon"
+                                     onmouseover="this.src='images/fb-icon_2.svg';"
+                                     onmouseout="this.src='images/fb-icon.svg';"/></a>
+                    <a href="#"><img src="images/yt-icon.svg" alt="TouTube" class="ty_icon"
+                                     onmouseover="this.src='images/yt-icon_2.svg';"
+                                     onmouseout="this.src='images/yt-icon.svg';"/></a>
+                    <a href="#"><img src="images/ins-icon.svg" alt="Instagram" class="ins_icon"
+                                     onmouseover="this.src='images/ins-icon_2.svg';"
+                                     onmouseout="this.src='images/ins-icon.svg';"/></a>
+                    <a href="#"><img src="images/mail-icon.svg" alt="Correo" class="mail_icon"
+                                     onmouseover="this.src='images/mail-icon_2.svg';"
+                                     onmouseout="this.src='images/mail-icon.svg';"/></a>
+                    <a href="#" class="terms">Condiciones</a>
+                    <a href="#" class="terms">Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script>
     wow = new WOW({
-      boxClass: 'wow', // default
-      animateClass: 'animated', // default
-      offset: 0, // default
-      mobile: true, // default
-      live: true // default
-    })
+        boxClass: 'wow', // default
+        animateClass: 'animated', // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true // default
+    });
 
-    </script>
+</script>
+
+<!--<script>-->
+<!--$(document).ready(function removeClass() {-->
+<!--var color1 = $("#shapes1")-->
+<!--var color2 = $("#shapes2")-->
+
+<!--color1.removeClass('red')-->
+<!--color2.removeClass('red')-->
+<!--})-->
+<!--</script>-->
+
+<script type="text/javascript" src="js/9c1b9aa6.home_vendor.min.js"></script>
+<script type="text/javascript" src="js/23baa828.home_main.min.js"></script>
 </body>
 
 </html>
