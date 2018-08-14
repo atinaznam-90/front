@@ -1042,7 +1042,7 @@ input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly
 }
 
 .top-content {
-    padding-top: 2rem;
+    padding-top: 1rem;
     margin: auto;
 }
 
@@ -1391,9 +1391,9 @@ footer .md-form label {
     background-color: #ef7261;
 }
 
-/*.tag-6 {*/
-/*background-color: #893660;*/
-/*}*/
+.tag-6 {
+    background-color: #893660;
+}
 
 .tag-op1 {
     opacity: 0.2;
@@ -1539,10 +1539,6 @@ footer .md-form label {
         position: absolute;
         font-size: 0.7rem;
         line-height: 2;
-    }
-
-    .top-content {
-        padding-top: 1rem;
     }
 
     .pymes {
