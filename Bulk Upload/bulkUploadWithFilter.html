@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tame Traffic</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Material Design Bootstrap -->
+    <!-- <link href="css/mdb.css" rel="stylesheet"> -->
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/dashboard.css" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="stylesheet" type="text/css" href="../fonts/font.css">
+    <title></title>
+    <!--Inline Styles-->
+    <style type="text/css">
+        .navbar {
+            padding-bottom: 0;
+        }
+
+        td {
+            font-family: AkkuratBold;
+        }
+
+        /*Radio Buttons Inline styling*/
+        input[type='radio']:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: #d1d3d1;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid white;
+        }
+
+        input[type='radio']:checked:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: #3AF1A7;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid white;
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- Upper Dashboard -->
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F1F1F1">
+    <a class="navbar-brand" href="#">Nombre</a> <i class="fa fa-user-circle fa-3x" style="color:black;top: 25px"></i>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">
+                    Dashboard
+                </a>
+            </li>
+
+        </ul>
+        <!-- Right Nav content -->
+        <button class="btn btn-green" style="margin-right: 50px">CANCELAR</button>
+        <button class="btn btn-green" style="margin-right: 50px">AUTHORIZAR</button>
+
+    </div>
+</nav>
+<a class="logod">
+    <img src="../images/logo_dash.svg" alt="Home">
+</a>
+<nav class="main-menu">
+    <ul>
+        <li class="d-md-block d-xl-none">
+            <a href="#">
+                <img src="../images/logo_dash.svg" alt="Home">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-search fa-2x"></i>
+            </a>
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-bell-o fa-2x"></i>
+
+            </a>
+
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+
+            </a>
+
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-question-circle fa-2x"></i>
+
+            </a>
+        </li>
+        <li class="last"></li>
+    </ul>
+
+</nav>
+<div class="left-menu">
+    <ul>
+        <li>
+            <a href="#">Productos</a>
+        </li>
+        <li>
+            <a href="#">Pedidos</a>
+        </li>
+    </ul>
+</div>
+
+<!-- Center Content -->
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-left: 10%">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" style="padding-right: 20px">
+                    <select name="" id="" class="form-control" style="font-family: AkkuratBold;width: 250px">
+                        <option selected="selected" value="Search Type">Search Type</option>
+                        <option selected="selected" value="Search Type">Search Type</option>
+                        <option selected="selected" value="Search Type">Search Type</option>
+                        <option selected="selected" value="Search Type">Search Type</option>
+                        <option selected="selected" value="Search Type">Search Type</option>
+                        <option selected="selected" value="Search Type">Search Type</option>
+                    </select>
+                </li>
+                <li class="nav-item" style="padding-right: 20px">
+                    <select name="" id="" class="form-control" style="font-family: AkkuratBold;width: 250px">
+                        <option selected="selected" value="Search Type">Search TypeB</option>
+                        <option selected="selected" value="Search Type">Search TypeB</option>
+                        <option selected="selected" value="Search Type">Search TypeB</option>
+                        <option selected="selected" value="Search Type">Search TypeB</option>
+                        <option selected="selected" value="Search Type">Search TypeB</option>
+                        <option selected="selected" value="Search Type">Search TypeB</option>
+                    </select>
+                </li>
+                <li class="nav-item mt-2" style="padding-right:20px;">
+                    <span style="font-family: AkkuratBold">Productos</span><span>: 3</span>
+                </li>
+                <li class="nav-item mt-2" style="padding-right: 20px">
+                    <input id="onlyProductRadioButton" type="radio"><span style="font-family: AkkuratBold;">
+    Ajustes</span><span>: 1</span>
+                </li>
+                <li class="nav-item mt-2">
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="fa fa-caret-down" style="position:absolute;color: black;"></span>
+                        </div>
+                        <div class="col-6">
+
+                            <!--collapsible starts-->
+                            <p>
+                                <a class="" data-toggle="collapse" href="#collapseExample" role="button"
+                                   aria-expanded="false" aria-controls="collapseExample">
+                                    <span style="font-family: AkkuratBold   ">Filtros</span>
+                                </a>
+
+                            </p>
+
+                            <!--collapsible ends-->
+                        </div>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <form class="form-inline " style="margin-right: 3%">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!--collapsible content starts-->
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <!--table starts-->
+                <table class="table table-borderless">
+                    <thead>
+                    <tr>
+                        <th scope="col">Sort</th>
+                        <th scope="col"></th>
+                        <th scope="col">Quality</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">A - Z</th>
+                        <td>(-) Minimum of pieces</td>
+                        <td>Artisan</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Z - A</th>
+                        <td>(+) Maximum of pieces</td>
+                        <td>Premium</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">(+) Unit Price</th>
+                        <td></td>
+                        <td>Standar</td>
+
+
+                    </tr>
+                    <tr>
+                        <th scope="row">(-) Unit Price</th>
+                        <td></td>
+                        <td>Economic</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">(+) Percentege TT</th>
+                        <td colspan="2"></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">(-) Percentage TT</th>
+                        <td colspan="2"></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2"></td>
+
+                    </tr>
+                    </tbody>
+                </table>
+                <!--table ends-->
+            </div>
+        </div>
+        <!--collapsible content ends-->
+        <table class="table">
+            <thead class="thead-light">
+            <tr>
+                <th scope="col" style="font-family: AkkuratBold;">Nombre</th>
+                <th scope="col" style="font-family: AkkuratBold;">ITEM</th>
+                <th scope="col" style="font-family: AkkuratBold;">SKU</th>
+                <th scope="col" style="font-family: AkkuratBold;">Categoria/Subcategoria</th>
+                <th scope="col" style="font-family: AkkuratBold;">Costo unitario</th>
+                <th scope="col" style="font-family: AkkuratBold;">Estatus</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--<tr>-->
+            <!--<th style="font-family: AkkuratBold;" scope="row">Nombre</th>-->
+            <!--<td style="font-family: AkkuratBold;">ITEM</td>-->
+            <!--<td style="font-family: AkkuratBold;">SKU</td>-->
+            <!--<td style="font-family: AkkuratBold">Categoria/Subcategoria</td>-->
+            <!--<td style="font-family: AkkuratBold">$0.00 MXN / 00 pz min. <span style="color: #2BCA73 ;">00%</span>-->
+            <!--</td>-->
+            <!--<td style="font-family: AkkuratBold">Estatus</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<th style="font-family: AkkuratBold" scope="row">Nombre</th>-->
+            <!--<td style="font-family: AkkuratBold">ITEM</td>-->
+            <!--<td style="font-family: AkkuratBold;">SKU</td>-->
+            <!--<td style="font-family: AkkuratBold;">Categoria/Subcategoria</td>-->
+            <!--<td style="font-family: AkkuratBold">$0.00 MXN / 00 pz min. <span style="color: #2BCA73 ;">00%</span>-->
+            <!--</td>-->
+            <!--<td style="font-family: AkkuratBold">Estatus</td>-->
+            <!--</tr>-->
+            <tr style="background-color: #F6FF98">
+                <th scope="row" style="font-family: AkkuratBold">Nombre</th>
+                <td style="font-family: AkkuratBold">ITEM</td>
+                <td style="font-family: AkkuratBold">SKU</td>
+                <td style="font-family: AkkuratBold">Categoria/Subcategoria</td>
+                <td style="font-family: AkkuratBold">$0.00 MXN / 00 pz min. <span style="color: #2BCA73 ;">00%</span>
+                </td>
+                <td style="font-family: AkkuratBold">Estatus</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+<!-- Scripts -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script>
+    function myFunc() {
+        document.getElementById('onlyProductRadioButton').checked = true;
+    }
+
+    myFunc();
+</script>
+</body>
+</html>
+
+
+<!--some demo code-->
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--<div class="collapse navbar-collapse" id="navbarNav">-->
+<!--<ul class="navbar-nav">-->
+<!--<li class="nav-item" style="padding-right: 20px">-->
+<!--<select name="" id="" class="form-control" style="font-family: AkkuratBold;width: 250px">-->
+<!--<option selected="selected" value="Categoria">CATEGORIA</option>-->
+<!--</select>-->
+<!--</li>-->
+<!--<li class="nav-item" style="padding-right: 20px">-->
+<!--<select name="" id="" class="form-control" style="font-family: AkkuratBold;width: 250px">-->
+<!--<option selected="selected" value="Categoria">CATEGORIA</option>-->
+<!--</select>-->
+<!--</li>-->
+<!--<li class="nav-item mt-2" style="padding-right:20px;">-->
+<!--<span style="font-family: AkkuratBold">Productos</span><span>: 3</span>-->
+<!--</li>-->
+<!--<li class="nav-item mt-2" style="padding-right: 20px">-->
+<!--<input type="radio"><span style="font-family: AkkuratBold;">-->
+<!--Ajustes</span><span>: 1</span>-->
+<!--</li>-->
+<!--<li class="nav-item mt-2">-->
+<!--<div class="row">-->
+<!--<div class="col-6">-->
+<!--<span class="fa fa-caret-down" style="position:absolute;color: black;"></span>-->
+<!--</div>-->
+<!--<div class="col-6">-->
+
+<!--<span-->
+<!--style="font-family: AkkuratBold;">Filtros</span>-->
+<!--</div>-->
+
+<!--</div>-->
+
+
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</nav>-->

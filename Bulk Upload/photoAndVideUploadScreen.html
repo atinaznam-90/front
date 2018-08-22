@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tame Traffic</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <!-- <link href="css/mdb.css" rel="stylesheet"> -->
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/dashboard.css" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="stylesheet" type="text/css" href="../fonts/font.css">
+    <!--Cropper CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.0.0/cropper.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
+    <script src="../js/jquery.cropit.js"></script>
+    <!--draggable grid-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <title></title>
+
+    <!--draggable styles-->
+    <style>
+        ul#sortable li {
+            display: inline;
+        }
+
+        /*#sortable {*/
+        /*list-style-type: none;*/
+        /*margin: 0;*/
+        /*padding: 0;*/
+        /*width: 450px;*/
+        /*}*/
+
+        /*#sortable li {*/
+        /*margin: 13px 13px 13px 0;*/
+        /*padding: 1px;*/
+        /*float: left;*/
+        /*width: 100px;*/
+        /*height: 90px;*/
+        /*font-size: 1em;*/
+        /*text-align: center;*/
+        /*}*/
+    </style>
+    <!--Inline Styles-->
+    <style type="text/css">
+        .navbar {
+            padding-bottom: 0;
+        }
+
+        /*Radio Buttons Inline styling*/
+        input[type='radio']:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: #d1d3d1;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid white;
+        }
+
+        input[type='radio']:checked:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: #3AF1A7;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid white;
+        }
+
+        .placeholder-image:hover {
+            border-style: solid;
+            border-color: #6BF2BC;
+        }
+
+
+    </style>
+
+    <!--cropit styles-->
+    <style>
+        .cropit-preview {
+            background-color: #f8f8f8;
+            background-size: cover;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-top: 7px;
+            width: 250px;
+            height: 250px;
+        }
+
+        .cropit-preview-image-container {
+            cursor: move;
+        }
+
+        .image-size-label {
+            margin-top: 10px;
+        }
+
+        input, .export {
+            display: block;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+<body>
+<!-- Upper Dashboard -->
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F1F1F1">
+    <a class="navbar-brand" href="#">Nombre</a> <i class="fa fa-user-circle fa-3x" style="color:black;top: 25px"></i>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">
+                    Dashboard
+                </a>
+            </li>
+
+        </ul>
+        <!-- Right Nav content -->
+        <button class="btn btn-green" style="margin-right: 50px">CANCELAR</button>
+        <button class="btn btn-green" style="margin-right: 50px">AUTHORIZAR</button>
+
+    </div>
+</nav>
+<a class="logod">
+    <img src="../images/logo_dash.svg" alt="Home">
+</a>
+<nav class="main-menu">
+    <ul>
+        <li class="d-md-block d-xl-none">
+            <a href="#">
+                <img src="../images/logo_dash.svg" alt="Home">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-search fa-2x"></i>
+            </a>
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-bell-o fa-2x"></i>
+
+            </a>
+
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+
+            </a>
+
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-question-circle fa-2x"></i>
+
+            </a>
+        </li>
+        <li class="last"></li>
+    </ul>
+
+</nav>
+<div class="left-menu">
+    <ul>
+        <li>
+            <a href="#">Productos</a>
+        </li>
+        <li>
+            <a href="#">Pedidos</a>
+        </li>
+    </ul>
+</div>
+
+<!-- Center Content -->
+<div class="container">
+
+    <!--Modal starts-->
+    <!-- Modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal
+    </button>
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <!--modal content starts-->
+            <div class="modal-content" style="padding: 50px">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span style="font-family: Akkurat;">PHOTO</span>
+                    </div>
+                    <div class="col-sm-6">
+                        <span>Customer</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p style="font-family: AkkuratBold;">We recommend you to upload at least 3 photos over a white
+                            background and preferably square
+                            shaped</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="jumbotron" style="height: 400px">
+                            <p class="center-text" style="font-family: Akkurat;margin-top: 100px">Media Holder</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="jumbotron" style="height: 400px">
+                            <p class="center-text" style="font-family: Akkurat;margin-top: 100px">Media Holder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p style="font-family: AkkuratBold">Upload as many photos you want to make your product a
+                            star</p>
+                        <p style="font-family: Akkurat">Minimum image resolution: 590x500 px. Ideal image resolution:
+                            1090x1000px.<br>File type: JPEG, PNG, PDF</p>
+
+                    </div>
+                </div>
+                <div class="row jumbotron">
+                    <div class="col-sm-6">
+                        <!--cropping modal starts-->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal">
+                            Upload Images
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="image-editor">
+                                            <input type="file" class="cropit-image-input">
+                                            <div class="cropit-preview"></div>
+                                            <div class="image-size-label">
+                                                Resize image
+                                            </div>
+                                            <input type="range" class="cropit-image-zoom-input">
+                                            <button class="rotate-ccw">Rotate counterclockwise</button>
+                                            <button class="rotate-cw">Rotate clockwise</button>
+
+                                            <button class="export">Export</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                        </button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--cropping modal ends-->
+
+                    </div>
+                    <div class="col-sm-6">
+                        <p style="font-family: AkkuratBold;">0 photos</p>
+                    </div>
+                </div>
+                <div class="row" id="sortable">
+
+                    <div class="col-sm-4">
+                        <div class="jumbotron">
+                            <p style="font-family: Akkurat">this is placeholder for image</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="jumbotron">
+                            <p style="font-family: Akkurat">this is palceholder for images</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="jumbotron">
+                            <p style="font-family: Akkurat">this is 3 text</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="jumbotron">
+                            <p style="font-family: Akkurat">this is 4 text</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="jumbotron">
+                            <p style="font-family: Akkurat">this is 5 text</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="jumbotron">
+                            <p style="font-family: Akkurat">this is 6 text</p>
+                        </div>
+                    </div>
+
+
+                    <!--<li class="ui-state-default">images</li>-->
+                    <!--<li class="ui-state-default">images</li>-->
+                    <!--<li class="ui-state-default">images</li>-->
+                    <!--<li class="ui-state-default">images</li>-->
+                    <!--<li class="ui-state-default">images</li>-->
+                    <!--<li class="ui-state-default">images</li>-->
+                    <!--<li class="ui-state-default">images</li>-->
+                    <!--<li class="ui-state-default">images</li>-->
+                    <!--<li class="ui-state-default">images</li>-->
+                    <!--<li class="ui-state-default">images</li>-->
+                    <!--<li class="ui-state-default">images</li>-->
+                    <!--<li class="ui-state-default">images</li>-->
+
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p style="font-family: AkkuratBold;">VIDEO</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p style="font-family: AkkuratBold;">Customer</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p style="font-family: AkkuratBold">If you already have a promo video explaining all the
+                            advantages, you may link it here and it will play automatically in the catalog</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p style="font-family: Akkurat;">At the moment we only support videos hosted in YoutTube or
+                            Vimeo</p>
+                    </div>
+                </div>
+                <div class="row jumbotron">
+                    <div class="col-sm-12">
+                        <p class="center-text" style="font-family: Akkurat">Attach here the web link of the video you
+                            want to show</p>
+                    </div>
+                </div>
+            </div>
+            <!--modal content ends-->
+        </div>
+    </div>
+
+    <!--Modal ends-->
+
+
+</div>
+<!--Center content ends-->
+<!-- Scripts -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+<script>
+    $(function () {
+        $('.image-editor').cropit({
+            imageState: {
+                src: 'http://lorempixel.com/1920/1080/',
+            },
+        });
+
+        $('.rotate-cw').click(function () {
+            $('.image-editor').cropit('rotateCW');
+        });
+        $('.rotate-ccw').click(function () {
+            $('.image-editor').cropit('rotateCCW');
+        });
+
+        $('.export').click(function () {
+            var imageData = $('.image-editor').cropit('export');
+            window.open(imageData);
+        });
+    });
+</script>
+
+<script>
+    $(function () {
+        $("#sortable").sortable();
+        $("#sortable").disableSelection();
+    });
+</script>
+</body>
+</html>
+
+
+<!--some demo code-->
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--<div class="collapse navbar-collapse" id="navbarNav">-->
+<!--<ul class="navbar-nav">-->
+<!--<li class="nav-item" style="padding-right: 20px">-->
+<!--<select name="" id="" class="form-control" style="font-family: AkkuratBold;width: 250px">-->
+<!--<option selected="selected" value="Categoria">CATEGORIA</option>-->
+<!--</select>-->
+<!--</li>-->
+<!--<li class="nav-item" style="padding-right: 20px">-->
+<!--<select name="" id="" class="form-control" style="font-family: AkkuratBold;width: 250px">-->
+<!--<option selected="selected" value="Categoria">CATEGORIA</option>-->
+<!--</select>-->
+<!--</li>-->
+<!--<li class="nav-item mt-2" style="padding-right:20px;">-->
+<!--<span style="font-family: AkkuratBold">Productos</span><span>: 3</span>-->
+<!--</li>-->
+<!--<li class="nav-item mt-2" style="padding-right: 20px">-->
+<!--<input type="radio"><span style="font-family: AkkuratBold;">-->
+<!--Ajustes</span><span>: 1</span>-->
+<!--</li>-->
+<!--<li class="nav-item mt-2">-->
+<!--<div class="row">-->
+<!--<div class="col-6">-->
+<!--<span class="fa fa-caret-down" style="position:absolute;color: black;"></span>-->
+<!--</div>-->
+<!--<div class="col-6">-->
+
+<!--<span-->
+<!--style="font-family: AkkuratBold;">Filtros</span>-->
+<!--</div>-->
+
+<!--</div>-->
+
+
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</nav>-->
