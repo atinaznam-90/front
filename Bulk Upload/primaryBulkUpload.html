@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tame Traffic</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <!-- <link href="css/mdb.css" rel="stylesheet"> -->
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/dashboard.css" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="stylesheet" type="text/css" href="../fonts/font.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/jquery.cropit.js"></script>
+    <!--color wheel-->
+    <script src="../js/iro.js"></script>
+    <title></title>
+    <!--Inline Styles-->
+    <link rel="stylesheet" href="../css/tametraffic.css">
+
+</head>
+<body>
+<!-- Upper Dashboard -->
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F1F1F1">
+    <a class="navbar-brand" href="#">Nombre</a> <i class="fa fa-user-circle fa-3x" style="color:black;top: 25px"></i>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">
+                    Dashboard
+                </a>
+            </li>
+
+        </ul>
+        <!-- Right Nav content -->
+        <button class="btn btn-green" style="margin-right: 50px">CANCELAR</button>
+        <button class="btn btn-green" style="margin-right: 50px">AUTHORIZAR</button>
+
+    </div>
+</nav>
+<a class="logod">
+    <img src="../images/logo_dash.svg" alt="Home">
+</a>
+<nav class="main-menu">
+    <ul>
+        <li class="d-md-block d-xl-none">
+            <a href="#">
+                <img src="../images/logo_dash.svg" alt="Home">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-search fa-2x"></i>
+            </a>
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-bell-o fa-2x"></i>
+
+            </a>
+
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+
+            </a>
+
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-question-circle fa-2x"></i>
+
+            </a>
+        </li>
+        <li class="last"></li>
+    </ul>
+
+</nav>
+<div class="left-menu">
+    <ul>
+        <li>
+            <a href="#">Productos</a>
+        </li>
+        <li>
+            <a href="#">Pedidos</a>
+        </li>
+    </ul>
+</div>
+
+<!-- Center Content -->
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-left: 10%">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" style="padding-right: 20px">
+                    <select name="" id="" class="form-control" style="font-family: AkkuratBold;width: 250px">
+                        <option selected="selected" value="Search Type">Search Type</option>
+                        <option selected="selected" value="Search Type">Search Type</option>
+                        <option selected="selected" value="Search Type">Search Type</option>
+                        <option selected="selected" value="Search Type">Search Type</option>
+                        <option selected="selected" value="Search Type">Search Type</option>
+                        <option selected="selected" value="Search Type">Search Type</option>
+                    </select>
+                </li>
+                <li class="nav-item" style="padding-right: 20px">
+                    <select name="" id="" class="form-control" style="font-family: AkkuratBold;width: 250px">
+                        <option selected="selected" value="Search Type">Search TypeB</option>
+                        <option selected="selected" value="Search Type">Search TypeB</option>
+                        <option selected="selected" value="Search Type">Search TypeB</option>
+                        <option selected="selected" value="Search Type">Search TypeB</option>
+                        <option selected="selected" value="Search Type">Search TypeB</option>
+                        <option selected="selected" value="Search Type">Search TypeB</option>
+                    </select>
+                </li>
+                <li class="nav-item mt-2" style="padding-right:20px;">
+                    <span style="font-family: AkkuratBold">Productos</span><span>: 3</span>
+                </li>
+                <li class="nav-item mt-2" style="padding-right: 20px">
+                    <input type="radio"><span style="font-family: AkkuratBold;">
+    Ajustes</span><span>: 1</span>
+                </li>
+                <li class="nav-item mt-2">
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="fa fa-caret-down" style="position:absolute;color: black;"></span>
+                        </div>
+                        <div class="col-6">
+
+    <span
+            style="font-family: AkkuratBold;">Filtros</span>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline " style="margin-right: 3%">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <table class="table">
+            <thead class="thead-light">
+            <tr>
+                <th scope="col" data-toggle="collapse" href="#collapseExample1" role="button"
+                    aria-expanded="false" aria-controls="collapseExample" style="font-family: AkkuratBold;">Nombre
+                </th>
+                <th scope="col" style="font-family: AkkuratBold;">ITEM</th>
+                <th scope="col" style="font-family: AkkuratBold;">SKU</th>
+                <th scope="col" style="font-family: AkkuratBold;">Categoria/Subcategoria</th>
+                <th scope="col" style="font-family: AkkuratBold;">Costo unitario</th>
+                <th scope="col" style="font-family: AkkuratBold;">Estatus</th>
+                <th scope="col" style="font-family: AkkuratBold;">Options</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th data-toggle="collapse" href="#collapseExample1" role="button"
+                    aria-expanded="false" aria-controls="collapseExample" style="font-family: AkkuratBold;" scope="row">
+                    Nombre
+                </th>
+                <td style="font-family: AkkuratBold;">ITEM</td>
+                <td style="font-family: AkkuratBold;">SKU</td>
+                <td style="font-family: AkkuratBold">Categoria/Subcategoria</td>
+                <td style="font-family: AkkuratBold">$0.00 MXN / 00 pz min. <span style="color: #2BCA73 ;">00%</span>
+                </td>
+                <td style="font-family: AkkuratBold">Estatus</td>
+                <td style="font-family: Akkurat">
+                    <!--<button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"-->
+                    <!--data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                    <!--<span class="sr-only">Toggle Dropdown</span>-->
+                    <!--</button>-->
+                    <i data-toggle="dropdown" class="fa fa-ellipsis-h" style="color: black;"></i>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" data-toggle="modal" data-target=".bd-example-modal-lg" href="#">PHOTO
+                            AND VIDEO</a>
+                        <a class="dropdown-item" data-toggle="modal" data-target=".color-example-modal-lg" href="#">ASSIGN
+                            COLORS</a>
+                        <a class="dropdown-item" data-toggle="modal" data-target=".pricetabulation-example-modal-lg"
+                           href="#">PRICE/TABULATOR</a>
+                        <a class="dropdown-item" data-toggle="modal" data-target=".printareas-example-modal-lg" href="">PRINT
+                            AREAS</a>
+
+                    </div>
+
+
+                </td>
+            </tr>
+            <tr>
+                <th data-toggle="collapse" href="#collapseExample1" role="button"
+                    aria-expanded="false" aria-controls="collapseExample" style="font-family: AkkuratBold" scope="row">
+                    Nombre
+                </th>
+                <td style="font-family: AkkuratBold">ITEM</td>
+                <td style="font-family: AkkuratBold;">SKU</td>
+                <td style="font-family: AkkuratBold;">Categoria/Subcategoria</td>
+                <td style="font-family: AkkuratBold">$0.00 MXN / 00 pz min. <span style="color: #2BCA73 ;">00%</span>
+                </td>
+                <td style="font-family: AkkuratBold">Estatus</td>
+                <td style="font-family: Akkurat;">
+                    <i data-toggle="dropdown" class="fa fa-ellipsis-h" style="color: black;"></i>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target=".bd-example-modal-lg">PHOTO
+                            AND VIDEO</a>
+                        <a class="dropdown-item" data-toggle="modal" data-target=".color-example-modal-lg" href="#">ASSIGN
+                            COLORS</a>
+                        <a class="dropdown-item" data-toggle="modal" data-target=".pricetabulation-example-modal-lg"
+                           href="#">PRICE/TABULATOR</a>
+                        <a class="dropdown-item" data-toggle="modal" data-target=".printareas-example-modal-lg" href="">PRINT
+                            AREAS</a>
+                    </div>
+                </td>
+            </tr>
+            <tr style="background-color: #F6FF98">
+                <th data-toggle="collapse" href="#collapseExample1" role="button"
+                    aria-expanded="false" aria-controls="collapseExample" scope="row" style="font-family: AkkuratBold">
+                    Nombre
+                </th>
+                <td style="font-family: AkkuratBold">ITEM</td>
+                <td style="font-family: AkkuratBold">SKU</td>
+                <td style="font-family: AkkuratBold">Categoria/Subcategoria</td>
+                <td style="font-family: AkkuratBold">$0.00 MXN / 00 pz min. <span style="color: #2BCA73 ;">00%</span>
+                </td>
+                <td style="font-family: AkkuratBold">Estatus</td>
+                <td style="font-family: Akkurat">
+                    <i data-toggle="dropdown" class="fa fa-ellipsis-h" style="color: black;"></i>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" data-toggle="modal" data-target=".bd-example-modal-lg" href="#">PHOTO
+                            AND VIDEO</a>
+                        <a class="dropdown-item" data-toggle="modal" data-target=".color-example-modal-lg" href="#">ASSIGN
+                            COLORS</a>
+                        <a class="dropdown-item" data-toggle="modal" data-target=".pricetabulation-example-modal-lg"
+                           href="#">PRICE/TABULATOR</a>
+                        <a class="dropdown-item" data-toggle="modal" data-target=".printareas-example-modal-lg" href="">PRINT
+                            AREAS</a>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <!--collapsible table-->
+
+        <!--collapsible table ends-->
+    </div>
+
+    <!--price tabulations starts-->
+
+    <div class="modal fade pricetabulation-example-modal-lg" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="padding: 50px">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p style="font-family: AkkuratBold">PRICE TABULATION</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p style="font-family: AkkuratBold">Customer</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p style="font-family: AkkuratBold">For many businesses is vital to have the complete overview
+                            and
+                            in many occasions, the minimum price is not the best one; use
+                            the price tabulator so the customer can have a clearer scenario
+                            to make a purchase.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                   aria-controls="home" aria-selected="true">PRODUCTION ORDER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                   aria-controls="profile" aria-selected="false">INVENTORY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                   aria-controls="contact" aria-selected="false">SALE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="outlet-tab" data-toggle="tab" href="#outlet" role="tab"
+                                   aria-controls="contact" aria-selected="false">OUTLET</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <!--table mockup-->
+                                <table id="myTable" class=" table order-list">
+                                    <thead>
+                                    <tr>
+                                        <td>NUMBER OF PIECES</td>
+                                        <td>SUPPLIER</td>
+                                        <td>PROFIT</td>
+                                        <td>SHOWROOM</td>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="first-table">
+                                        <td class="col-sm-4">
+                                            <input type="text" name="name" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-4">
+                                            <input type="mail" name="mail" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-3">
+                                            <input type="text" name="phone" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-3">
+                                            <input type="text" name="phone" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-2"><a class="deleteRow"></a>
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <td colspan="5" style="text-align: left;">
+                                            <input type="button" class="btn btn-lg btn-block " id="addrow"
+                                                   value="Add Row"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                                <div>
+                                    <!--<span><i class="fa fa-plus-circle fa-2x"-->
+                                    <!--style="color: black;vertical-align: middle"></i></span>-->
+                                    <!--<span style="font-family: AkkuratBold">Add number of pieces</span>-->
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <table id="myTable" class=" table order-list1">
+                                    <thead>
+                                    <tr>
+                                        <td>NUMBER OF PIECES</td>
+                                        <td>SUPPLIER</td>
+                                        <td>PROFIT</td>
+                                        <td>SHOWROOM</td>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="col-sm-4">
+                                            <input type="text" name="name" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-4">
+                                            <input type="mail" name="mail" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-3">
+                                            <input type="text" name="phone" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-3">
+                                            <input type="text" name="phone" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-2"><a class="deleteRow"></a>
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <td colspan="5" style="text-align: left;">
+                                            <input type="button" class="btn btn-lg btn-block " id="addrow1"
+                                                   value="Add Row"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <table id="myTable" class=" table order-list2">
+                                    <thead>
+                                    <tr>
+                                        <td>NUMBER OF PIECES</td>
+                                        <td>SUPPLIER</td>
+                                        <td>PROFIT</td>
+                                        <td>SHOWROOM</td>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="col-sm-4">
+                                            <input type="text" name="name" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-4">
+                                            <input type="mail" name="mail" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-3">
+                                            <input type="text" name="phone" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-3">
+                                            <input type="text" name="phone" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-2"><a class="deleteRow"></a>
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <td colspan="5" style="text-align: left;">
+                                            <input type="button" class="btn btn-lg btn-block " id="addrow2"
+                                                   value="Add Row"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="outlet" role="tabpanel" aria-labelledby="profile-tab">
+                                <table id="myTable" class=" table order-list-outlet">
+                                    <thead>
+                                    <tr>
+                                        <td>NUMBER OF PIECES</td>
+                                        <td>SUPPLIER</td>
+                                        <td>PROFIT</td>
+                                        <td>SHOWROOM</td>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="col-sm-4">
+                                            <input type="text" name="name" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-4">
+                                            <input type="mail" name="mail" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-3">
+                                            <input type="text" name="phone" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-3">
+                                            <input type="text" name="phone" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-2"><a class="deleteRow"></a>
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <td colspan="5" style="text-align: left;">
+                                            <input type="button" class="btn btn-lg btn-block " id="addrowoutlet"
+                                                   value="Add Row"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Modal Footer-->
+            <div class="modal-footer" style="background-color: #3AF1A7">
+                <div class="col-7">
+                    <h3 style="font-family: AkkuratBold;color:white;">Product Name</h3>
+                </div>
+                <button type="button" class="btn btn-green" data-dismiss="modal" style="background-color: grey">Close
+                </button>
+                <button type="button" class="btn btn-green" style="background-color: grey">Save changes</button>
+
+            </div>
+        </div>
+    </div>
+    <!--price tabulation ends-->
+
+    <!--print areas starts-->
+    <div class="modal fade printareas-example-modal-lg" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="padding: 50px">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p style="font-family: AkkuratBold">PRINTING AREA</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p style="font-family: AkkuratBold">Customer</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!--<p style="font-family: AkkuratBold">For many businesses is vital to have the complete overview-->
+                        <!--and-->
+                        <!--in many occasions, the minimum price is not the best one; use-->
+                        <!--the price tabulator so the customer can have a clearer scenario-->
+                        <!--to make a purchase.</p>-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!--<ul class="nav nav-tabs" id="myTab" role="tablist">-->
+                        <!--<li class="nav-item">-->
+                        <!--<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"-->
+                        <!--aria-controls="home" aria-selected="true">Home</a>-->
+                        <!--</li>-->
+                        <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"-->
+                        <!--aria-controls="profile" aria-selected="false">Profile</a>-->
+                        <!--</li>-->
+                        <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"-->
+                        <!--aria-controls="contact" aria-selected="false">Contact</a>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                        <p style="font-family: AkkuratBold">Mention the printing areas of the product</p>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <!--table mockup-->
+                                <table id="myTable" class=" table order-list-printingareas">
+                                    <thead>
+                                    <tr>
+                                        <td>Nombre</td>
+                                        <td>Height</td>
+                                        <td>Length</td>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="col-sm-4">
+                                            <input type="text" name="name" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-4">
+                                            <input type="mail" name="mail" class="form-control"/>
+                                        </td>
+                                        <td class="col-sm-3">
+                                            <input type="text" name="phone" class="form-control"/>
+                                        </td>
+
+                                        <td class="col-sm-2"><a class="deleteRow"></a>
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <td colspan="5" style="text-align: left;">
+                                            <input type="button" class="btn btn-lg btn-block " id="addrowpriningareas"
+                                                   value="Add Row"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                                <!--<div>-->
+                                <!--<span><i class="fa fa-plus-circle fa-2x"-->
+                                <!--style="color: black;vertical-align: middle"></i></span>-->
+                                <!--<span style="font-family: AkkuratBold">Add number of pieces</span>-->
+                                <!--</div>-->
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">second
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">third
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Modal Footer-->
+            <div class="modal-footer" style="background-color: #3AF1A7">
+                <div class="col-7">
+                    <h3 style="font-family: AkkuratBold;color:white;">Product Name</h3>
+                </div>
+                <button type="button" class="btn btn-green" data-dismiss="modal" style="background-color: grey">Close
+                </button>
+                <button type="button" class="btn btn-green" style="background-color: grey">Save changes</button>
+
+            </div>
+        </div>
+    </div>
+    <!--print areas ends-->
+
+    <!--color wheel modal starts-->
+    <div class="container">
+
+        <!--Modal starts-->
+        <!-- Modal -->
+        <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".color-example-modal-lg">Large modal-->
+        <!--</button>-->
+
+        <div class="modal fade color-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-sm-6 center-text">
+                            <span style="font-family: Akkurat;">COLORS</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <span>Customer</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 center-text">
+                            <span style="font-family: AkkuratBold;">Mentions the colors available for your product.</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 center-text">
+                            <span style="font-family: AkkuratBold;">Unique Model</span>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top:20px">
+                        <div class="col-sm-12">
+                            <!--<div style="margin-left: 30%" id="color-picker-container"></div>-->
+
+                            <table id="myTable" class=" table order-list3">
+                                <thead>
+                                <tr>
+                                    <td>Colors</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-sm-4">
+                                        <input type="color" name="name" class="form-control"/>
+                                    </td>
+                                    <td class="col-sm-2"><a class="deleteRow"></a>
+
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <td colspan="5" style="text-align: left;">
+                                        <input type="button" class="btn btn-lg btn-block " id="addrow3"
+                                               value="Add Row"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                </tr>
+                                </tfoot>
+                            </table>
+
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                        <div class="modal-footer" style="background-color: #3AF1A7">
+                            <div class="col-7">
+                                <h3 style="font-family: AkkuratBold;color:white;">Product Name</h3>
+                            </div>
+                            <button type="button" class="btn btn-green" data-dismiss="modal"
+                                    style="background-color: grey">Close
+                            </button>
+                            <button type="button" class="btn btn-green" style="background-color: grey">Save changes
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--color wheel modal ends-->
+
+
+        <!--photo and video modal content starts-->
+
+        <div class="container">
+
+            <!--Modal starts-->
+            <!-- Modal -->
+            <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal-->
+            <!--</button>-->
+
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <!--modal content starts-->
+                    <div class="modal-content" style="padding: 50px">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <span style="font-family: Akkurat;">PHOTO</span>
+                            </div>
+                            <div class="col-sm-6">
+                                <span>Customer</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p style="font-family: AkkuratBold;">We recommend you to upload at least 3 photos over a
+                                    white
+                                    background and preferably square
+                                    shaped</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="jumbotron" style="height: 400px">
+                                    <p class="center-text" style="font-family: Akkurat;margin-top: 100px">Media
+                                        Holder</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="jumbotron" style="height: 400px">
+                                    <p class="center-text" style="font-family: Akkurat;margin-top: 100px">Media
+                                        Holder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p style="font-family: AkkuratBold">Upload as many photos you want to make your product
+                                    a
+                                    star</p>
+                                <p style="font-family: Akkurat">Minimum image resolution: 590x500 px. Ideal image
+                                    resolution:
+                                    1090x1000px.<br>File type: JPEG, PNG, PDF</p>
+
+                            </div>
+                        </div>
+                        <div class="row jumbotron">
+                            <div class="col-sm-6">
+                                <!--cropping modal starts-->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-default" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                    Upload Images
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="image-editor">
+                                                    <input type="file" class="cropit-image-input">
+                                                    <div class="cropit-preview"></div>
+                                                    <div class="image-size-label">
+                                                        Resize image
+                                                    </div>
+                                                    <input type="range" class="cropit-image-zoom-input">
+                                                    <button class="rotate-ccw">Rotate counterclockwise</button>
+                                                    <button class="rotate-cw">Rotate clockwise</button>
+
+                                                    <button class="export">Export</button>
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--cropping modal ends-->
+
+                            </div>
+                            <div class="col-sm-6">
+                                <p style="font-family: AkkuratBold;">0 photos</p>
+                            </div>
+                        </div>
+                        <div class="row" id="sortable">
+
+
+                            <div class="row heading">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <!--<h2 class="text-center bottom-line">Meet Our Team</h2>-->
+                                    <!--<p class="subheading text-center">Creative Nerds</p>-->
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 col-sm-6 team-wrap">
+                                <div class="team-member text-center">
+                                    <div class="team-img">
+                                        <img src="http://deothemes.com/envato/enigma/html/img/team_1.jpg" alt="">
+                                        <div class="overlay">
+                                            <div class="team-details text-center">
+                                                <!--<p>-->
+                                                <!--Our web design team will spend time with our digital marketing team.-->
+                                                <!--</p>-->
+                                                <div class="socials mt-20">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                    <a href="#"><i class="fa fa-envelope"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<h6 class="team-title">John Marshall</h6>-->
+                                    <!--<span>Designer</span>-->
+                                </div>
+                            </div>
+                            <!-- end team member -->
+
+                            <div class="col-md-4 col-sm-6 team-wrap">
+                                <div class="team-member text-center">
+                                    <div class="team-img">
+                                        <img src="http://deothemes.com/envato/enigma/html/img/team_2.jpg" alt="">
+                                        <div class="overlay">
+                                            <div class="team-details text-center">
+                                                <!--<p>-->
+                                                <!--Our web design team will spend time with our digital marketing team.-->
+                                                <!--</p>-->
+                                                <div class="socials mt-20">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                    <a href="#"><i class="fa fa-envelope"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<h6 class="team-title">Steve Roberts</h6>-->
+                                    <!--<span>Photographer</span>-->
+                                </div>
+                            </div>
+                            <!-- end team member -->
+
+                            <div class="col-md-4 col-sm-6 team-wrap">
+                                <div class="team-member last text-center">
+                                    <div class="team-img">
+                                        <img src="http://deothemes.com/envato/enigma/html/img/team_3.jpg" alt="">
+                                        <div class="overlay">
+                                            <div class="team-details text-center">
+                                                <!--<p>-->
+                                                <!--Our web design team will spend time with our digital marketing team.-->
+                                                <!--</p>-->
+                                                <div class="socials mt-20">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                    <a href="#"><i class="fa fa-envelope"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<h6 class="team-title">Michael Cartney</h6>-->
+                                    <!--<span>Designer</span>-->
+                                </div>
+                            </div>
+                            <!-- end team member -->
+
+
+                            <div class="row heading">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <!--<h2 class="text-center bottom-line">Meet Our Team</h2>-->
+                                    <!--<p class="subheading text-center">Creative Nerds</p>-->
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 col-sm-6 team-wrap">
+                                <div class="team-member text-center">
+                                    <div class="team-img">
+                                        <img src="http://deothemes.com/envato/enigma/html/img/team_1.jpg" alt="">
+                                        <div class="overlay">
+                                            <div class="team-details text-center">
+                                                <!--<p>-->
+                                                <!--Our web design team will spend time with our digital marketing team.-->
+                                                <!--</p>-->
+                                                <div class="socials mt-20">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                    <a href="#"><i class="fa fa-envelope"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<h6 class="team-title">John Marshall</h6>-->
+                                    <!--<span>Designer</span>-->
+                                </div>
+                            </div>
+                            <!-- end team member -->
+
+                            <div class="col-md-4 col-sm-6 team-wrap">
+                                <div class="team-member text-center">
+                                    <div class="team-img">
+                                        <img src="http://deothemes.com/envato/enigma/html/img/team_2.jpg" alt="">
+                                        <div class="overlay">
+                                            <div class="team-details text-center">
+                                                <!--<p>-->
+                                                <!--Our web design team will spend time with our digital marketing team.-->
+                                                <!--</p>-->
+                                                <div class="socials mt-20">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                    <a href="#"><i class="fa fa-envelope"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<h6 class="team-title">Steve Roberts</h6>-->
+                                    <!--<span>Photographer</span>-->
+                                </div>
+                            </div>
+                            <!-- end team member -->
+
+                            <div class="col-md-4 col-sm-6 team-wrap">
+                                <div class="team-member last text-center">
+                                    <div class="team-img">
+                                        <img src="http://deothemes.com/envato/enigma/html/img/team_3.jpg" alt="">
+                                        <div class="overlay">
+                                            <div class="team-details text-center">
+                                                <!--<p>-->
+                                                <!--Our web design team will spend time with our digital marketing team.-->
+                                                <!--</p>-->
+                                                <div class="socials mt-20">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                    <a href="#"><i class="fa fa-envelope"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<h6 class="team-title">Michael Cartney</h6>-->
+                                    <!--<span>Designer</span>-->
+                                </div>
+                            </div>
+                            <!-- end team member -->
+
+
+                            <!--<li class="ui-state-default">images</li>-->
+                            <!--<li class="ui-state-default">images</li>-->
+                            <!--<li class="ui-state-default">images</li>-->
+                            <!--<li class="ui-state-default">images</li>-->
+                            <!--<li class="ui-state-default">images</li>-->
+                            <!--<li class="ui-state-default">images</li>-->
+                            <!--<li class="ui-state-default">images</li>-->
+                            <!--<li class="ui-state-default">images</li>-->
+                            <!--<li class="ui-state-default">images</li>-->
+                            <!--<li class="ui-state-default">images</li>-->
+                            <!--<li class="ui-state-default">images</li>-->
+                            <!--<li class="ui-state-default">images</li>-->
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p style="font-family: AkkuratBold;">VIDEO</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p style="font-family: AkkuratBold;">Customer</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p style="font-family: AkkuratBold">If you already have a promo video explaining all the
+                                    advantages, you may link it here and it will play automatically in the catalog</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p style="font-family: Akkurat;">At the moment we only support videos hosted in YoutTube
+                                    or
+                                    Vimeo</p>
+                            </div>
+                        </div>
+                        <div class="row jumbotron">
+                            <div class="col-sm-12">
+                                <p class="center-text" style="font-family: Akkurat">Attach here the web link of the
+                                    video
+                                    you
+                                    want to show</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--modal content ends-->
+                </div>
+            </div>
+
+            <!--Modal ends-->
+
+
+        </div>
+        <!--modal content ends-->
+    </div>
+    <!-- Scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $('.image-editor').cropit({
+                imageState: {
+                    src: 'http://lorempixel.com/1920/1080/',
+                },
+            });
+
+            $('.rotate-cw').click(function () {
+                $('.image-editor').cropit('rotateCW');
+            });
+            $('.rotate-ccw').click(function () {
+                $('.image-editor').cropit('rotateCCW');
+            });
+
+            $('.export').click(function () {
+                var imageData = $('.image-editor').cropit('export');
+                window.open(imageData);
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $("#sortable").sortable();
+            $("#sortable").disableSelection();
+        });
+    </script>
+
+    <!--color wheel-->
+    <script>
+        var demoColorPicker = new iro.ColorPicker("#color-picker-container");
+    </script>
+    <!--for first table-->
+    <script>
+        $(document).ready(function () {
+            var counter = 0;
+
+            $("#addrow").on("click", function () {
+                var newRow = $("<tr>");
+                var cols = "";
+
+                cols += '<td><input type="text" class="form-control" name="name' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="mail' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="phone' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="phone' + counter + '"/></td>';
+
+                cols += '<td><input type="button" class="ibtnDel btn btn-md btn-danger "  value="Delete"></td>';
+                newRow.append(cols);
+                $("table.order-list").append(newRow);
+                counter++;
+            });
+
+
+            $("table.order-list").on("click", ".ibtnDel", function (event) {
+                $(this).closest("tr").remove();
+                counter -= 1
+            });
+
+
+        });
+
+
+        function calculateRow(row) {
+            var price = +row.find('input[name^="price"]').val();
+
+        }
+
+        function calculateGrandTotal() {
+            var grandTotal = 0;
+            $("table.order-list").find('input[name^="price"]').each(function () {
+                grandTotal += +$(this).val();
+            });
+            $("#grandtotal").text(grandTotal.toFixed(2));
+        }
+    </script>
+    <!--second table-->
+    <script>
+        $(document).ready(function () {
+            var counter = 0;
+
+            $("#addrow1").on("click", function () {
+                var newRow = $("<tr>");
+                var cols = "";
+
+                cols += '<td><input type="text" class="form-control" name="name' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="mail' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="phone' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="phone' + counter + '"/></td>';
+
+                cols += '<td><input type="button" class="ibtnDel btn btn-md btn-danger "  value="Delete"></td>';
+                newRow.append(cols);
+                $("table.order-list1").append(newRow);
+                counter++;
+            });
+
+
+            $("table.order-list1").on("click", ".ibtnDel", function (event) {
+                $(this).closest("tr").remove();
+                counter -= 1
+            });
+
+
+        });
+
+
+        function calculateRow(row) {
+            var price = +row.find('input[name^="price"]').val();
+
+        }
+
+        function calculateGrandTotal() {
+            var grandTotal = 0;
+            $("table.order-list").find('input[name^="price"]').each(function () {
+                grandTotal += +$(this).val();
+            });
+            $("#grandtotal").text(grandTotal.toFixed(2));
+        }
+    </script>
+    <!--third table-->
+    <script>
+        $(document).ready(function () {
+            var counter = 0;
+
+            $("#addrow2").on("click", function () {
+                var newRow = $("<tr>");
+                var cols = "";
+
+                cols += '<td><input type="text" class="form-control" name="name' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="mail' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="phone' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="phone' + counter + '"/></td>';
+
+                cols += '<td><input type="button" class="ibtnDel btn btn-md btn-danger "  value="Delete"></td>';
+                newRow.append(cols);
+                $("table.order-list2").append(newRow);
+                counter++;
+            });
+
+
+            $("table.order-list2").on("click", ".ibtnDel", function (event) {
+                $(this).closest("tr").remove();
+                counter -= 1
+            });
+
+
+        });
+
+
+        function calculateRow(row) {
+            var price = +row.find('input[name^="price"]').val();
+
+        }
+
+        function calculateGrandTotal() {
+            var grandTotal = 0;
+            $("table.order-list").find('input[name^="price"]').each(function () {
+                grandTotal += +$(this).val();
+            });
+            $("#grandtotal").text(grandTotal.toFixed(2));
+        }
+    </script>
+    <!--assign color custom script-->
+    <script>
+        $(document).ready(function () {
+            var counter = 0;
+
+            $("#addrow3").on("click", function () {
+                var newRow = $("<tr>");
+                var cols = "";
+
+                cols += '<td><input type="color" class="form-control" name="name' + counter + '"/></td>';
+                // cols += '<td><input type="text" class="form-control" name="mail' + counter + '"/></td>';
+                // cols += '<td><input type="text" class="form-control" name="phone' + counter + '"/></td>';
+                // cols += '<td><input type="text" class="form-control" name="phone' + counter + '"/></td>';
+
+                cols += '<td><input type="button" class="ibtnDel btn btn-md btn-danger "  value="Delete"></td>';
+                newRow.append(cols);
+                $("table.order-list3").append(newRow);
+                counter++;
+            });
+
+
+            $("table.order-list3").on("click", ".ibtnDel", function (event) {
+                $(this).closest("tr").remove();
+                counter -= 1
+            });
+
+
+        });
+
+
+        function calculateRow(row) {
+            var price = +row.find('input[name^="price"]').val();
+
+        }
+
+        function calculateGrandTotal() {
+            var grandTotal = 0;
+            $("table.order-list").find('input[name^="price"]').each(function () {
+                grandTotal += +$(this).val();
+            });
+            $("#grandtotal").text(grandTotal.toFixed(2));
+        }
+    </script>
+    <!--outlet custom script-->
+    <script>
+        $(document).ready(function () {
+            var counter = 0;
+
+            $("#addrowoutlet").on("click", function () {
+                var newRow = $("<tr>");
+                var cols = "";
+
+                cols += '<td><input type="text" class="form-control" name="name' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="mail' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="phone' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="phone' + counter + '"/></td>';
+
+                cols += '<td><input type="button" class="ibtnDel btn btn-md btn-danger "  value="Delete"></td>';
+                newRow.append(cols);
+                $("table.order-list-outlet").append(newRow);
+                counter++;
+            });
+
+
+            $("table.order-list-outlet").on("click", ".ibtnDel", function (event) {
+                $(this).closest("tr").remove();
+                counter -= 1
+            });
+
+
+        });
+
+
+        function calculateRow(row) {
+            var price = +row.find('input[name^="price"]').val();
+
+        }
+
+        function calculateGrandTotal() {
+            var grandTotal = 0;
+            $("table.order-list").find('input[name^="price"]').each(function () {
+                grandTotal += +$(this).val();
+            });
+            $("#grandtotal").text(grandTotal.toFixed(2));
+        }
+    </script>
+    <!--cusotm script for printing areas-->
+    <script>
+        $(document).ready(function () {
+            var counter = 0;
+
+            $("#addrowpriningareas").on("click", function () {
+                var newRow = $("<tr>");
+                var cols = "";
+
+                cols += '<td><input type="text" class="form-control" name="name' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="mail' + counter + '"/></td>';
+                cols += '<td><input type="text" class="form-control" name="phone' + counter + '"/></td>';
+
+                cols += '<td><input type="button" class="ibtnDel btn btn-md btn-danger "  value="Delete"></td>';
+                newRow.append(cols);
+                $("table.order-list-printingareas").append(newRow);
+                counter++;
+            });
+
+
+            $("table.order-list-printingareas").on("click", ".ibtnDel", function (event) {
+                $(this).closest("tr").remove();
+                counter -= 1
+            });
+
+
+        });
+
+
+        function calculateRow(row) {
+            var price = +row.find('input[name^="price"]').val();
+
+        }
+
+        function calculateGrandTotal() {
+            var grandTotal = 0;
+            $("table.order-list").find('input[name^="price"]').each(function () {
+                grandTotal += +$(this).val();
+            });
+            $("#grandtotal").text(grandTotal.toFixed(2));
+        }
+    </script>
+
+
+</body>
+</html>
+
+
+<!--some demo code-->
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--<div class="collapse navbar-collapse" id="navbarNav">-->
+<!--<ul class="navbar-nav">-->
+<!--<li class="nav-item" style="padding-right: 20px">-->
+<!--<select name="" id="" class="form-control" style="font-family: AkkuratBold;width: 250px">-->
+<!--<option selected="selected" value="Categoria">CATEGORIA</option>-->
+<!--</select>-->
+<!--</li>-->
+<!--<li class="nav-item" style="padding-right: 20px">-->
+<!--<select name="" id="" class="form-control" style="font-family: AkkuratBold;width: 250px">-->
+<!--<option selected="selected" value="Categoria">CATEGORIA</option>-->
+<!--</select>-->
+<!--</li>-->
+<!--<li class="nav-item mt-2" style="padding-right:20px;">-->
+<!--<span style="font-family: AkkuratBold">Productos</span><span>: 3</span>-->
+<!--</li>-->
+<!--<li class="nav-item mt-2" style="padding-right: 20px">-->
+<!--<input type="radio"><span style="font-family: AkkuratBold;">-->
+<!--Ajustes</span><span>: 1</span>-->
+<!--</li>-->
+<!--<li class="nav-item mt-2">-->
+<!--<div class="row">-->
+<!--<div class="col-6">-->
+<!--<span class="fa fa-caret-down" style="position:absolute;color: black;"></span>-->
+<!--</div>-->
+<!--<div class="col-6">-->
+
+<!--<span-->
+<!--style="font-family: AkkuratBold;">Filtros</span>-->
+<!--</div>-->
+
+<!--</div>-->
+
+
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</nav>-->
